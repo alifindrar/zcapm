@@ -1,0 +1,784 @@
+date,code,r,close,previous,volume,source,prev_source,obs_no,gap_days,weight,eligible_prev_month_end,reverts,split_like,near_price_break,near_split_table,near_rights,near_share_break,class
+2005-01-05,APIC,0.5000000486702743,444.44445405832573,296.2962930916692,472770,yahoo,yahoo,3,1.0,0.0009746146407552762,False,True,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2005-01-05,BAYU,0.44999999999999996,145.0,100.0,427000,yahoo,yahoo,3,1.0,3.4263796334636755e-05,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2005-01-06,INCF,-0.368421052631579,60.0,95.0,38000,yahoo,yahoo,4,1.0,0.00013371965972007303,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2005-01-07,APIC,0.5000000486702743,444.44445405832573,296.2962930916692,582813,yahoo,yahoo,5,1.0,0.0009668880721631602,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2005-01-13,LMPI,0.4736842105263157,140.0,95.0,500,yahoo,yahoo,9,1.0,9.43879544829982e-05,False,False,False,False,False,False,False,unexplained
+2005-02-01,KOPI,1.0,10.0,5.0,0,yahoo,yahoo,21,1.0,3.3150880463497775e-06,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2005-02-02,KOPI,0.5,15.0,10.0,0,yahoo,yahoo,22,1.0,6.6317776989216785e-06,False,False,False,False,False,False,False,unexplained
+2005-02-04,KOPI,0.5,30.0,20.0,0,yahoo,yahoo,24,1.0,1.3240057225313e-05,False,False,False,False,False,False,False,unexplained
+2005-02-07,KOPI,0.5,45.0,30.0,0,yahoo,yahoo,25,3.0,1.993351441271807e-05,False,False,False,False,False,False,False,unexplained
+2005-02-08,KOPI,0.4444444444444444,65.0,45.0,0,yahoo,yahoo,26,1.0,3.0113783396731574e-05,False,False,False,False,False,False,False,unexplained
+2005-02-11,KOPI,0.46153846153846145,95.0,65.0,0,yahoo,yahoo,27,3.0,4.364939031804582e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-02-21,BIPP,0.47058823529411775,125.0,85.0,109152000,yahoo,yahoo,33,3.0,0.0003847492383603388,False,False,False,False,False,False,False,unexplained
+2005-02-21,BRPT,0.3999999999999999,84.0,60.0,440560000,stockdb,stockdb,1074,4.0,,False,False,False,False,False,False,False,unexplained
+2005-02-21,KOPI,0.5,75.0,50.0,0,yahoo,yahoo,33,3.0,3.2200438408923615e-05,False,False,False,False,False,False,False,unexplained
+2005-02-22,KOPI,0.46666666666666656,110.0,75.0,0,yahoo,yahoo,34,1.0,4.8093665971658776e-05,False,False,False,False,False,False,False,unexplained
+2005-03-03,INDX,0.5,1500.0,1000.0,1500,yahoo,yahoo,41,1.0,0.0004403310836952428,False,False,False,False,False,False,False,unexplained
+2005-03-15,ADMF,0.3999999999999999,2449.9999999999995,1749.9999999999998,23462,yahoo,yahoo,48,1.0,0.00365636726588343,False,False,False,False,False,False,False,unexplained
+2005-03-16,APIC,0.5000000486702743,444.44445405832573,296.2962930916692,3137982,yahoo,yahoo,49,1.0,0.0008783833016431255,False,False,False,False,False,False,False,unexplained
+2005-03-16,INDX,0.5,1500.0,1000.0,1998630,yahoo,yahoo,49,1.0,0.00042350623930127366,False,False,False,False,False,False,False,unexplained
+2005-03-21,HADE,0.46153865928815807,2.9820430278778076,2.0403449535369873,548535815,yahoo,yahoo,52,3.0,3.612340202828441e-06,False,False,False,False,False,False,False,unexplained
+2005-03-30,APIC,0.5000000486702743,444.44445405832573,296.2962930916692,1007037,yahoo,yahoo,58,1.0,0.000893370632651631,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-03-30,DNET,0.41666675426714184,38.604166348384965,27.249998090309777,166442,yahoo,yahoo,58,1.0,0.0003464164707362755,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-03-30,INCF,0.5,105.0,70.0,7500,yahoo,yahoo,58,1.0,9.045377753429099e-05,False,False,False,False,False,False,False,unexplained
+2005-03-30,LPLI,-0.9,440.0,4400.0,410500,yahoo,yahoo,58,1.0,0.004619603638358433,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2005-04-01,APIC,0.5000000486702743,444.44445405832573,296.2962930916692,517999,yahoo,yahoo,60,1.0,0.0008909472283947972,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-04-04,HADE,0.470588739901151,3.923741102218628,2.6681430339813232,1506470461,yahoo,yahoo,61,3.0,5.014401745606147e-06,False,False,False,False,False,False,False,unexplained
+2005-04-04,LMPI,0.46666666666666656,110.0,75.0,605000,yahoo,yahoo,61,3.0,6.715166644734805e-05,False,False,False,False,False,False,False,unexplained
+2005-04-19,INDX,0.5,1500.0,1000.0,10500,yahoo,yahoo,72,1.0,0.00045097281006437404,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-04-21,DNET,0.4615385511086503,43.145833651615035,29.520831741924813,1102,yahoo,yahoo,74,1.0,0.0003889683162575001,False,False,False,False,False,False,False,unexplained
+2005-04-26,INDX,0.5,1500.0,1000.0,1500,yahoo,yahoo,76,1.0,0.00047692739212274127,False,False,False,False,False,False,False,unexplained
+2005-05-20,TMPO,0.35714293027081645,95.00000046498229,69.99999657075554,41748,yahoo,yahoo,93,1.0,4.7681848683182256e-05,False,False,False,False,False,False,False,unexplained
+2005-06-03,PSDN,0.36363636363636354,75.0,55.0,183000,yahoo,yahoo,102,1.0,7.295090916539393e-05,False,False,False,False,False,False,False,unexplained
+2005-06-30,FMII,0.46153841906517235,47.49999696955905,32.499998871012195,96085,yahoo,yahoo,121,1.0,0.00015856018750579298,False,False,False,False,False,False,False,unexplained
+2005-07-12,GSMF,-0.5,50.00000123303309,100.00000246606618,500,yahoo,yahoo,129,1.0,0.000673667739458224,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2005-07-13,RELI,-0.39999997526298947,255.00000420529167,424.9999894867708,37363050,yahoo,yahoo,46,1.0,0.0006890144036800638,False,False,False,False,False,False,False,unexplained
+2005-07-18,JTPE,0.5,3.0,2.0,210000,stockdb,stockdb,410,3.0,1.2644008636503748e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-07-19,GSMF,0.4999999445135128,74.9999990752252,50.00000123303309,1000,yahoo,yahoo,134,1.0,0.0003393678705670755,False,False,False,False,False,False,False,unexplained
+2005-07-20,JTPE,0.5,3.0,2.0,21290000,stockdb,stockdb,412,1.0,1.2720690077861048e-05,False,False,False,False,False,False,False,unexplained
+2005-07-22,GSMF,0.4000000295927941,105.00000092477482,74.9999990752252,5000,yahoo,yahoo,137,1.0,0.0004962309846944884,False,False,False,False,False,False,False,unexplained
+2005-07-27,SRSN,0.44444447975441204,173.38882446289062,120.03841400146484,7144650,yahoo,yahoo,140,1.0,0.0006359220775557453,False,False,False,False,False,False,False,unexplained
+2005-08-01,TMPO,0.35714293027081645,95.00000046498229,69.99999657075554,46966,yahoo,yahoo,143,3.0,4.40648398743582e-05,False,False,False,False,False,False,False,unexplained
+2005-08-02,PICO,0.4285714285714286,100.0,70.0,55000,yahoo,yahoo,144,1.0,3.4986622658042124e-05,False,False,False,False,False,False,False,unexplained
+2005-08-05,JTPE,0.5,3.0,2.0,5600000,stockdb,stockdb,420,3.0,,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-08-11,JTPE,0.5,3.0,2.0,10000,stockdb,stockdb,423,1.0,1.204594377250129e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-08-12,GSMF,-0.3529411918301697,54.999999691741735,85.00000154129137,8000,yahoo,yahoo,152,1.0,0.0005511457915136163,False,False,False,False,False,False,False,unexplained
+2005-08-22,JTPE,0.5,3.0,2.0,190000,stockdb,stockdb,426,6.0,,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-08-25,INDX,-0.945,55.0,1000.0,15000,yahoo,yahoo,160,1.0,0.00047429922130048127,False,False,False,False,False,False,False,unexplained
+2005-09-01,TGKA,0.46341463414634143,300.0,205.0,0,yahoo,yahoo,3,1.0,0.0001934686754586275,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2005-09-07,OCAP,0.44999999999999996,145.0,100.0,114000,stockdb,stockdb,45,6.0,,False,False,False,False,False,False,False,unexplained
+2005-09-12,YULE,-0.4500000038799058,56.13792748397706,102.0689597818091,2542,yahoo,yahoo,171,3.0,0.00015153558800750356,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2005-09-13,YULE,0.3636363379840941,76.5517178562671,56.13792748397706,20341,yahoo,yahoo,172,1.0,8.241642913222242e-05,False,False,False,False,False,False,False,unexplained
+2005-09-19,ESTI,-0.4666666666666667,40.0,75.0,0,yahoo,yahoo,176,3.0,0.00015091022812289455,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2005-09-21,APLI,0.3999999999999999,35.0,25.0,3118000,yahoo,yahoo,178,1.0,3.328173507458671e-05,False,False,False,False,False,False,False,unexplained
+2005-09-22,GSMF,-0.36363635446504317,35.00000030825827,54.999999691741735,25499,yahoo,yahoo,179,1.0,0.0004223411804531099,False,False,False,False,False,False,False,unexplained
+2005-09-23,SHID,0.3529411764705883,115.0,85.0,7500,yahoo,yahoo,180,1.0,0.00010502549881362209,False,False,False,False,False,False,False,unexplained
+2005-09-29,BMSR,0.36363636363636354,75.0,55.0,0,yahoo,yahoo,184,1.0,6.696394196108485e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-09-29,ESTI,0.875,75.0,40.0,0,yahoo,yahoo,184,1.0,8.480699859648363e-05,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2005-09-29,FPNI,0.4516129032258065,225.0,155.0,2,yahoo,yahoo,184,1.0,0.0009061648791865611,False,False,False,False,False,False,False,unexplained
+2005-09-29,KLBF,0.4310344827586208,166.0,116.0,3202500,yahoo,yahoo,184,1.0,0.006185033184769291,False,False,False,False,False,False,False,unexplained
+2005-09-29,RAJA,-0.516666656893412,35.25490443021271,72.94118010484134,204960,yahoo,yahoo,184,1.0,0.0002082389772261611,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2005-10-03,BMSR,0.4545454545454546,80.0,55.0,1000,yahoo,yahoo,186,3.0,4.6918721504202724e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-10-04,GSMF,0.4285714512189749,50.00000123303309,35.00000030825827,1499,yahoo,yahoo,187,1.0,0.0001915891296614882,False,False,False,False,False,False,False,unexplained
+2005-10-05,JTPE,0.5,3.0,2.0,210000,stockdb,stockdb,438,2.0,,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-10-18,JTPE,0.5,3.0,2.0,1200000,stockdb,stockdb,444,5.0,,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-10-26,DART,0.3500000000000001,135.0,100.00000000000001,95897,yahoo,yahoo,203,1.0,0.00011085499646895027,False,False,False,False,False,False,False,unexplained
+2005-10-26,IKBI,0.935483870967742,150.0,77.5,230000,yahoo,yahoo,203,1.0,7.329608332964509e-05,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2005-11-09,SMDM,-0.3846153846153846,40.0,65.0,10500,yahoo,yahoo,208,8.0,0.00023435416223354023,False,False,False,False,False,False,False,unexplained
+2005-11-17,LPPF,-0.9966363624572754,269.09100341796875,80000.0,1337,yahoo,yahoo,31,1.0,0.16565615702952183,False,False,False,False,False,False,False,unexplained
+2005-11-24,TMPO,-0.3846153374980936,40.00000145306968,64.99999738447457,2609,yahoo,yahoo,219,1.0,4.386269276205561e-05,False,False,False,False,False,False,False,unexplained
+2005-11-30,MIRA,0.375,27.5,20.0,6000,yahoo,yahoo,40,1.0,4.8846789508003346e-05,False,False,False,False,False,False,False,unexplained
+2005-11-30,RODA,-0.40000003654415117,15.657896995544434,26.09649658203125,9579,yahoo,yahoo,223,1.0,0.00031448011201759633,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-12-01,RODA,0.5000000913603835,23.486846923828125,15.657896995544434,19159,yahoo,yahoo,224,1.0,0.00019350783033327866,False,False,False,False,False,False,False,unexplained
+2005-12-07,PSDN,0.5,60.0,40.0,2000,yahoo,yahoo,228,1.0,5.0053003577136366e-05,False,False,False,False,False,False,False,unexplained
+2005-12-08,TMPO,0.3636363109896066,74.99999575703652,54.99999901191261,9393,yahoo,yahoo,229,1.0,3.469686949934835e-05,False,False,False,False,False,False,False,unexplained
+2005-12-12,SQMI,0.4166666892739297,85.00000494345507,60.000002532013575,711,yahoo,yahoo,231,3.0,0.0006100421212146967,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2005-12-13,LPPF,0.45454548453815047,269.09100341796875,185.00006103515625,148,yahoo,yahoo,49,1.0,0.00041306864748875364,False,False,False,False,False,False,False,unexplained
+2005-12-13,SMDM,0.5,45.0,30.0,134500,yahoo,yahoo,232,1.0,0.00012011807346890699,False,False,False,False,False,False,False,unexplained
+2005-12-13,SQMI,-0.3529412027544646,55.0000009645766,85.00000494345507,104540,yahoo,yahoo,232,1.0,0.0008561875755685864,False,False,False,False,False,False,False,unexplained
+2005-12-20,OCAP,0.55,310.0,200.0,185000,stockdb,stockdb,48,54.0,,False,False,False,False,False,False,False,first trade after a gap > 10 days
+2005-12-20,SMDM,0.46153846153846145,95.0,65.0,201500,yahoo,yahoo,237,1.0,0.0002616732757435619,False,False,False,False,False,False,False,unexplained
+2005-12-21,SMDM,0.4736842105263157,140.0,95.0,249500,yahoo,yahoo,238,1.0,0.0003829572020955048,False,False,False,False,False,False,False,unexplained
+2005-12-22,HITS,-0.7964285688415278,548.8897094726562,2696.30029296875,24403,yahoo,yahoo,56,1.0,0.010228137526060742,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2005-12-29,CENT,0.49999987928875966,11.249998835998781,7.499999827555374,187330,yahoo,yahoo,243,1.0,0.00016526662004933494,False,False,False,False,False,False,False,unexplained
+2005-12-29,DNET,-0.3846153945676277,18.16666539353985,29.520831741924813,22045,yahoo,yahoo,243,1.0,0.0003530838505108029,False,False,False,False,False,False,False,unexplained
+2006-01-17,ERTX,0.38888888888888884,15.625,11.25,5264000,yahoo,yahoo,254,1.0,1.0936680863019098e-05,False,False,False,False,False,False,False,unexplained
+2006-01-25,ESTI,0.4545454545454546,80.0,55.0,11000,yahoo,yahoo,260,1.0,9.160230201640737e-05,False,False,False,False,False,False,False,unexplained
+2006-01-30,WAPO,0.3999999999999999,35.0,25.0,2539500,yahoo,yahoo,263,3.0,2.507853504923571e-05,False,False,False,False,False,False,False,unexplained
+2006-02-09,MITI,0.45454544431713106,319.99999600765454,219.99999880229637,12655763,yahoo,yahoo,270,1.0,0.00022530588338832253,False,False,False,False,False,False,False,unexplained
+2006-02-16,RODA,0.4285714285714286,26.09649658203125,18.267547607421875,258655,yahoo,yahoo,275,1.0,0.00019657880307213122,False,False,False,False,False,False,False,unexplained
+2006-02-20,PSDN,0.4444444444444444,65.0,45.0,500,yahoo,yahoo,277,3.0,5.324472110787844e-05,False,False,False,False,False,False,False,unexplained
+2006-03-03,DOID,-0.4500000193668362,27.08345603942871,49.24264907836914,9142481,yahoo,yahoo,286,1.0,0.00034693316567055134,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2006-03-08,DOID,0.4666665771488485,54.16691207885742,36.93198776245117,1455039,yahoo,yahoo,289,1.0,0.0002533651098067627,False,False,False,False,False,False,False,unexplained
+2006-03-08,OMRE,0.7058823600106958,145.00000060090917,85.0,5999,yahoo,yahoo,289,1.0,0.00011838672466329456,False,False,False,False,False,False,False,unexplained
+2006-03-13,CNKO,0.3999999999999999,35.0,25.0,248239000,yahoo,yahoo,292,3.0,0.00016909604969654132,False,False,False,False,False,False,False,unexplained
+2006-03-17,YULE,-0.363636337984094,35.724137111687014,56.13792748397706,1017,yahoo,yahoo,296,1.0,6.826093799283069e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2006-04-06,DNET,0.3999999831807093,31.79166539353985,22.708332696769926,1102,yahoo,yahoo,308,1.0,0.00024054932828194777,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2006-04-07,KDSI,0.3500000000000001,33.75,25.0,1314500,yahoo,yahoo,309,1.0,3.0565403101451994e-05,False,False,False,False,False,False,False,unexplained
+2006-04-13,PSDN,0.5,105.0,70.0,65500,yahoo,yahoo,312,1.0,7.438758162331702e-05,False,False,False,False,False,False,False,unexplained
+2006-04-19,RAJA,0.5357141585622538,52.274510269851454,34.03921880800475,51996301,yahoo,yahoo,315,1.0,6.6173192456456e-05,False,False,False,False,False,False,False,unexplained
+2006-04-25,PICO,0.3500000000000001,135.0,100.0,175000,yahoo,yahoo,319,1.0,3.997355532714471e-05,False,False,False,False,False,False,False,unexplained
+2006-05-01,DNET,0.3750000788404275,24.97916634838496,18.16666539353985,857565,yahoo,yahoo,323,3.0,0.00017950823449238175,False,False,False,False,False,False,False,unexplained
+2006-05-02,KARW,0.5,135.0,90.0,5000,yahoo,yahoo,324,1.0,3.665776277355134e-05,False,False,False,False,False,False,False,unexplained
+2006-06-07,RODA,0.5000000913603835,23.486846923828125,15.657896995544434,40235,yahoo,yahoo,348,1.0,0.00016152179974936423,False,False,False,False,False,False,False,unexplained
+2006-06-13,APLI,0.3999999999999999,35.0,25.0,6805000,yahoo,yahoo,352,1.0,2.5727272539047336e-05,False,False,False,False,False,False,False,unexplained
+2006-06-14,KDSI,0.3999999999999999,26.25,18.75,43750,yahoo,yahoo,353,1.0,2.498391182806492e-05,False,False,False,False,False,False,False,unexplained
+2006-06-19,BKSL,-0.38461537526320944,85.33333220940972,138.66666273293404,1037432,yahoo,yahoo,173,3.0,0.016553518026645817,False,False,False,False,False,False,False,unexplained
+2006-06-19,SDPC,0.40000004664552224,70.00000323927242,50.000000647854485,5094,yahoo,yahoo,356,3.0,4.904429990546792e-05,False,False,False,False,False,False,False,unexplained
+2006-06-20,BKSL,0.37500002469558735,117.33333389529513,85.33333220940972,259038,yahoo,yahoo,174,1.0,0.01039164780374624,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2006-07-12,GSMF,-0.4210526592453394,54.999999691741735,95.00000400735752,26000,yahoo,yahoo,373,1.0,0.0005473600385730472,False,False,False,False,False,False,False,unexplained
+2006-07-13,BMSR,-0.3571428571428571,45.0,70.0,3000,yahoo,yahoo,374,1.0,6.43182600916939e-05,False,False,False,False,False,False,False,unexplained
+2006-07-14,MIRA,0.41666666666666674,42.5,30.0,163000,yahoo,yahoo,192,1.0,6.546819163680398e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2006-07-24,BMSR,0.4444444444444444,65.0,45.0,1000,yahoo,yahoo,381,3.0,4.1183870096502764e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2006-08-22,JTPE,0.5,3.0,2.0,1000000,stockdb,stockdb,485,19.0,,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2006-08-22,SDPC,-0.39999997926865627,45.00000097178173,74.99999902821828,10189,yahoo,yahoo,399,6.0,6.895737092256986e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2006-08-23,SDPC,0.44444440605306834,64.99999967607276,45.00000097178173,6113,yahoo,yahoo,400,1.0,4.147822391933104e-05,False,False,False,False,False,False,False,unexplained
+2006-08-31,WICO,-0.5,35.00000171029802,70.00000342059604,15000,yahoo,yahoo,406,1.0,6.573153551790901e-05,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2006-09-04,RBMS,0.4285713800242521,49.999997356875994,34.999999339219,46769,yahoo,yahoo,408,3.0,4.228096173050483e-05,False,False,False,False,False,False,False,unexplained
+2006-09-07,CENT,0.47058820856221595,15.624998986887828,10.624999504221703,5062,yahoo,yahoo,411,1.0,0.00019999004182876283,False,False,False,False,False,False,False,unexplained
+2006-09-07,JTPE,0.5,3.0,2.0,1020000,stockdb,stockdb,487,7.0,,False,False,False,False,False,False,False,unexplained
+2006-09-07,MITI,0.40000001237627014,140.0000059885182,100.00000339349367,5323255,yahoo,yahoo,411,1.0,9.267062410176631e-05,False,False,False,False,False,False,False,unexplained
+2006-09-07,WICO,0.4285713536195961,49.99999981996862,35.00000171029802,500,yahoo,yahoo,411,1.0,3.205610352393988e-05,False,False,False,False,False,False,False,unexplained
+2006-09-19,ESTI,0.3999999999999999,70.0,50.0,20500,yahoo,yahoo,419,1.0,7.295623204237537e-05,False,False,False,False,False,False,False,unexplained
+2006-09-22,MITI,0.40000001237627014,140.0000059885182,100.00000339349367,126344,yahoo,yahoo,422,1.0,9.064873046236112e-05,False,False,False,False,False,False,False,unexplained
+2006-10-13,GSMF,-0.470588244893856,45.00000000000001,85.00000154129137,500,yahoo,yahoo,437,1.0,0.00045099894479013093,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2006-10-16,GSMF,0.4444443690924229,64.99999660915904,45.00000000000001,5499,yahoo,yahoo,438,3.0,0.00023590353533838902,False,False,False,False,False,False,False,unexplained
+2006-11-01,TMAS,-0.7432432497740662,0.892999988794327,3.4780000448226938,122949998,yahoo,yahoo,262,1.0,0.0005410018473362285,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2006-11-02,RODA,0.40000000000000013,18.267547607421875,13.048248291015625,1915,yahoo,yahoo,446,1.0,0.00012267888560488896,False,False,False,False,False,False,False,unexplained
+2006-11-02,TFCO,0.4181818181818182,390.0,275.0,0,yahoo,yahoo,263,1.0,0.000921348526431968,False,False,False,False,False,False,False,unexplained
+2006-11-15,WICO,0.4999999234866699,119.99999711949806,80.00000216037643,325500,yahoo,yahoo,455,1.0,6.656676298464675e-05,False,False,False,False,False,False,False,unexplained
+2006-11-23,MITI,0.40000001237627014,140.0000059885182,100.00000339349367,8039529,yahoo,yahoo,461,1.0,8.279339902620322e-05,False,False,False,False,False,False,False,unexplained
+2006-11-23,POLY,0.3999999999999999,700.0,500.0,66950,yahoo,yahoo,461,1.0,0.0007667248365585316,False,False,False,False,False,False,False,unexplained
+2006-11-23,SIPD,0.5,450.0,300.0,13189100,yahoo,yahoo,461,1.0,0.0001815011650912087,False,False,False,False,False,False,False,unexplained
+2006-11-30,HADE,-0.40000003797692374,7.5335822105407715,12.555971145629883,5081247,yahoo,yahoo,466,1.0,1.751593903680335e-05,False,False,False,False,False,False,False,unexplained
+2006-12-18,BABP,0.4999999297527957,89.99999693466742,60.00000076633315,168496,yahoo,yahoo,478,3.0,0.0008042095863448553,False,False,False,False,False,False,False,unexplained
+2006-12-19,CNKO,0.3999999999999999,35.0,25.0,171105000,yahoo,yahoo,479,1.0,0.00012950932754290958,False,False,False,False,False,False,False,unexplained
+2006-12-20,CNKO,0.4285714285714286,50.0,35.0,149762000,yahoo,yahoo,480,1.0,0.00018684409881168616,False,False,False,False,False,False,False,unexplained
+2006-12-21,DNET,0.41666675426714184,38.604166348384965,27.249998090309777,1387756,yahoo,yahoo,481,1.0,0.00023775761107850684,False,False,False,False,False,False,False,unexplained
+2006-12-22,BTEK,0.3999997615423587,4.374999269279358,3.1250000103282067,218963753,yahoo,yahoo,482,1.0,7.162004143306403e-05,False,False,False,False,False,False,False,unexplained
+2006-12-22,CNKO,0.4545454545454546,80.0,55.0,616875000,yahoo,yahoo,482,1.0,0.0002849563341216794,False,False,False,False,False,False,False,unexplained
+2006-12-22,HADE,-0.4117647242794794,6.277985095977783,10.672574996948242,796433,yahoo,yahoo,482,1.0,1.3791191091230839e-05,False,False,False,False,False,False,False,unexplained
+2006-12-26,GSMF,0.38461545684632026,90.00000000000001,64.99999660915904,1000,yahoo,yahoo,483,4.0,0.0002957320195552618,False,False,False,False,False,False,False,unexplained
+2006-12-27,CNKO,0.5,120.0,80.0,522009000,yahoo,yahoo,484,1.0,0.0004155876064190496,False,False,False,False,False,False,False,unexplained
+2006-12-28,AGRO,0.5328189848394398,213.9930502891512,139.60751556816516,5491,yahoo,yahoo,485,1.0,0.0017903835201581576,False,False,False,False,False,False,False,unexplained
+2006-12-28,BTEK,0.5000003439293901,5.62499967466148,3.749998923284425,1499125384,yahoo,yahoo,485,1.0,8.557751996137852e-05,False,False,False,False,False,False,False,unexplained
+2006-12-28,ERTX,0.4736842105263157,17.5,11.875,10244000,yahoo,yahoo,485,1.0,8.64879439426815e-06,False,False,False,False,False,False,False,unexplained
+2006-12-28,FORU,0.5,90.0,60.0,500,yahoo,yahoo,485,1.0,1.7115508906551707e-05,False,False,False,False,False,False,False,unexplained
+2007-01-02,BTEK,0.4888888413332311,8.374999248106533,5.62499967466148,2821346789,yahoo,yahoo,487,4.0,0.00013778663030046548,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-01-03,KOPI,-0.9282000017166138,1.7949999570846558,25.0,0,yahoo,yahoo,488,1.0,1.045594652633328e-05,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2007-01-09,KOPI,-0.4261838462310372,1.0299999713897705,1.7949999570846558,0,yahoo,yahoo,492,1.0,7.504414049375181e-07,False,False,False,False,False,False,False,unexplained
+2007-01-10,FORU,-0.43333333333333335,51.0,90.0,10000,yahoo,yahoo,493,1.0,2.5669755258180338e-05,False,False,False,False,False,False,False,unexplained
+2007-01-16,KARW,-0.4631578947368421,51.0,95.0,22500,yahoo,yahoo,497,1.0,3.488742017494078e-05,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2007-01-16,KOPI,-0.7376916868442291,325.0,1239.0,0,yahoo,yahoo,497,1.0,0.0005398369227069783,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2007-01-24,KOPI,-0.9995980000019073,2.009999990463257,5000.0,0,yahoo,yahoo,503,1.0,0.0020758877235818683,False,False,False,False,False,False,False,unexplained
+2007-02-08,RODA,0.3548387819291281,21.921056747436523,16.179826736450195,23949,yahoo,yahoo,514,1.0,0.00012932852283814808,False,False,False,False,False,False,False,unexplained
+2007-02-09,MAIN,-0.9183908056938785,75.39175156465511,923.8144329896908,6866294,yahoo,yahoo,245,1.0,0.00015543802066809374,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-02-09,POLY,0.9393939393939394,1280.0,660.0,0,yahoo,yahoo,515,1.0,0.0009328154614288521,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-02-09,RDTX,-0.5,480.0,960.0,4329000,yahoo,yahoo,515,1.0,0.00015392524038856535,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2007-02-09,TMAS,-0.8828125017462298,0.3525000000000001,3.0080000448226936,62500,yahoo,yahoo,332,1.0,0.0004072747902673528,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-02-12,POLY,-0.390625,780.0,1280.0,254750,yahoo,yahoo,516,3.0,0.0018779629207359518,False,False,False,False,False,False,False,unexplained
+2007-02-14,KOPI,-0.9932653058548363,1.3200000524520874,196.0,0,yahoo,yahoo,518,1.0,8.245922202445425e-05,False,False,False,False,False,False,False,unexplained
+2007-02-19,POLY,0.4864864864864864,1100.0,740.0,1034925,yahoo,yahoo,521,3.0,0.0010234400447010046,False,False,False,False,False,False,False,unexplained
+2007-02-20,POLY,0.49090909090909096,1640.0,1100.0,2865025,yahoo,yahoo,522,1.0,0.001517482225606956,False,False,False,False,False,False,False,unexplained
+2007-02-23,DNET,0.3999999541292083,34.97083174192481,24.97916634838496,1102,yahoo,yahoo,525,1.0,0.00020389837578550443,False,False,False,False,False,False,False,unexplained
+2007-02-23,WAPO,0.42500000000000004,57.0,40.0,9149500,yahoo,yahoo,525,1.0,2.8600578011881756e-05,False,False,False,False,False,False,False,unexplained
+2007-03-05,KOPI,-0.6894472361809045,309.0,995.0,0,yahoo,yahoo,531,3.0,0.0004091995378799758,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2007-03-08,BIPP,0.48979591836734704,73.0,49.0,139682000,yahoo,yahoo,534,1.0,0.00014378776286783779,False,False,False,False,False,False,False,unexplained
+2007-03-12,DNET,-0.40259741181694975,20.89166539353985,34.97083174192481,5511,yahoo,yahoo,536,3.0,0.0002915891573391786,False,False,False,False,False,False,False,unexplained
+2007-03-13,FORU,0.4285714285714286,100.0,70.0,12500,yahoo,yahoo,537,1.0,1.9122164977313658e-05,False,False,False,False,False,False,False,unexplained
+2007-04-09,HADE,0.3666666518978621,10.29589557647705,7.5335822105407715,31427277,yahoo,yahoo,554,4.0,8.823379549904798e-06,False,False,False,False,False,False,False,unexplained
+2007-04-10,PSDN,0.459016393442623,89.0,61.0,4,yahoo,yahoo,555,1.0,4.805257222759565e-05,False,False,False,False,False,False,False,unexplained
+2007-04-12,TMAS,0.35593218147258177,3.7600000000000007,2.7730000448226932,0,yahoo,yahoo,374,1.0,0.00034378105897905946,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-04-17,KOPI,-0.999957928801721,0.013000000268220901,309.0,0,yahoo,yahoo,560,1.0,0.00011518501015098162,False,False,False,False,False,False,False,unexplained
+2007-04-18,HADE,0.4444443600512804,16.32276153564453,11.300374031066895,2309658,yahoo,yahoo,561,1.0,1.2663465457560963e-05,False,False,False,False,False,False,False,unexplained
+2007-04-23,RBMS,0.36363640295556543,74.9999990088285,54.99999768726649,239303,yahoo,yahoo,564,3.0,4.975098085395358e-05,False,False,False,False,False,False,False,unexplained
+2007-04-24,KOPI,-0.9552238805970149,600.0,13400.0,0,yahoo,yahoo,565,1.0,0.0048408165509858814,False,False,False,False,False,False,False,unexplained
+2007-04-26,LPPS,0.5,108.0,72.0,55206750,yahoo,yahoo,567,1.0,9.577134277813961e-05,False,False,False,False,False,False,False,unexplained
+2007-04-27,CPRO,0.3500000000000001,405.0,300.0,793787500,yahoo,yahoo,105,1.0,0.008550910382712116,False,False,False,False,False,False,False,unexplained
+2007-04-27,KOPI,-0.9975,1.5,600.0,0,yahoo,yahoo,568,1.0,0.00021384913425860952,False,False,False,False,False,False,False,unexplained
+2007-04-30,ASGR,0.39240506329113933,550.0,395.0,276067488,yahoo,yahoo,386,3.0,0.00027042211087410285,False,False,False,False,False,False,False,unexplained
+2007-04-30,KOPI,-0.899999996026357,0.15000000596046448,1.5,0,yahoo,yahoo,569,3.0,5.324767302724951e-07,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-05-01,ASGR,0.38181818181818183,760.0,550.0,148472496,yahoo,yahoo,387,1.0,0.00037989843180422593,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-05-01,ESTI,0.459016393442623,89.0,61.0,1000,yahoo,yahoo,570,1.0,6.304523200931545e-05,False,False,False,False,False,False,False,unexplained
+2007-05-07,ASGR,0.39682539682539675,880.0,630.0,292131488,yahoo,yahoo,391,3.0,0.00042664840483556726,False,False,False,False,False,False,False,unexplained
+2007-05-07,SQMI,0.5000000000000002,120.00000506402715,80.0000033760181,71116,yahoo,yahoo,574,3.0,0.00048157846669796286,False,False,False,False,False,False,False,unexplained
+2007-05-09,AMAG,0.49473684210526314,142.0,95.0,18569000,yahoo,yahoo,337,1.0,0.00023380564393681163,False,False,False,False,False,False,False,unexplained
+2007-05-09,KOPI,-0.41428570942002896,0.8199999928474426,1.399999976158142,0,yahoo,yahoo,576,1.0,4.942397048231724e-07,False,False,False,False,False,False,False,unexplained
+2007-05-14,GEMA,0.35000006357828783,32.400001525878906,24.0,30042500,yahoo,yahoo,579,3.0,1.9412771957143536e-05,False,False,False,False,False,False,False,unexplained
+2007-05-15,FPNI,0.3500000000000001,162.0,120.0,70000,yahoo,yahoo,580,1.0,0.0003326470640910786,False,False,False,False,False,False,False,unexplained
+2007-05-21,KOPI,-0.9947643979312881,0.019999999552965164,3.819999933242798,0,yahoo,yahoo,582,5.0,1.318062450721371e-06,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2007-05-21,TMAS,0.40350881889439716,3.7600000000000007,2.6789999103546145,0,yahoo,yahoo,399,5.0,0.0003010801603513227,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-05-22,INDX,0.3500000000000001,162.0,120.0,3236500,yahoo,yahoo,583,1.0,2.8205466835168167e-05,False,False,False,False,False,False,False,unexplained
+2007-05-28,ERTX,0.4736842105263157,17.5,11.875,14276000,yahoo,yahoo,587,3.0,7.039326864142201e-06,False,False,False,False,False,False,False,unexplained
+2007-05-31,TMAS,0.48148145531757747,3.7600000000000007,2.5380000448226934,0,yahoo,yahoo,407,1.0,0.0002843799195934893,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-06-05,APLI,0.37096774193548376,85.0,62.0,73030000,yahoo,yahoo,592,1.0,3.8329768936471765e-05,False,False,False,False,False,False,False,unexplained
+2007-06-06,BIPP,0.38888888888888884,125.0,90.0,278600000,yahoo,yahoo,593,1.0,0.000212426140445617,False,False,False,False,False,False,False,unexplained
+2007-06-08,KOPI,-0.9384269660778259,2.740000009536743,44.5,225118000,yahoo,yahoo,595,1.0,1.4864565853296664e-05,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2007-06-11,YULE,0.37931027408812623,122.48275015409914,88.79999841592823,508,yahoo,yahoo,596,3.0,6.740135682647173e-05,False,False,False,False,False,False,False,unexplained
+2007-06-19,POLY,0.453125,1860.0,1280.0,5021375,yahoo,yahoo,602,1.0,0.0014300296677715195,False,False,False,False,False,False,False,unexplained
+2007-06-20,DNET,0.4929577514836212,48.14166730323007,32.24583365161504,612861,yahoo,yahoo,603,1.0,0.00021254525838001407,False,False,False,False,False,False,False,unexplained
+2007-06-21,FORU,0.4329896907216495,139.0,97.0,761000,yahoo,yahoo,604,1.0,2.10534619899e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-06-26,ESTI,-0.3548387096774194,60.0,93.0,240000,yahoo,yahoo,607,1.0,8.669974132873431e-05,False,False,False,False,False,False,False,unexplained
+2007-06-28,HADE,-0.75,17.26445960998535,69.0578384399414,3504308,yahoo,yahoo,609,1.0,7.047602678405907e-05,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-06-29,KONI,0.44999999999999996,72.27963525835867,49.848024316109424,3000,yahoo,yahoo,610,1.0,3.605580855394415e-06,False,False,False,False,False,False,False,unexplained
+2007-07-02,TMAS,0.48148145531757747,3.7600000000000007,2.5380000448226934,0,yahoo,yahoo,428,3.0,0.00027492410735869475,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-07-03,FMII,0.4909091620957302,40.99999898985302,27.499998009416238,213,yahoo,yahoo,612,1.0,7.011714791904869e-05,False,False,False,False,False,False,False,unexplained
+2007-07-06,PWON,0.3888888380733555,92.90172722138554,66.88924604668675,11734125,yahoo,yahoo,432,1.0,0.0009216319727994684,False,False,False,False,False,False,False,unexplained
+2007-07-06,ZBRA,0.4893616219871375,69.99999512954612,46.99999925884397,7613500,yahoo,yahoo,432,1.0,1.7954074929470873e-05,False,False,False,False,False,False,False,unexplained
+2007-07-09,DEFI,0.3500000000000001,27.0,20.0,5000,stockdb,stockdb,276,7.0,,False,False,False,False,False,False,False,unexplained
+2007-07-20,JTPE,0.5,6.0,4.0,11350000,stockdb,stockdb,513,39.0,,False,False,False,False,False,False,False,first trade after a gap > 10 days
+2007-07-23,TMAS,0.40350881889439716,3.7600000000000007,2.6789999103546145,0,yahoo,yahoo,443,3.0,0.0002521873134185921,False,False,False,False,False,False,False,unexplained
+2007-07-30,BTON,0.3600000000000001,68.0,50.0,4240000,stockdb,stockdb,288,4.0,,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-07-30,GSMF,0.4835165190289088,135.00000277432446,90.99999969174173,1175999,yahoo,yahoo,631,3.0,0.0002817578157431441,False,False,False,False,False,False,False,unexplained
+2007-08-01,BISI,0.6565656565656566,828.8172043010752,500.3225806451613,2557500,yahoo,yahoo,47,1.0,0.000615129549467646,False,False,False,False,False,False,False,unexplained
+2007-08-01,CMPP,0.5199999852305073,94.99999379641645,62.49999652599321,80661,yahoo,yahoo,633,1.0,0.0002561387139152532,False,False,False,False,False,False,False,unexplained
+2007-08-01,TMAS,-0.399999976158142,2.2560000896453865,3.7600000000000007,1202500,yahoo,yahoo,450,1.0,0.00035133217419291496,False,False,False,False,False,False,False,unexplained
+2007-08-02,APIC,0.7925926727082699,358.518534541654,200.0,13915826,yahoo,yahoo,634,1.0,0.00028763354535670384,False,False,False,False,False,False,False,unexplained
+2007-08-02,LPPF,0.6153847173864053,353.18194580078125,218.6364288330078,297,yahoo,yahoo,451,1.0,0.0002489283858787432,False,False,False,False,False,False,False,unexplained
+2007-08-06,ALKA,0.5277777777777777,137.5,90.0,5000,yahoo,yahoo,636,3.0,1.915163410934776e-05,False,False,False,False,False,False,False,unexplained
+2007-08-06,APIC,-0.3928571229917256,251.85186787498733,414.8148276333232,22965,yahoo,yahoo,636,3.0,0.0005931805078800955,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-08-15,JTPE,0.5,6.0,4.0,1420000,stockdb,stockdb,525,1.0,1.2438027595009494e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-08-16,BTON,-0.36,32.0,50.0,54000,stockdb,stockdb,299,3.0,,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-08-20,BTON,0.375,44.0,32.0,12000,stockdb,stockdb,300,4.0,1.170156928513997e-05,False,False,False,False,False,False,False,unexplained
+2007-08-20,TMAS,-0.4624999761581421,2.021000089645386,3.7600000000000007,3267500,yahoo,yahoo,462,4.0,0.00043539589048458314,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2007-08-21,APIC,0.5925926006041604,318.5185201208321,200.0,884172,yahoo,yahoo,646,1.0,0.00032632609810314214,False,False,False,False,False,False,False,unexplained
+2007-08-27,TMAS,0.7021277286500212,3.7600000000000007,2.2089999103546147,0,yahoo,yahoo,467,3.0,0.0002361733572723992,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-08-27,ZBRA,0.46153852769744885,94.9999967177376,64.99999481190784,7999,yahoo,yahoo,467,3.0,2.6094857043787147e-05,False,False,False,False,False,False,False,unexplained
+2007-08-29,RODA,0.4285714285714286,52.1929931640625,36.53509521484375,1274117,yahoo,yahoo,652,1.0,0.00022423865092962967,False,False,False,False,False,False,False,unexplained
+2007-08-29,TMAS,-0.42500001192092884,2.1619999551773077,3.7600000000000007,200000,yahoo,yahoo,469,1.0,0.0003906207635876058,False,False,False,False,False,False,False,unexplained
+2007-09-03,ESTI,-0.3707865168539326,56.0,89.0,2500,yahoo,yahoo,655,3.0,8.038381267369012e-05,False,False,False,False,False,False,False,unexplained
+2007-09-04,LCGP,0.5,129.0,86.0,217010000,stockdb,stockdb,36,1.0,0.00021407966584137487,False,False,False,False,False,False,False,unexplained
+2007-09-04,SKLT,0.499999963875972,9.899999618530273,6.599999904632568,5000,yahoo,yahoo,656,1.0,2.0243330235764616e-05,False,False,False,False,False,False,False,unexplained
+2007-09-06,TMAS,0.7777777777777775,3.7600000000000007,2.1150000000000007,0,yahoo,yahoo,475,1.0,0.00021971539624885946,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-09-07,SDPC,0.3666666263557219,122.99999902821828,90.00000194356346,509,yahoo,yahoo,659,1.0,5.05338798177334e-05,False,False,False,False,False,False,False,unexplained
+2007-09-07,TMAS,-0.399999976158142,2.2560000896453865,3.7600000000000007,605000,yahoo,yahoo,476,1.0,0.00038500115259327596,False,False,False,False,False,False,False,unexplained
+2007-09-10,APIC,-0.4807692523684639,200.0,385.1852012083207,0,yahoo,yahoo,660,3.0,0.0005621557926414395,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-09-11,APIC,0.9259260060416035,385.1852012083207,200.0,816551,yahoo,yahoo,661,1.0,0.00029512099666616345,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2007-09-12,FORU,0.5,120.0,80.0,902500,yahoo,yahoo,662,1.0,1.646894914576271e-05,False,False,False,False,False,False,False,unexplained
+2007-09-13,RIMO,0.46153846153846145,38.0,26.0,33400000,stockdb,stockdb,1283,1.0,3.886296700185408e-06,False,False,False,False,False,False,False,unexplained
+2007-09-13,TMAS,0.7777777777777775,3.7600000000000007,2.1150000000000007,0,yahoo,yahoo,480,1.0,0.00021199660574246692,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-09-14,HITS,-0.4779874336685487,799.2604370117188,1531.1134033203125,24923,yahoo,yahoo,481,1.0,0.0030989134006205493,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2007-09-14,TMAS,-0.42500001192092884,2.1619999551773077,3.7600000000000007,15000,yahoo,yahoo,481,1.0,0.00038557801202748673,False,False,False,False,False,False,False,unexplained
+2007-09-20,APIC,-0.46000000467234625,200.0,370.3703735749975,0,yahoo,yahoo,668,1.0,0.0005191141151770303,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-09-21,APIC,0.8888888648541857,377.77777297083713,200.0,1371551,yahoo,yahoo,669,1.0,0.00028164568012697727,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-09-24,APIC,-0.4705882285577474,200.0,377.77777297083713,0,yahoo,yahoo,670,3.0,0.0005223217728126064,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-09-24,RIMO,0.3555555555555556,61.0,45.0,24740000,stockdb,stockdb,1289,4.0,,False,False,False,False,False,False,False,unexplained
+2007-09-24,TMAS,0.584158356009064,3.7600000000000007,2.373500089645386,0,yahoo,yahoo,487,3.0,0.0002226827365053756,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-09-25,APIC,1.0,400.0,200.0,1479999,yahoo,yahoo,671,1.0,0.00027558378032431117,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2007-09-25,TMAS,-0.4125000238418579,2.2089999103546147,3.7600000000000007,747500,yahoo,yahoo,488,1.0,0.00035156616547087126,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-09-26,IKBI,-0.7365591397849462,61.25,232.5,136504000,yahoo,yahoo,672,1.0,0.0001174808384214467,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-09-26,RDTX,0.7708333333333333,850.0,480.0,35475500,yahoo,yahoo,672,1.0,5.367712553999469e-05,False,False,False,False,False,False,False,unexplained
+2007-09-26,RODA,0.38333328460779836,86.64036560058594,62.631591796875,0,yahoo,yahoo,672,1.0,0.000349418016950718,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-09-26,TMAS,0.7021277286500212,3.7600000000000007,2.2089999103546147,0,yahoo,yahoo,489,1.0,0.0002086002356123048,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-09-26,ULTJ,0.653061224489796,202.5,122.5,24540000,yahoo,yahoo,489,1.0,0.0005865137151017474,False,False,False,False,False,False,False,unexplained
+2007-09-27,SKLT,0.4933333079020181,11.199999809265137,7.5,5000,yahoo,yahoo,673,1.0,2.1157261209734013e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-09-27,TMAS,-0.4125000238418579,2.2089999103546147,3.7600000000000007,77500,yahoo,yahoo,490,1.0,0.00035048689642281695,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-09-28,TMAS,0.7021277286500212,3.7600000000000007,2.2089999103546147,0,yahoo,yahoo,491,1.0,0.00020388249056800517,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-10-01,TMAS,-0.41874998807907104,2.1855000448226933,3.7600000000000007,200000,yahoo,yahoo,492,3.0,0.00034708111468536814,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-10-02,TMAS,0.7204300722423662,3.7600000000000007,2.1855000448226933,0,yahoo,yahoo,493,1.0,0.00019891214444413797,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-10-03,APIC,-0.5344827551483752,200.0,429.6296264250025,0,yahoo,yahoo,677,1.0,0.0005671137669384283,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-10-03,TMAS,-0.399999976158142,2.2560000896453865,3.7600000000000007,162500,yahoo,yahoo,494,1.0,0.00033679015114889294,False,False,False,False,False,False,False,unexplained
+2007-10-04,MIRA,0.5490196078431373,395.0,255.0,0,yahoo,yahoo,495,1.0,0.000273972435992562,False,False,False,False,False,False,False,unexplained
+2007-10-09,TMAS,0.666666600439286,3.7600000000000007,2.2560000896453865,0,yahoo,yahoo,498,1.0,0.00019668615544465696,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-10-11,TMAS,-0.399999976158142,2.2560000896453865,3.7600000000000007,115000,yahoo,yahoo,500,1.0,0.0003237308923165212,False,False,False,False,False,False,False,unexplained
+2007-10-17,APIC,-0.5263157948665123,200.0,422.22222702916287,0,yahoo,yahoo,684,6.0,0.000511941112490013,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-10-22,APIC,-0.5,200.0,400.0,0,yahoo,yahoo,687,3.0,0.0004946131056067679,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-10-22,TMAS,0.5384615948919735,3.7600000000000007,2.4439999103546146,0,yahoo,yahoo,504,3.0,0.00020507011901339293,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-10-23,TMAS,-0.375,2.3500000000000005,3.7600000000000007,677500,yahoo,yahoo,505,1.0,0.0003260589935020947,False,False,False,False,False,False,False,unexplained
+2007-10-24,ASJT,0.35000005979940885,270.00001195988176,200.0,1000,yahoo,yahoo,689,1.0,4.438368092754401e-05,False,False,False,False,False,False,False,unexplained
+2007-10-25,APIC,-0.5,200.0,400.0,0,yahoo,yahoo,690,1.0,0.0005038753813418305,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-10-30,BABP,0.3580247234783751,110.0,80.99999808416715,1104,yahoo,yahoo,693,1.0,0.0006395168500276155,False,False,False,False,False,False,False,unexplained
+2007-10-30,KARW,0.48,370.0,250.0,52467500,yahoo,yahoo,693,1.0,5.30306154906569e-05,False,False,False,False,False,False,False,unexplained
+2007-10-31,SKLT,0.5,12.0,8.0,5000,yahoo,yahoo,694,1.0,1.9808180931267206e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-01,OMRE,-0.3500000204309126,259.99998557817975,399.99999038545315,20000,yahoo,yahoo,695,1.0,0.0002512451717841364,False,False,False,False,False,False,False,unexplained
+2007-11-01,TMAS,0.5686274803129359,3.7600000000000007,2.3969999551773076,0,yahoo,yahoo,512,1.0,0.0001961564386222603,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-02,TMAS,-0.399999976158142,2.2560000896453865,3.7600000000000007,5000,yahoo,yahoo,513,1.0,0.000301690455438774,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-05,APIC,-0.6666666586550987,200.0,599.9999855791781,0,yahoo,yahoo,697,3.0,0.0007236682403650213,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-05,TMAS,0.666666600439286,3.7600000000000007,2.2560000896453865,0,yahoo,yahoo,514,3.0,0.00018463879424490014,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-06,TMAS,-0.4374999999999999,2.1150000000000007,3.7600000000000007,122500,yahoo,yahoo,515,1.0,0.00031321534463276166,False,False,False,False,False,False,False,unexplained
+2007-11-07,APIC,-0.6447368582837468,200.0,562.9629885999797,0,yahoo,yahoo,699,1.0,0.0006681869807768262,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-14,RDTX,0.41176470588235303,1200.0,850.0,3000,yahoo,yahoo,704,1.0,8.139011165892515e-05,False,False,False,False,False,False,False,unexplained
+2007-11-14,TMAS,0.7391304708383486,3.7600000000000007,2.1619999551773077,0,yahoo,yahoo,521,1.0,0.00017481531698880907,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-14,TMPO,0.49397598105807683,124.00000052310507,82.99999604765046,4,yahoo,yahoo,704,1.0,2.119334571296821e-05,False,False,False,False,False,False,False,unexplained
+2007-11-16,APIC,-0.6493506601863316,200.0,570.3703879958194,0,yahoo,yahoo,706,1.0,0.0006651876064170416,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-19,FORU,0.4631578947368422,139.0,95.0,5965500,yahoo,yahoo,707,3.0,1.567589776381536e-05,False,False,False,False,False,False,False,unexplained
+2007-11-19,TMAS,-0.4750000238418579,1.9739999103546146,3.7600000000000007,22500,yahoo,yahoo,524,3.0,0.000300977237065255,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-21,APIC,-0.674698809593171,200.0,614.8148420541452,0,yahoo,yahoo,709,1.0,0.0007409663382661069,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-21,TMAS,0.8604650337545248,3.7600000000000007,2.021000089645386,0,yahoo,yahoo,526,1.0,0.00016527837639051667,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-22,BABP,0.3666667259865306,123.00000114949972,89.99999693466742,7734,yahoo,yahoo,710,1.0,0.0007221176478701037,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-22,TMAS,-0.46875,1.9975000000000003,3.7600000000000007,72500,yahoo,yahoo,527,1.0,0.000313224569040023,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-23,APIC,-0.674698809593171,200.0,614.8148420541452,0,yahoo,yahoo,711,1.0,0.0007559616338288458,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-26,TMAS,0.7777777777777775,3.7600000000000007,2.1150000000000007,0,yahoo,yahoo,529,3.0,0.00017518581689128412,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-11-27,TMAS,-0.4624999761581421,2.021000089645386,3.7600000000000007,62500,yahoo,yahoo,530,1.0,0.0003131060947886354,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2007-12-03,KBLV,-0.35172416071071877,706.7669067382812,1090.2255859375,33915,yahoo,yahoo,717,3.0,0.0006160134989706652,False,False,False,False,False,False,False,unexplained
+2007-12-03,OKAS,-0.9706572777884347,492.9577331542969,16800.0,0,yahoo,yahoo,402,3.0,0.010418658375616906,False,False,False,False,False,False,False,unexplained
+2007-12-05,TMAS,0.9512195575811697,3.7600000000000007,1.9269999551773076,0,yahoo,yahoo,536,1.0,0.00014751405840394012,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-12-06,BABP,0.37894731237896195,130.999997317834,95.00000191583287,4,yahoo,yahoo,720,1.0,0.0006995415592906667,False,False,False,False,False,False,False,unexplained
+2007-12-06,TMAS,-0.4750000238418579,1.9739999103546146,3.7600000000000007,50000,yahoo,yahoo,537,1.0,0.00028746188086218753,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2007-12-14,APIC,-0.6142857262049646,200.0,518.5185345416539,0,yahoo,yahoo,726,1.0,0.0005968360796396957,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-12-14,TMAS,0.8823529411764706,3.7600000000000007,1.9975000000000003,0,yahoo,yahoo,543,1.0,0.00015601743789261038,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-12-17,TMAS,-0.48124998807907104,1.9505000448226935,3.7600000000000007,250000,yahoo,yahoo,544,3.0,0.0002886857394643376,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-12-18,APIC,-0.5970149110615361,200.0,496.29627867084724,0,yahoo,yahoo,728,1.0,0.0005901490579169478,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-12-18,TMAS,0.9277107990744993,3.7600000000000007,1.9505000448226935,0,yahoo,yahoo,545,1.0,0.0001573845996433187,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-12-19,TMAS,-0.48124998807907104,1.9505000448226935,3.7600000000000007,50000,yahoo,yahoo,546,1.0,0.0003032243939945019,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-12-26,APIC,-0.5970149110615361,200.0,496.29627867084724,0,yahoo,yahoo,730,7.0,0.0005893535524749675,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-12-26,TMAS,0.9277107990744993,3.7600000000000007,1.9505000448226935,0,yahoo,yahoo,547,7.0,0.00015717244933345957,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2007-12-27,SRSN,0.3500000000000001,270.0,200.0,226000,yahoo,yahoo,731,1.0,0.00041003187097416,False,False,False,False,False,False,False,unexplained
+2007-12-27,TMAS,-0.48750001192092884,1.9269999551773076,3.7600000000000007,102500,yahoo,yahoo,548,1.0,0.0002919535899906378,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-01-07,HADE,0.45616628695789463,245.0,168.25001525878906,0,yahoo,yahoo,736,3.0,0.00011985501859080409,False,False,False,False,False,False,False,unexplained
+2008-01-08,TMAS,1.0,3.7600000000000007,1.8800000000000003,0,yahoo,yahoo,554,1.0,0.00014039620118143158,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-01-09,TMAS,-0.5,1.8800000000000003,3.7600000000000007,172500,yahoo,yahoo,555,1.0,0.00028144990444977535,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-01-25,BEKS,0.3749999829480295,52.87270975414829,38.45288029806958,10334895,yahoo,yahoo,748,1.0,0.0003164541341584188,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-02-01,TMAS,-0.637499988079071,1.3630000448226933,3.7600000000000007,382500,yahoo,yahoo,570,1.0,0.0002965315067878013,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-02-15,LPPF,-0.35064938201926144,168.18186950683594,259.0000915527344,2972,yahoo,yahoo,578,1.0,0.00023271094376093503,False,False,False,False,False,False,False,unexplained
+2008-02-21,TMAS,-0.6500000059604645,1.315999977588654,3.7600000000000007,147500,yahoo,yahoo,582,1.0,0.0002887420068363701,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-02-29,TMAS,-0.6624999940395355,1.2690000224113467,3.7600000000000007,11117500,yahoo,yahoo,588,1.0,0.0002776468417197254,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-03-05,APIC,-0.5970149110615361,200.0,496.29627867084724,0,yahoo,yahoo,774,1.0,0.000583026939286641,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-03-10,TMAS,-0.6937499940395356,1.1515000224113465,3.7600000000000007,440000,yahoo,yahoo,593,4.0,0.0002967797546199585,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-03-17,APIC,-0.5909090828644173,200.0,488.8888792750076,0,yahoo,yahoo,781,3.0,0.0006389889268771647,False,False,False,False,False,False,False,unexplained
+2008-03-28,KDSI,0.49473684210526314,35.5,23.75,875,yahoo,yahoo,788,1.0,1.4552322804969223e-05,False,False,False,False,False,False,False,unexplained
+2008-04-01,PSDN,0.4901960784313726,76.0,51.0,17500,yahoo,yahoo,790,1.0,2.8039541169252826e-05,False,False,False,False,False,False,False,unexplained
+2008-04-03,APIC,-0.6400000218042814,200.0,555.55558920414,0,yahoo,yahoo,792,1.0,0.0007406507972681486,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-04-04,AKKU,0.40322579150011295,25.95737806118471,18.498361574037975,3348,yahoo,yahoo,793,1.0,5.3338406201127804e-05,False,False,False,False,False,False,False,unexplained
+2008-04-07,LAPD,0.3565891472868217,175.0,129.0,500,stockdb,stockdb,525,14.0,,False,False,False,False,False,False,False,first trade after a gap > 10 days
+2008-04-08,TMAS,-0.7625000029802322,0.892999988794327,3.7600000000000007,14187500,yahoo,yahoo,612,1.0,0.0003634693308820584,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-04-10,APIC,0.8518518678749873,370.3703735749975,200.0,1275,yahoo,yahoo,797,1.0,0.000293103995694759,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-04-11,APIC,-0.46000000467234625,200.0,370.3703735749975,0,yahoo,yahoo,798,1.0,0.0005291792667102822,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-04-15,APIC,0.7777778739165904,355.55557478331815,200.0,1275,yahoo,yahoo,800,1.0,0.0002807079343911562,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-04-17,APIC,-0.4375000304189196,200.0,355.55557478331815,0,yahoo,yahoo,802,1.0,0.0004794230746048368,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-04-17,FORU,0.3653846153846154,71.0,52.0,1000,yahoo,yahoo,802,1.0,9.807839823970942e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-04-22,APIC,0.8518518678749873,370.3703735749975,200.0,5103,yahoo,yahoo,805,1.0,0.00026935610545028593,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-04-23,APIC,-0.46000000467234625,200.0,370.3703735749975,0,yahoo,yahoo,806,1.0,0.000510259404714864,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-04-23,BABP,0.39999998314067065,69.99999808416715,49.999999233666856,552,yahoo,yahoo,806,1.0,0.00045021279611430254,False,False,False,False,False,False,False,unexplained
+2008-04-24,TMAS,-0.75,0.9400000000000002,3.7600000000000007,277500,yahoo,yahoo,624,1.0,0.00034537155200876126,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-04-29,BABP,0.4285714457748262,99.99999846733371,69.99999808416715,552,yahoo,yahoo,810,1.0,0.0006393421941761659,False,False,False,False,False,False,False,unexplained
+2008-04-30,MICE,0.3500000000000001,540.0,400.0,100000,yahoo,yahoo,574,1.0,9.598451441911284e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-05-05,ADMG,0.36752136752136755,160.0,117.0,6915000,yahoo,yahoo,812,5.0,,False,False,False,False,False,False,False,unexplained
+2008-05-05,POLY,0.43939393939393945,190.0,132.0,17442500,yahoo,yahoo,812,5.0,,False,False,False,False,False,False,False,unexplained
+2008-05-05,TBLA,0.36000000659656606,509.99997644083675,374.99998085817987,276309505,yahoo,yahoo,812,5.0,,False,False,False,False,False,False,False,unexplained
+2008-05-07,TMPO,0.49999992037178087,149.99999151407303,99.99999965126327,521,yahoo,yahoo,814,1.0,2.805483514415467e-05,False,False,False,False,False,False,False,unexplained
+2008-05-12,MDRN,0.35000008848616626,75.69310876492426,56.0689657804418,13382,yahoo,yahoo,817,3.0,0.0001674346656387449,False,False,False,False,False,False,False,unexplained
+2008-05-21,BKDP,0.3999999999999999,210.0,150.0,65367000,yahoo,yahoo,223,5.0,,False,False,False,False,False,False,False,unexplained
+2008-05-27,TPIA,-0.8609338760375976,151.0,1085.8144003555035,110210000,stockdb,yahoo,826,1.0,0.030745745039426342,False,False,False,False,False,False,False,seam between data sources
+2008-05-28,PGLI,-0.5047619047619047,52.0,105.0,0,yahoo,yahoo,827,1.0,2.0573859164369228e-05,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-05-29,ASBI,0.3500000000000001,135.0,100.0,2000,yahoo,yahoo,828,1.0,1.3819482050245887e-05,False,False,False,False,False,False,False,unexplained
+2008-05-30,MIRA,1.0,1370.0,685.0,0,yahoo,yahoo,646,1.0,0.0007586001042846903,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-06-02,GSMF,-0.4444444307440769,50.00000123303309,90.00000000000001,3499,yahoo,yahoo,830,3.0,0.0002668548090877494,False,False,False,False,False,False,False,unexplained
+2008-06-03,ITMG,0.4835164835164836,33750.0,22750.0,3432000,yahoo,yahoo,104,1.0,0.010294052890389364,False,False,False,False,False,False,False,unexplained
+2008-06-03,MIRA,-0.43065693430656937,780.0,1370.0,74229000,yahoo,yahoo,648,1.0,0.0014976480488318685,False,False,False,False,False,False,False,unexplained
+2008-06-03,TMAS,-0.5562500059604645,1.668499977588654,3.7600000000000007,355000,yahoo,yahoo,648,1.0,0.0003432805858941163,False,False,False,False,False,False,False,unexplained
+2008-06-04,APIC,1.0,400.0,200.0,332999,yahoo,yahoo,832,1.0,0.0002631781164030996,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-06-06,APIC,-0.5,200.0,400.0,0,yahoo,yahoo,834,1.0,0.0005262253637776228,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-06-09,APIC,0.9629630030208016,392.59260060416034,200.0,51034,yahoo,yahoo,835,3.0,0.00026165437598048074,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-06-10,ASDM,0.7589285714285716,92.9245283018868,52.83018867924528,25000,yahoo,yahoo,836,1.0,7.759142843942358e-06,False,False,False,False,False,False,False,unexplained
+2008-06-10,LTLS,-0.9152542372881356,50.0,590.0,1737000,yahoo,yahoo,836,1.0,0.0003557333636268054,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-06-10,MAIN,-0.9243902462284739,65.8350495210628,870.7216494845361,1441542,yahoo,yahoo,566,1.0,9.535094523422501e-05,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-06-10,PNBN,-0.4642857142857143,450.0,840.0,124364496,yahoo,yahoo,836,1.0,0.006571095561753036,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-06-11,ASBI,0.37055837563451766,135.0,98.5,0,yahoo,yahoo,837,1.0,1.3118330842429735e-05,False,False,False,False,False,False,False,unexplained
+2008-06-11,HERO,-0.6174999928878425,147.71434020996094,386.1812744140625,0,yahoo,yahoo,837,1.0,0.0006328609913709468,False,False,False,False,False,False,False,unexplained
+2008-06-11,PNBN,0.8666666666666667,840.0,450.0,63188500,yahoo,yahoo,837,1.0,0.003567684601757242,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-06-12,APIC,-0.5423728998117665,200.0,437.03705466248607,0,yahoo,yahoo,838,1.0,0.0005765892646115588,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-06-16,APIC,0.9259260060416035,385.1852012083207,200.0,1275,yahoo,yahoo,840,3.0,0.00025919579444412245,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-06-17,APIC,-0.4807692523684639,200.0,385.1852012083207,0,yahoo,yahoo,841,1.0,0.0005130043083196275,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-06-18,ASRM,0.5204081764742208,113.4091242196837,74.59123541592359,19607,yahoo,yahoo,659,1.0,4.669695455105578e-05,False,False,False,False,False,False,False,unexplained
+2008-06-19,GSMF,0.46153842049815963,75.99999876696693,52.00000061651655,3,yahoo,yahoo,843,1.0,0.00015603512345743748,False,False,False,False,False,False,False,unexplained
+2008-06-20,APIC,-0.5090909341902887,200.0,407.40742823748354,0,yahoo,yahoo,844,1.0,0.0005474970460229115,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-06-20,FISH,0.3500000000000001,67.5,50.0,330000,stockdb,stockdb,599,1.0,7.679178954190969e-05,False,False,False,False,False,False,False,unexplained
+2008-06-24,APIC,-0.5090909341902887,200.0,407.40742823748354,0,yahoo,yahoo,846,1.0,0.0005398708516390589,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-06-26,APIC,-0.5500000097340545,200.0,444.44445405832573,0,yahoo,yahoo,848,1.0,0.00060250099578252,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-06-26,DPNS,0.3500000000000001,540.0,400.0,1068000,yahoo,yahoo,665,1.0,5.325678329662358e-05,False,False,False,False,False,False,False,unexplained
+2008-06-27,APIC,0.8888888648541857,377.77777297083713,200.0,12758,yahoo,yahoo,849,1.0,0.0002703633888747588,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-07-01,APIC,-0.5263157948665123,200.0,422.22222702916287,0,yahoo,yahoo,851,1.0,0.0005819232701744149,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-07-02,APIC,0.814814870895789,362.9629741791578,200.0,2551,yahoo,yahoo,852,1.0,0.00027079667733994944,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-07-04,APIC,-0.44897960886423527,200.0,362.9629741791578,0,yahoo,yahoo,854,1.0,0.0005199003283994662,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-07-07,KOPI,-0.8820004619133375,5.119999885559082,43.38999938964844,0,yahoo,yahoo,855,3.0,1.2730252236690704e-05,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-07-08,APIC,0.814814870895789,362.9629741791578,200.0,5103,yahoo,yahoo,856,1.0,0.0002833095631890237,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-07-08,PDES,0.3600000000000001,340.0,250.0,79127500,yahoo,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2008-07-10,APIC,-0.4375000304189196,200.0,355.55557478331815,0,yahoo,yahoo,858,1.0,0.0005007198568932747,False,False,False,False,False,False,False,unexplained
+2008-07-18,APIC,-0.5500000097340545,200.0,444.44445405832573,0,yahoo,yahoo,864,1.0,0.0006561397719667897,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-07-22,APIC,-0.5500000097340545,200.0,444.44445405832573,0,yahoo,yahoo,866,1.0,0.000649762414174554,False,False,False,False,False,False,False,unexplained
+2008-08-05,APIC,0.8518518678749873,370.3703735749975,200.0,12758,yahoo,yahoo,875,1.0,0.0002885090341971437,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-08-06,APIC,-0.46000000467234625,200.0,370.3703735749975,0,yahoo,yahoo,876,1.0,0.0005592155466620407,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-08-11,APIC,0.555555603624962,311.1111207249924,200.0,72724,yahoo,yahoo,879,3.0,0.00030051215389416907,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-08-12,FORU,0.3561643835616439,99.0,73.0,500,yahoo,yahoo,880,1.0,1.585454023296483e-05,False,False,False,False,False,False,False,unexplained
+2008-08-20,APIC,0.48148146545834614,296.2962930916692,200.0,95689,yahoo,yahoo,885,1.0,0.00032228134076771515,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-08-26,APIC,0.814814870895789,362.9629741791578,200.0,7655,yahoo,yahoo,889,1.0,0.0003103641380472805,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-08-27,APIC,-0.44897960886423527,200.0,362.9629741791578,0,yahoo,yahoo,890,1.0,0.000569919612919307,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-09-01,APIC,0.7777778739165904,355.55557478331815,200.0,6379,yahoo,yahoo,893,3.0,0.0002986943230830636,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-09-02,APIC,-0.4375000304189196,200.0,355.55557478331815,0,yahoo,yahoo,894,1.0,0.0005280972241440125,False,False,False,False,False,False,False,unexplained
+2008-09-17,GSMF,0.4999999445135128,74.9999990752252,50.00000123303309,1000,yahoo,yahoo,905,1.0,0.0002095149579542535,False,False,False,False,False,False,False,unexplained
+2008-09-24,APIC,0.48148146545834614,296.2962930916692,200.0,5103,yahoo,yahoo,910,1.0,0.0003579563790213028,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-09-26,APIC,0.48148146545834614,296.2962930916692,200.0,57413,yahoo,yahoo,912,1.0,0.00035412107205811446,False,False,False,False,False,False,False,unexplained
+2008-09-26,OKAS,-0.4399999722656246,147.8873291015625,264.0845031738281,0,yahoo,yahoo,597,1.0,0.0002504943411906711,False,False,False,False,False,False,False,unexplained
+2008-10-06,BUMI,-0.3602941176470589,2175.0,3400.0,439755008,yahoo,yahoo,913,10.0,,False,False,False,False,False,False,False,unexplained
+2008-10-06,UNSP,-0.36986301369863017,4600.0,7300.0,6981200,yahoo,yahoo,913,10.0,,True,False,False,False,False,False,False,unexplained
+2008-10-08,TMAS,-0.53125,1.7625000000000006,3.7600000000000007,7500,yahoo,yahoo,732,1.0,0.0005321828291652271,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-10-14,APIC,0.43703706908330786,287.4074138166616,200.0,597103,yahoo,yahoo,917,1.0,0.0004566449349468225,False,False,False,False,False,False,False,unexplained
+2008-10-27,ANTM,-0.7322834569983461,519.3700934232087,1940.0,64695830,yahoo,yahoo,743,3.0,0.017353222819078036,True,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-10-27,TMAS,-0.7562499940395355,0.9165000224113465,3.7600000000000007,92500,yahoo,yahoo,743,3.0,0.0007086545593011458,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-11-25,TMAS,-0.699999988079071,1.1280000448226932,3.7600000000000007,742500,yahoo,yahoo,764,1.0,0.0007830086488925032,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2008-12-01,ANTM,-0.6881889759094214,604.9133867357225,1940.0,58562923,yahoo,yahoo,768,3.0,0.017312941529874108,True,False,True,False,False,False,False,"split-like jump, no recorded event"
+2008-12-01,TMAS,-0.7125000059604645,1.0809999775886538,3.7600000000000007,1700000,yahoo,yahoo,768,3.0,0.0007427171429274791,False,False,False,False,False,False,False,unexplained
+2008-12-30,PDES,0.4285714285714286,100.0,70.0,16000,yahoo,yahoo,113,6.0,,False,False,False,False,False,False,False,unexplained
+2008-12-30,PWON,0.42105266666148267,97.82552004894579,68.84017907567771,471025,yahoo,yahoo,785,6.0,,False,False,False,False,False,False,False,unexplained
+2009-01-07,ANTM,-0.6125984336304143,751.5590387569962,1940.0,302919662,yahoo,yahoo,788,1.0,0.018373338351546253,True,False,False,False,False,False,False,unexplained
+2009-01-07,TMAS,-0.7249999940395355,1.0340000224113466,3.7600000000000007,1765000,yahoo,yahoo,788,1.0,0.0006344110691281446,False,False,False,False,False,False,False,unexplained
+2009-02-02,MDRN,-0.35000002552485476,24.296551710977912,37.379311792429874,29441,yahoo,yahoo,988,3.0,0.00022986229287220945,False,False,False,False,False,False,False,unexplained
+2009-03-18,INAF,0.3529411764705883,69.0,51.0,6346500,yahoo,yahoo,1019,1.0,0.00013260196578245543,False,False,False,False,False,False,False,unexplained
+2009-03-19,INCI,0.3500000758451136,135.00000270875395,99.99999638832806,715315,yahoo,yahoo,1020,1.0,1.524549109029057e-05,False,False,False,False,False,False,False,unexplained
+2009-03-20,ANTM,-0.6472441055166958,684.3464352976104,1940.0,62924353,yahoo,yahoo,838,1.0,0.017569359571343014,True,False,True,False,False,False,False,"split-like jump, no recorded event"
+2009-03-20,INAI,0.35483870967741926,31.5,23.25,1564000,yahoo,yahoo,1021,1.0,1.2218505125403279e-05,False,False,False,False,False,False,False,unexplained
+2009-03-20,LTLS,0.3728813559322033,405.0,295.0,128167000,yahoo,yahoo,1021,1.0,0.00037788683190259333,False,False,False,False,False,False,False,unexplained
+2009-03-20,TMAS,-0.6624999940395355,1.2690000224113467,3.7600000000000007,9905000,yahoo,yahoo,838,1.0,0.0007039435533538793,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2009-03-31,PUDP,0.35714278289639223,44.56185219289937,32.835050780579024,11220,yahoo,yahoo,1027,1.0,1.685473233875303e-05,False,False,False,False,False,False,False,unexplained
+2009-04-20,ANTM,-0.5433070898578517,885.9842456757677,1940.0,102098642,yahoo,yahoo,856,3.0,0.019090916277626085,True,False,True,False,False,False,False,"split-like jump, no recorded event"
+2009-04-20,BAYU,0.3529411764705883,69.0,51.0,4,yahoo,yahoo,1039,3.0,1.1563178391476417e-05,False,False,False,False,False,False,False,unexplained
+2009-04-20,CPRO,0.3538461538461539,88.0,65.0,517645500,yahoo,yahoo,576,3.0,0.0016674297579641624,False,False,False,False,False,False,False,unexplained
+2009-04-20,DEWA,0.5368421052631578,146.0,95.0,2508,yahoo,yahoo,368,3.0,0.0009606507224448152,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-04-20,TMAS,-0.5687499940395355,1.6215000224113467,3.7600000000000007,8162500,yahoo,yahoo,856,3.0,0.0005553435054030759,False,False,False,False,False,False,False,unexplained
+2009-04-22,DGIK,0.44067796610169485,85.0,59.0,155372000,yahoo,yahoo,312,2.0,,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-05-12,PYFA,0.358490566037736,14.4,10.600000000000001,7574500,yahoo,yahoo,1054,1.0,1.5949877896092792e-05,False,False,False,False,False,False,False,unexplained
+2009-05-12,TIRT,0.35185185185185186,73.0,54.0,15415000,yahoo,yahoo,1054,1.0,3.0395050330290035e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-05-20,BSDE,0.35000006164703623,250.61260986328125,185.6389617919922,3219690,yahoo,yahoo,227,1.0,0.0020846617093704107,False,False,False,False,False,False,False,unexplained
+2009-05-20,SIMA,0.3500000000000001,81.0,60.0,13500,stockdb,stockdb,1666,5.0,,False,False,False,False,False,False,False,unexplained
+2009-06-01,ICON,-0.4578313469612738,395.7445983886719,729.928955078125,2842,yahoo,yahoo,523,3.0,0.0004205375813013202,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2009-06-10,AKKU,0.36000000510876173,20.28852492125179,14.918032974293466,18297246,yahoo,yahoo,1074,1.0,5.0771244314369e-05,False,False,False,False,False,False,False,unexplained
+2009-06-10,VRNA,0.35714267826847323,76.56715425572847,56.4179105718034,31933690,yahoo,yahoo,228,1.0,0.00013913748734443863,False,False,False,False,False,False,False,unexplained
+2009-06-15,PYFA,0.3548387096774195,25.200000000000003,18.6,12713500,yahoo,yahoo,1077,3.0,2.4571723044962877e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-07-02,ANTM,0.5487805215211572,1940.0,1252.598397928327,0,yahoo,yahoo,907,1.0,0.02091651210222077,True,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-07-03,ANTM,-0.3543307227173572,1252.598397928327,1940.0,15428401,yahoo,yahoo,908,1.0,0.020878045060085584,True,False,False,False,False,False,False,unexplained
+2009-07-03,TMAS,-0.637499988079071,1.3630000448226933,3.7600000000000007,2870000,yahoo,yahoo,908,1.0,0.000432537494312016,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2009-07-07,AKKU,0.35714296140330437,28.344263794347718,20.885245401884095,9305982,yahoo,yahoo,1093,1.0,7.462226466582613e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-07-10,ANTM,0.6282051606908445,1940.0,1191.4960392195671,0,yahoo,yahoo,912,1.0,0.01975673075542938,True,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-07-13,ANTM,-0.41732284509752204,1130.3936805108071,1940.0,46896530,yahoo,yahoo,913,3.0,0.01988778094825382,True,False,False,False,False,False,False,unexplained
+2009-07-13,TMAS,-0.6500000059604645,1.315999977588654,3.7600000000000007,937500,yahoo,yahoo,913,3.0,0.00043315118435760535,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2009-07-16,SUGI,0.352112676056338,96.0,71.0,2150000,stockdb,stockdb,636,1.0,1.397964785872923e-05,False,False,False,False,False,False,False,unexplained
+2009-07-17,SIMA,0.35238095238095246,142.0,105.0,4240000,stockdb,stockdb,1697,1.0,2.2870068469947102e-05,False,False,False,False,False,False,False,unexplained
+2009-07-21,LMPI,0.3500000000000001,270.0,200.0,3140000,yahoo,yahoo,1101,4.0,0.00010049780039176793,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-07-27,AIMS,0.3500000000000001,67.5,50.0,1916000,yahoo,yahoo,1105,3.0,5.263033190908909e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-07-28,TMPO,0.35353530803815536,133.99999093284515,98.99999662887832,1043,yahoo,yahoo,1106,1.0,3.379920174118605e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-08-10,UNIT,0.35106382978723394,127.0,94.0,192500,stockdb,stockdb,972,4.0,,False,False,False,False,False,False,False,unexplained
+2009-08-13,ADMG,0.35185185185185186,146.0,108.0,148298500,yahoo,yahoo,1118,1.0,0.00018391737797768625,True,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-08-13,BTEK,0.3538461950905376,10.999999440211182,8.124999338994755,86802680,yahoo,yahoo,1118,1.0,0.00012520319390255615,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-08-13,TMAS,-0.637499988079071,1.3630000448226933,3.7600000000000007,3640000,yahoo,yahoo,935,1.0,0.0003752944153877723,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2009-09-07,BNBA,0.3538461869440299,175.99999884906566,129.99999597172982,17267999,yahoo,yahoo,791,3.0,0.00013349220109674063,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-10-05,VRNA,0.3529412728071739,92.68656914885432,68.50745927540666,45675736,yahoo,yahoo,304,3.0,0.00014338670549317786,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-10-12,BAYU,0.35057471264367823,235.0,174.0,8192000,yahoo,yahoo,1155,3.0,2.557128481026871e-05,False,False,False,False,False,False,False,unexplained
+2009-10-20,AIMS,0.3520000000000001,84.5,62.5,1000,yahoo,yahoo,1161,1.0,5.670396765206317e-06,False,False,False,False,False,False,False,unexplained
+2009-10-23,UNIT,0.3500000000000001,81.0,60.0,5000,stockdb,stockdb,988,1.0,2.069183931177711e-06,False,False,False,False,False,False,False,unexplained
+2009-10-27,UNIT,0.35185185185185186,146.0,108.0,73500,stockdb,stockdb,990,1.0,3.6708510450048137e-06,False,False,False,False,False,False,False,unexplained
+2009-11-02,AIMS,-0.3508771929824561,37.0,57.0,1000,yahoo,yahoo,1170,3.0,5.570146720101185e-06,False,False,False,False,False,False,False,unexplained
+2009-11-10,AIMS,0.3513513513513513,50.0,37.0,118000,yahoo,yahoo,1176,1.0,3.5614323636595427e-06,False,False,False,False,False,False,False,unexplained
+2009-11-19,PGLI,0.3529411764705883,69.0,51.0,500,yahoo,yahoo,1183,1.0,1.058027944462418e-05,False,False,False,False,False,False,False,unexplained
+2009-11-25,TRIL,0.3513513513513513,150.0,111.0,174250000,stockdb,stockdb,347,1.0,5.66121816516603e-05,False,False,False,False,False,False,False,unexplained
+2009-12-02,ANTM,0.38043477436715656,1940.0,1405.3543390989764,0,yahoo,yahoo,1008,1.0,0.02008800231585515,True,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-12-03,TMAS,-0.731249988079071,1.010500044822693,3.7600000000000007,270000,yahoo,yahoo,1009,1.0,0.00036987575683211096,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-12-04,TIRT,0.35593220338983045,80.0,59.0,39945000,yahoo,yahoo,1193,1.0,2.5489414347090143e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-12-07,TMAS,-0.71875,1.0575000000000003,3.7600000000000007,100000,yahoo,yahoo,1011,3.0,0.0003714866365673367,False,False,False,False,False,False,False,unexplained
+2009-12-08,FORU,0.35526315789473695,103.0,76.0,3213500,yahoo,yahoo,1195,1.0,1.5581458573437336e-05,False,False,False,False,False,False,False,unexplained
+2009-12-16,PGLI,0.3600000000000001,68.0,50.0,71500,yahoo,yahoo,1201,1.0,1.0589904331672331e-05,False,False,False,False,False,False,False,unexplained
+2009-12-28,ANTM,0.5119047437802284,1940.0,1283.1496216814567,0,yahoo,yahoo,1023,5.0,0.01844663634220071,True,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2009-12-29,LPPF,0.3999999999999999,560.0,400.0,14000,yahoo,yahoo,1024,1.0,0.0004563665303020949,False,False,False,False,False,False,True,unexplained
+2009-12-29,TMAS,-0.7437500059604645,0.9634999775886538,3.7600000000000007,282500,yahoo,yahoo,1024,1.0,0.0003677010329862594,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2010-01-18,ANTM,0.4269663038768483,1940.0,1359.5275478680317,0,yahoo,yahoo,1036,3.0,0.018083358042321782,True,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2010-01-19,TMAS,-0.737500011920929,0.9869999551773073,3.7600000000000007,5015000,yahoo,yahoo,1037,1.0,0.0003462766170530471,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2010-01-26,ANTM,0.443181805420771,1940.0,1344.2519803902167,0,yahoo,yahoo,1042,1.0,0.018191274368420603,True,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2010-01-27,LPPF,0.5625,2625.0,1680.0,7500,yahoo,yahoo,1043,1.0,0.0018764191647613596,False,False,False,False,False,False,False,unexplained
+2010-01-27,TMAS,-0.7537499964237213,0.925900013446808,3.7600000000000007,450000,yahoo,yahoo,1043,1.0,0.0003546332939961681,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2010-02-15,KBLM,0.3500000000000001,162.0,120.0,24500,yahoo,yahoo,1239,3.0,5.683122372030419e-05,False,False,False,False,False,False,False,unexplained
+2010-02-24,INDX,0.3500000000000001,108.0,80.0,29000,yahoo,yahoo,1246,1.0,8.977973544442826e-06,False,False,False,False,False,False,False,unexplained
+2010-03-11,SULI,0.3500000997043655,185.9440155029297,137.73629760742188,33752176,yahoo,yahoo,1256,1.0,0.0001707632841115739,True,False,False,False,False,False,False,unexplained
+2010-03-29,SULI,0.3500000000000001,162.0,120.0,289953500,yahoo,yahoo,1267,3.0,0.0001423138797752228,True,False,False,False,False,False,False,unexplained
+2010-04-06,TMAS,-0.7637500017881393,0.8882999932765963,3.7600000000000007,167500,yahoo,yahoo,1089,1.0,0.0003188745232213844,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2010-04-14,TMAS,-0.7650000005960464,0.8835999977588656,3.7600000000000007,157500,yahoo,yahoo,1095,1.0,0.00032033371132106754,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2010-04-26,KICI,0.3500000000000001,54.0,40.0,20000,yahoo,yahoo,1286,3.0,4.136760072264071e-06,False,False,False,False,False,False,False,unexplained
+2010-05-12,TMAS,-0.7625000029802322,0.892999988794327,3.7600000000000007,87500,yahoo,yahoo,1115,1.0,0.0003292149430207431,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2010-05-18,PBRX,0.3500000246988526,52.591275684317274,38.95649979417514,7904026,yahoo,yahoo,1301,1.0,0.00010712271896875885,False,False,False,False,False,False,False,unexplained
+2010-05-26,DEWA,0.3833333333333333,83.0,60.0,505672992,yahoo,yahoo,636,1.0,0.0005698480964440066,True,False,False,False,False,False,False,unexplained
+2010-05-26,ENRG,0.52,114.0,75.0,220252375,yahoo,yahoo,1307,1.0,0.002645816447791509,True,False,False,False,False,False,False,unexplained
+2011-01-19,PGLI,0.3500000000000001,81.0,60.0,9500,yahoo,yahoo,1466,1.0,8.602844516763392e-06,False,False,False,False,False,False,False,unexplained
+2011-03-02,TMAS,-0.771249994635582,0.860100020170212,3.7600000000000007,262500,yahoo,yahoo,1311,1.0,0.0002521179760044349,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2011-03-23,ASRM,-0.35714291425199685,127.87065845130812,198.90993081692937,1050,yahoo,yahoo,1326,1.0,9.152089839867635e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2011-03-23,MRAT,-0.5154639175257731,235.0,485.0,8500,yahoo,yahoo,1509,1.0,6.118067327369701e-05,False,True,True,False,False,False,False,spike that reverts within 3 rows (glitch)
+2011-03-23,PSDN,0.4285714285714286,100.0,70.0,6000,yahoo,yahoo,1509,1.0,2.957090321739947e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2011-03-23,TMAS,-0.574999988079071,1.5980000448226932,3.7600000000000007,5207500,yahoo,yahoo,1326,1.0,0.00025149349117274027,False,False,False,False,False,False,False,unexplained
+2011-03-23,TRST,-0.39655172413793105,175.0,290.0,585500,yahoo,yahoo,1509,1.0,0.00023906080388748837,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2011-03-24,ASRM,0.555555693745585,198.90993081692937,127.87065845130812,1050,yahoo,yahoo,1327,1.0,5.856934609617587e-05,False,False,False,False,False,False,False,unexplained
+2011-03-24,MTFN,0.4520547899002356,131.44000078507867,90.52000082869415,4034,yahoo,yahoo,1510,1.0,0.0008480444809839629,False,False,False,False,False,False,False,unexplained
+2011-03-24,RIGS,0.5348837209302326,660.0,430.0,125500,yahoo,yahoo,1510,1.0,7.660163049542955e-05,False,False,False,False,False,False,False,unexplained
+2011-03-24,TMAS,-0.4764706113346714,0.8365999865531923,1.5980000448226932,5207500,yahoo,yahoo,1327,1.0,0.00010640238369829516,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2011-03-24,TRST,0.6571428571428573,290.0,175.0,585500,yahoo,yahoo,1510,1.0,0.00014360980478889622,False,False,False,False,False,False,False,unexplained
+2011-03-24,ULTJ,0.4444444444444444,260.0,180.0,5600000,yahoo,yahoo,1327,1.0,0.0006076731709298125,False,False,False,False,False,False,False,unexplained
+2011-04-26,TMAS,-0.78125,0.8225000000000001,3.7600000000000007,100000,yahoo,yahoo,1349,1.0,0.0002326535061073434,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2011-08-09,TMAS,-0.7637500017881393,0.8882999932765963,3.7600000000000007,6302500,yahoo,yahoo,1420,1.0,0.00022611079221515482,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2011-08-15,INPP,0.3500000000000001,189.0,140.0,274500,yahoo,yahoo,1315,3.0,0.0004113379566696252,False,False,False,False,False,False,False,unexplained
+2011-08-18,TMAS,-0.737500011920929,0.9869999551773073,3.7600000000000007,3540000,yahoo,yahoo,1426,2.0,0.00022174451942836302,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2011-09-07,GTBO,0.3500000000000001,189.0,140.0,20820000,stockdb,stockdb,479,1.0,9.878163617260606e-05,True,False,False,False,False,False,False,unexplained
+2011-11-02,UNIT,0.3500000000000001,270.0,200.0,4000,stockdb,stockdb,1133,1.0,4.4073491895897845e-06,False,False,False,False,False,False,False,unexplained
+2011-12-02,MYOH,0.5529411538432805,638.3205245658183,411.0397377170908,20744420,yahoo,yahoo,1679,2.0,,False,False,False,False,False,False,False,unexplained
+2011-12-23,ERTX,0.3500000000000001,20.25,15.0,500,stockdb,stockdb,1694,1.0,4.739867602926198e-06,False,False,False,False,False,False,False,unexplained
+2012-02-14,RIMO,0.38888888888888884,25.0,18.0,60140000,stockdb,stockdb,1814,1.0,1.5297202056859568e-06,False,False,False,False,False,False,False,unexplained
+2012-04-03,BDMN,0.3913043478260869,6400.0,4600.0,102430000,stockdb,stockdb,1762,4.0,,True,False,False,False,False,False,False,unexplained
+2012-04-04,HERO,0.4372469569308999,3427.35888671875,2384.66943359375,409134,yahoo,yahoo,1763,2.0,,False,False,False,False,False,False,False,unexplained
+2012-05-03,YULE,0.46341460337175766,183.72412919132813,125.54482425419386,151038,yahoo,yahoo,1783,1.0,4.695997546389708e-05,False,False,False,False,False,False,False,unexplained
+2012-06-11,CENT,0.36363636363636354,15.0,11.0,936000,stockdb,stockdb,1785,3.0,7.882422422797911e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2012-08-10,CENT,0.36363636363636354,15.0,11.0,2390000,stockdb,stockdb,1825,1.0,7.181193473772892e-05,False,False,False,False,False,False,False,unexplained
+2012-08-29,OMRE,-0.42985073479930935,190.9999945918174,334.9999837754523,91000,yahoo,yahoo,1861,1.0,0.00014850523441857768,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2012-08-30,OMRE,0.7539266662879998,334.9999837754523,190.9999945918174,4999,yahoo,yahoo,1862,1.0,8.448386295544926e-05,False,False,False,False,False,False,False,unexplained
+2012-08-30,PSKT,-0.6446700386721621,102.42423918915313,288.2510633395575,0,yahoo,yahoo,1146,1.0,0.0007868592114646445,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2012-09-28,CENT,0.368421052631579,26.0,19.0,52000,stockdb,stockdb,1846,1.0,0.00012599167822962583,False,False,False,False,False,False,False,unexplained
+2012-11-27,CENT,0.368421052631579,26.0,19.0,924000,stockdb,stockdb,1858,6.0,,False,False,False,False,False,False,False,unexplained
+2013-02-15,PSAB,-0.8580246913580247,115.0,810.0,77000,stockdb,stockdb,1972,1.0,0.0006900393143164379,True,False,False,True,False,False,False,unexplained
+2013-02-15,SMMT,-0.7015384615384616,1164.0,3900.0,5660000,stockdb,stockdb,1243,1.0,0.0007910503900164877,False,False,False,True,False,False,False,unexplained
+2013-03-28,INDX,0.3500000000000001,189.0,140.0,6030000,stockdb,stockdb,1997,1.0,8.934071479683068e-06,False,False,False,False,False,False,False,unexplained
+2013-04-24,ITMA,0.43298963618252295,694.7687078723008,484.83861315505465,2112150,yahoo,yahoo,1304,1.0,9.005630749957332e-05,False,False,False,False,False,False,False,unexplained
+2013-04-25,BACA,0.3508771929824561,154.0,114.0,1680000,stockdb,stockdb,1265,1.0,0.00010582754104944613,False,False,False,False,False,False,False,unexplained
+2013-07-08,VICO,0.4999999999999998,209.99999793097368,139.99999862064914,10334750,yahoo,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2013-10-09,RIMO,0.3571428571428572,38.0,28.0,14690000,stockdb,stockdb,2145,1.0,2.219328038777018e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2013-11-19,SSTM,0.3500000000000001,162.0,120.0,10030000,stockdb,stockdb,1918,1.0,3.365735829900993e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2014-01-16,ASMI,0.4464285714285714,81.0,56.0,247439000,yahoo,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2014-05-28,PSKT,0.3668639702678975,140.0000022297546,102.42423918915313,0,yahoo,yahoo,1568,2.0,0.000228882508044137,False,False,False,False,False,False,False,unexplained
+2014-07-09,SPMA,0.4963503649635037,205.0,137.0,114600,stockdb,stockdb,3257,1.0,0.0001016481114121933,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2014-07-14,TARA,0.3500000000000001,243.0,180.0,200280000,stockdb,yahoo,2,3.0,0.0003760147408523012,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2014-09-12,APIC,-0.6109090909090908,214.0,550.0,41470000,stockdb,stockdb,2355,1.0,0.0012823868765627438,False,False,False,True,False,False,False,unexplained
+2014-12-08,DSFI,0.3500000000000001,135.0,100.0,264589999,stockdb,stockdb,2409,3.0,3.65410737733525e-05,False,False,False,False,False,False,False,unexplained
+2015-04-07,BEKS,0.3600000000000001,85.0,62.5,256160000,stockdb,stockdb,2488,1.0,0.00025423297704046813,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2015-06-29,BUKK,0.42741935483870974,885.0,620.0,741100,yahoo,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2015-10-19,BBYB,0.4166666275682831,127.4999639590089,89.99997704319708,2555520,yahoo,yahoo,188,3.0,0.00012868275800717878,False,False,False,False,False,False,False,unexplained
+2015-10-26,MKNT,0.3600000000000001,34.0,25.0,1388000,yahoo,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2015-11-12,SRAJ,0.3523316062176165,261.0,193.0,4900000,stockdb,stockdb,893,1.0,0.00035921522778695366,True,False,False,False,False,False,False,unexplained
+2015-11-24,BEKS,0.3529411764705883,57.5,42.5,123500000,stockdb,stockdb,2643,1.0,0.00021035365660691138,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2015-12-08,DPUM,0.4864864864864864,825.0,555.0,25568900,yahoo,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2015-12-22,MCOR,-0.404199432143563,104.23577117919922,174.95077514648438,0,yahoo,yahoo,2058,1.0,0.0006618222068468784,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2015-12-23,MCOR,0.6784139760017116,174.95077514648438,104.23577117919922,342953,yahoo,yahoo,2059,1.0,0.00039359212803369433,False,False,False,False,False,False,False,unexplained
+2016-04-20,ICON,-0.4024691358024691,242.0,405.0,3,yahoo,yahoo,2199,8.0,,False,False,False,False,False,False,False,unexplained
+2016-04-29,SPMA,0.3529411764705883,115.0,85.0,6550000,stockdb,stockdb,3662,1.0,5.360880366216346e-05,False,False,False,False,False,False,False,unexplained
+2016-05-02,TIRT,0.3500000000000001,108.0,80.0,4310000,stockdb,stockdb,2727,3.0,1.7104703412691424e-05,False,False,False,False,False,False,False,unexplained
+2016-06-01,AKKU,0.3500000000000001,81.0,60.0,89390,stockdb,stockdb,2762,1.0,8.07941154849232e-05,False,False,False,False,False,False,False,unexplained
+2016-06-16,SHIP,0.515923566878981,238.0,157.0,51087700,yahoo,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2016-07-12,BEKS,0.375,82.5,60.0,1020000000,stockdb,stockdb,2793,1.0,0.00025783138472629816,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2016-07-18,OASA,0.46363643952677447,64.39999924181893,43.99999720056222,6998200,yahoo,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2016-07-19,CASA,0.3750001270173031,93.153155220453,67.74774299295811,303482329,yahoo,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2016-07-21,BEKS,0.375,82.5,60.0,4139999999,stockdb,stockdb,2800,1.0,0.00024378569285657178,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2016-08-08,BEKS,0.7096774193548387,132.5,77.5,506860000,stockdb,stockdb,2812,3.0,0.00030465003021516794,False,False,False,False,False,False,False,unexplained
+2016-08-18,BCAP,-0.8561933534743202,238.0,1655.0,211400,stockdb,stockdb,2765,3.0,,False,False,False,True,False,False,False,unexplained
+2016-09-06,INCF,-0.9352380952380952,204.0,3150.0,100,yahoo,yahoo,2834,1.0,0.000839057268390048,False,False,True,False,False,False,False,"split-like jump, no recorded event"
+2016-10-19,BUMI,0.3500000000000001,108.0,80.0,2980000000,stockdb,stockdb,2797,1.0,0.0010614310878934291,False,False,False,False,False,False,False,unexplained
+2016-11-08,JGLE,0.3500000000000001,216.0,160.0,16140000,stockdb,stockdb,88,1.0,0.0006585111325218287,False,False,False,False,False,False,False,unexplained
+2016-12-30,OMRE,0.3500000000000001,216.0,160.0,3400,stockdb,stockdb,2097,2.0,,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2017-01-04,BCIP,0.3500000000000001,135.0,100.0,28880000,stockdb,stockdb,1676,1.0,2.7068017509492353e-05,False,False,False,False,False,False,False,unexplained
+2017-01-12,LEAD,0.3500000000000001,135.0,100.0,167640000,stockdb,stockdb,749,1.0,4.735723057624713e-05,False,False,False,False,False,False,False,unexplained
+2017-04-04,ALDO,-0.3933333333333333,182.0,300.0,330,stockdb,stockdb,1280,116.0,,False,False,False,False,False,False,False,first trade after a gap > 10 days
+2017-04-25,BBHI,0.35000004583876354,189.00000938777893,140.0000022002607,41631499,yahoo,yahoo,408,4.0,9.761071644828257e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2017-05-03,PTSN,0.3500000321865089,36.0,26.66666603088379,10120800,yahoo,yahoo,2296,1.0,2.430799806237426e-05,False,False,False,False,False,False,False,unexplained
+2017-05-09,BMSR,0.3500000000000001,189.0,140.0,96300,stockdb,stockdb,2060,1.0,2.763258469516031e-05,False,False,False,False,False,False,False,unexplained
+2017-05-10,CSIS,0.40625,450.0,320.0,560900,yahoo,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2017-05-15,TIFA,0.3500000000000001,189.0,140.0,4040000,stockdb,stockdb,1316,3.0,2.5576918735687903e-05,False,False,False,False,False,False,False,unexplained
+2017-06-16,SIMA,0.3500000000000001,270.0,200.0,694100,stockdb,stockdb,2116,1.0,1.4907065644517887e-05,False,False,False,False,False,False,False,unexplained
+2017-06-20,MYTX,0.352112676056338,96.0,71.0,1610000,stockdb,stockdb,2517,4.0,,False,False,False,False,False,False,False,unexplained
+2017-06-22,MYTX,0.3515625,173.0,128.0,1870000,stockdb,stockdb,2519,1.0,6.203590674228011e-05,False,False,False,False,False,False,False,unexplained
+2017-07-03,MABA,0.3500000000000001,108.0,80.0,251250,stockdb,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2017-08-15,CMPP,0.35074626865671643,181.0,134.0,814780,stockdb,stockdb,2500,1.0,0.0002436672544576236,True,False,False,False,False,False,False,unexplained
+2017-09-22,POLY,0.3500000000000001,81.0,60.0,47210000,stockdb,stockdb,3092,2.0,2.486629627788584e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2017-10-11,MTWI,0.41666673201399673,170.000005502933,119.9999983491201,72841600,yahoo,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2017-12-19,CAMP,0.48795180722891573,494.0,332.0,10382700,yahoo,,1,,,False,False,False,False,False,False,True,first 5 rows of the code (IPO / data start)
+2017-12-29,MBTO,0.3500000000000001,135.0,100.0,1710000,stockdb,stockdb,1591,1.0,1.5990049205784918e-05,False,False,False,False,False,False,False,unexplained
+2018-01-08,CASA,0.3500000000000001,216.0,160.0,4810000,stockdb,stockdb,352,3.0,0.0013832798969336101,False,False,False,False,False,True,False,rights issue window
+2018-03-20,KOBX,0.3500000000000001,162.0,120.0,10700000,stockdb,stockdb,1231,1.0,4.158371218929075e-05,False,False,False,False,False,False,False,unexplained
+2018-03-29,ARTO,0.38095238095238093,29.0,21.0,1060000,stockdb,stockdb,405,1.0,2.3951112436037147e-05,False,False,False,False,False,False,False,unexplained
+2018-07-05,MAPA,0.39380530973451333,315.0,226.0,1425000,yahoo,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2018-10-31,CAKK,-0.4545454545454546,108.0,198.0,403307700,yahoo,,1,,,False,False,True,False,False,False,False,first 5 rows of the code (IPO / data start)
+2018-12-27,MERK,0.4882478632478633,4400.0,4680.0,3240000,stockdb,stockdb,2726,1.0,0.00032572325322841506,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2019-01-04,SMMT,0.3500000000000001,216.0,160.0,4420000,stockdb,stockdb,2637,1.0,7.685821513386241e-05,True,False,False,False,False,False,False,unexplained
+2019-01-17,PSDN,0.3500000000000001,270.0,200.0,525800,stockdb,stockdb,2605,1.0,4.302162010566846e-05,True,False,False,False,False,False,False,unexplained
+2019-02-18,MAYA,-0.40120391271632805,1989.5,3322.5,1410,stockdb,stockdb,2641,11.0,,False,False,False,False,False,False,False,first trade after a gap > 10 days
+2019-03-20,CAKK,0.3500000000000001,216.0,160.0,42940000,stockdb,stockdb,94,1.0,2.7886320395771275e-05,False,False,False,False,False,False,False,unexplained
+2019-07-25,POSA,0.3500000000000001,270.0,200.0,718660000,stockdb,stockdb,48,1.0,0.0002467697179668458,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2019-08-29,PAMG,0.3500000000000001,189.0,140.0,85960000,stockdb,stockdb,40,1.0,6.489390431118287e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2019-09-11,BMSR,0.3500000000000001,108.0,80.0,1890000,stockdb,stockdb,2585,1.0,1.3819514521892539e-05,True,False,False,False,False,False,False,unexplained
+2019-09-16,BAPI,-0.4881889763779528,130.0,254.0,192703600,yahoo,,1,,,False,False,True,False,False,False,False,first 5 rows of the code (IPO / data start)
+2019-11-12,MTWI,0.3500000000000001,81.0,60.0,18920000,stockdb,stockdb,507,1.0,1.410070802307732e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2019-11-12,VINS,0.3500000000000001,135.0,100.0,1650000,stockdb,stockdb,955,1.0,2.2272360167170058e-05,False,False,False,False,False,False,False,unexplained
+2020-01-09,AMAR,0.6896551724137931,294.0,174.0,6598700,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-01-09,CSRA,0.696,212.0,125.0,536500,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-01-13,INDO,0.7,187.0,110.0,93800,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-01-14,AMOR,0.5,1425.0,950.0,5979700,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-01-15,KPAL,0.3500000000000001,216.0,160.0,7930500,idx,idx,10,1.0,2.5059401076298223e-05,False,False,False,False,False,False,False,unexplained
+2020-01-15,SKYB,0.3500000000000001,81.0,60.0,36110000,stockdb,stockdb,710,1.0,5.098570446709695e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2020-01-15,TRIN,0.7,340.0,200.0,37009900,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-01-22,DMND,0.49726775956284164,1370.0,915.0,3660600,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-01-29,PURA,0.6952380952380952,178.0,105.0,112999000,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-01-30,BBRM,0.3600000000000001,68.0,50.0,70,stockdb,stockdb,1277,1.0,4.191254143097878e-05,False,False,False,False,False,False,False,unexplained
+2020-01-31,RIGS,0.3500000000000001,270.0,200.0,4310000,stockdb,stockdb,3515,1.0,1.9054280181487285e-05,False,False,False,False,False,False,False,unexplained
+2020-02-07,PTPW,0.5,975.0,650.0,2045200,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-02-10,TAMA,0.6914285714285715,296.0,175.0,10600,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-02-12,AYLS,0.7,170.0,100.0,11500,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-02-12,IKAN,0.7,204.0,120.0,4633100,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-02-13,MEGA,-0.4415,3351.0,6000.0,7420,stockdb,stockdb,2539,2.0,,False,False,False,False,False,False,False,unexplained
+2020-02-14,DADA,0.696078431372549,173.0,102.0,48085200,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-02-17,ASPI,0.6952380952380952,178.0,105.0,7400,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-03-09,BESS,0.6952380952380952,178.0,105.0,316500,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-03-09,ESTA,0.7,68.0,40.0,1463000,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-03-10,TFAS,0.3500000000000001,135.0,100.0,1980000,stockdb,stockdb,122,1.0,3.0823484188465695e-05,False,False,False,False,False,False,False,unexplained
+2020-03-31,SAMF,0.3500000000000001,162.0,120.0,45000,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-04-01,YULE,0.3500000000000001,216.0,160.0,13000,stockdb,stockdb,2720,1.0,5.96717573388908e-05,False,False,False,False,False,False,False,unexplained
+2020-04-06,MTPS,0.3500000000000001,270.0,200.0,75400,stockdb,stockdb,219,3.0,8.552449100545967e-05,True,False,False,False,False,False,False,unexplained
+2020-04-08,KBAG,0.3500000000000001,135.0,100.0,896400,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-04-09,CBMF,0.3500000000000001,216.0,160.0,80600,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-04-09,RONY,0.3500000000000001,135.0,100.0,10000,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-04-15,BBSS,0.3500000000000001,162.0,120.0,16923700,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-06-04,TECH,0.3500000000000001,216.0,160.0,30513200,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-06-08,KREN,0.3500000000000001,135.0,100.0,239040000,stockdb,stockdb,4005,3.0,0.0003343183138334621,False,False,False,False,False,False,False,unexplained
+2020-06-24,IFII,0.3500000000000001,216.0,160.0,64269999,stockdb,stockdb,130,1.0,0.00028105999235685,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2020-06-26,TIFA,-0.61,78.0,200.0,510,stockdb,stockdb,2023,2.0,,False,False,False,True,False,False,False,unexplained
+2020-07-03,YELO,-0.6,20.0,50.0,3920,stockdb,stockdb,411,1.0,3.4906709862078148e-06,False,False,False,True,False,False,False,unexplained
+2020-09-01,MTPS,0.3500000000000001,270.0,200.0,568100,stockdb,stockdb,314,1.0,7.233149580652716e-05,True,False,False,False,False,False,False,unexplained
+2020-09-25,FIRE,0.3500000000000001,270.0,200.0,240790000,stockdb,stockdb,781,1.0,5.877637006240603e-05,True,False,False,False,False,False,False,unexplained
+2020-10-06,BAJA,0.3500000000000001,81.0,60.0,43060000,stockdb,stockdb,2109,1.0,2.0187865192110326e-05,False,False,False,False,False,False,False,unexplained
+2020-10-23,BMAS,-0.3623188405797102,176.0,276.0,8460,stockdb,stockdb,1167,1.0,0.00022350814276810458,True,False,False,False,False,False,False,unexplained
+2020-11-19,APLN,0.3500000000000001,162.0,120.0,1020000000,stockdb,stockdb,2441,1.0,0.0004389770030159874,True,False,False,False,False,False,False,unexplained
+2020-12-08,PTDU,0.3500000000000001,135.0,100.0,14300,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-12-10,ABBA,0.35849056603773577,72.0,53.0,510890000,stockdb,stockdb,3437,2.0,2.2066536325462427e-05,False,False,False,False,False,False,False,unexplained
+2020-12-10,JAYA,0.3500000000000001,135.0,100.0,120960000,stockdb,stockdb,440,2.0,6.67517436290742e-06,False,False,False,False,False,False,False,unexplained
+2020-12-11,ATAP,0.3500000000000001,135.0,100.0,300,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-12-15,ASJT,0.3504273504273505,158.0,117.0,10820000,stockdb,stockdb,3318,1.0,1.0489750917988266e-05,False,False,False,False,False,False,False,unexplained
+2020-12-17,VICI,0.3500000000000001,135.0,100.0,9700,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2020-12-28,BPTR,-0.3950617283950617,49.0,81.0,960210,stockdb,stockdb,594,5.0,1.8803618608325104e-05,False,False,False,False,False,False,False,unexplained
+2021-01-15,DGNS,0.3500000000000001,270.0,200.0,2900,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2021-01-21,GLOB,0.3500000000000001,216.0,160.0,181000,stockdb,stockdb,1316,1.0,2.423446721161203e-05,True,False,False,False,False,False,False,unexplained
+2021-02-17,BABP,0.35416666666666674,65.0,48.0,576910000,stockdb,stockdb,3788,1.0,0.00017115072709907709,False,False,False,False,False,False,False,unexplained
+2021-02-17,INPC,0.3500000000000001,108.0,80.0,218030000,stockdb,stockdb,3906,1.0,0.00017793008870676524,False,False,False,False,False,False,False,unexplained
+2021-02-22,YELO,0.3500000000000001,27.0,20.0,39260000,stockdb,stockdb,562,3.0,1.080157813490047e-06,False,False,False,False,False,False,False,unexplained
+2021-02-23,FORU,0.3500000000000001,135.0,100.0,539200,stockdb,stockdb,3317,1.0,6.605437835358764e-06,False,False,False,False,False,False,False,unexplained
+2021-02-23,YELO,0.37037037037037046,37.0,27.0,18440000,stockdb,stockdb,563,1.0,1.4419530253357642e-06,False,False,False,False,False,False,False,unexplained
+2021-03-08,AHAP,0.35416666666666674,65.0,48.0,13300000,stockdb,stockdb,3131,3.0,1.9888662217417644e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2021-03-08,VRNA,0.3500000000000001,135.0,100.0,1240000,stockdb,stockdb,2430,3.0,8.019167234772279e-05,False,False,False,False,False,False,False,unexplained
+2021-03-10,ABBA,0.35164835164835173,123.0,91.0,582290000,stockdb,stockdb,3496,1.0,3.587294791757067e-05,False,False,False,False,False,False,False,unexplained
+2021-03-15,BEBS,0.36111111111111116,49.0,36.0,1050000,stockdb,stockdb,3,3.0,0.0001756565452042258,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2021-03-25,FITT,0.3500000000000001,108.0,80.0,13770000,stockdb,stockdb,440,1.0,6.953125431636174e-06,False,False,False,False,False,False,False,unexplained
+2021-04-06,ABBA,0.35460992907801425,191.0,141.0,526169999,stockdb,stockdb,3512,1.0,5.7381339324759424e-05,False,False,False,False,False,False,False,unexplained
+2021-04-12,TAPG,0.3500000000000001,270.0,200.0,40200,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2021-04-14,NPGF,0.3500000000000001,135.0,100.0,3000,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2021-05-18,TMAS,0.3529411764705883,23.0,17.0,209580000,stockdb,stockdb,3635,1.0,0.0001470639183748101,False,False,False,False,False,False,False,unexplained
+2021-05-27,BABP,0.35344827586206895,157.0,116.0,1800000000,stockdb,stockdb,3852,2.0,0.0004435576432704619,False,False,False,False,False,False,False,unexplained
+2021-06-10,TRUE,0.3500000000000001,135.0,100.0,6500,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2021-06-14,BPTR,0.3529411764705883,92.0,68.0,81340000,stockdb,stockdb,704,3.0,1.5044824597545962e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2021-06-14,HDFA,0.3500000000000001,216.0,160.0,1360000,stockdb,stockdb,1433,3.0,0.00013931450481219031,False,False,False,False,False,False,False,unexplained
+2021-06-24,AMIN,0.3500000000000001,270.0,200.0,669200,stockdb,stockdb,1187,1.0,3.210957915972895e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2021-07-09,NICL,0.3500000000000001,135.0,100.0,236200,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2021-07-19,PANI,0.3846153846153846,18.0,13.0,136710000,stockdb,stockdb,675,3.0,1.1734458610642272e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2021-07-22,YELO,0.3500000000000001,81.0,60.0,695650000,stockdb,stockdb,661,1.0,3.341009260297627e-06,False,False,False,False,False,False,False,unexplained
+2021-07-29,TRIM,0.3500000000000001,189.0,140.0,33229999,stockdb,stockdb,3815,1.0,0.0001443800239030433,False,False,False,False,False,False,False,unexplained
+2021-08-02,IDPR,0.3500000000000001,189.0,140.0,41420000,stockdb,stockdb,1078,3.0,4.067192372801128e-05,False,False,False,False,False,False,False,unexplained
+2021-08-03,PEGE,0.3500000000000001,270.0,200.0,893200,stockdb,stockdb,2925,1.0,8.173639750022636e-05,False,False,False,False,False,False,False,unexplained
+2021-08-12,WEHA,0.3533333333333333,203.0,150.0,206920000,stockdb,stockdb,3445,2.0,1.933626471285973e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2021-08-19,WEHA,0.35365853658536595,222.0,164.0,268580000,stockdb,stockdb,3449,1.0,2.057438754254967e-05,False,False,False,False,False,False,False,unexplained
+2021-08-20,DFAM,0.3500000000000001,162.0,120.0,14680000,stockdb,stockdb,755,1.0,3.284446568084814e-05,True,False,False,False,False,False,False,unexplained
+2021-08-23,BPTR,0.3571428571428572,95.0,70.0,28750000,stockdb,stockdb,751,3.0,1.5480593302261532e-05,False,False,False,False,False,False,False,unexplained
+2021-08-26,LUCK,0.3500000000000001,270.0,200.0,253080000,stockdb,stockdb,653,1.0,2.0309485632576234e-05,True,False,False,False,False,False,False,unexplained
+2021-09-08,PGUN,0.3500000000000001,270.0,200.0,1020000,stockdb,stockdb,282,1.0,0.00014183932786399487,False,False,False,False,False,False,False,unexplained
+2021-10-06,ESTA,0.3513513513513513,50.0,37.0,7320000,stockdb,stockdb,381,1.0,9.231900214165888e-06,False,False,False,False,False,False,False,unexplained
+2021-10-14,GSMF,0.35344827586206895,157.0,116.0,7350000,stockdb,stockdb,3307,1.0,0.00010998610855125224,False,False,False,False,False,False,False,unexplained
+2021-11-10,ESTA,0.3571428571428572,57.0,42.0,46950000,stockdb,stockdb,405,1.0,9.85786028899929e-06,False,False,False,False,False,False,False,unexplained
+2021-11-11,AYLS,0.3500000000000001,216.0,160.0,67550000,stockdb,stockdb,396,1.0,1.6837000234947524e-05,False,False,False,False,False,False,False,unexplained
+2021-11-23,GLOB,0.3500000000000001,270.0,200.0,2320000,stockdb,stockdb,1506,1.0,2.7359538127413957e-05,True,False,False,False,False,False,False,unexplained
+2021-12-09,IPPE,0.3500000000000001,135.0,100.0,116416900,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2022-01-03,ADMR,0.3500000000000001,135.0,100.0,34289600,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2022-01-28,BAUT,0.3500000000000001,135.0,100.0,1060598500,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2022-01-31,HDFA,0.3500000000000001,189.0,140.0,2710000,stockdb,stockdb,1593,3.0,0.0001111847227208449,True,False,False,False,False,False,False,unexplained
+2022-02-09,NTBK,0.3500000000000001,135.0,100.0,1781381000,idx,,1,,,False,True,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2022-03-21,BMAS,-0.41028571428571425,516.0,875.0,25720,stockdb,stockdb,1499,3.0,0.00045676871699454325,True,False,False,False,False,False,False,unexplained
+2022-04-18,GPSO,0.3500000000000001,135.0,100.0,61900000,stockdb,stockdb,155,4.0,7.282198434434821e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2022-04-25,WINR,0.3500000000000001,135.0,100.0,1050397000,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2022-06-03,DIGI,0.3500000000000001,81.0,60.0,118660000,stockdb,stockdb,750,1.0,1.0566017233138648e-05,True,False,False,False,False,False,False,unexplained
+2022-06-24,RICY,0.3500000000000001,108.0,80.0,248550000,stockdb,stockdb,4003,1.0,5.820537110988701e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2022-07-06,ASHA,-0.3788819875776398,12.0,19.32,0,stockdb,stockdb,13,22.0,,False,False,False,False,False,False,False,first trade after a gap > 10 days
+2022-07-18,DEWI,0.3500000000000001,135.0,100.0,509459000,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2022-07-20,AXIO,0.3500000000000001,189.0,140.0,75657800,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2022-08-08,ELPI,0.3500000000000001,270.0,200.0,655243700,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2022-09-07,COAL,0.3500000000000001,135.0,100.0,10373300,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2022-09-23,SRAJ,0.3500000000000001,135.0,100.0,62260000,stockdb,stockdb,2378,1.0,0.0001315385391905424,True,False,False,False,False,False,False,unexplained
+2022-11-08,BSBK,0.3500000000000001,135.0,100.0,281956800,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2022-11-09,PDPP,0.3500000000000001,220.4892857142857,163.3253968253968,2229600,idx,,1,,,False,True,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2022-11-10,ZATA,0.3500000000000001,135.0,100.0,45586300,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2022-11-21,GGRP,-0.5858267716535432,526.0,1270.0,3900000,stockdb,stockdb,768,3.0,0.0008442295526858964,True,False,False,True,False,False,False,unexplained
+2022-12-02,WICO,-0.3762626262626263,247.0,396.0,480,stockdb,stockdb,3928,4.0,,False,False,False,False,False,False,False,unexplained
+2022-12-05,SDPC,0.3500000000000001,270.0,200.0,72320000,stockdb,stockdb,4150,3.0,2.7498672837953264e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2023-01-27,LAJU,0.3500000000000001,135.0,100.0,34839600,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2023-03-08,SAGE,0.3500000000000001,135.0,100.0,887296600,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2023-04-18,AWAN,0.3500000000000001,135.0,100.0,5523300,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2023-05-08,HITS,0.3500000000000001,270.0,200.0,6970000,stockdb,stockdb,3727,3.0,0.00015290575468472023,True,False,False,False,False,False,False,unexplained
+2023-05-08,JATI,0.3500000000000001,135.0,100.0,20545700,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2023-05-12,SMIL,0.3500000000000001,135.0,100.0,25638900,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2023-05-17,MPOW,0.3500000000000001,81.0,60.0,72540000,stockdb,stockdb,1404,1.0,5.345501892238971e-06,False,False,False,False,False,False,False,unexplained
+2023-06-09,PAMG,0.3500000000000001,81.0,60.0,101120000,stockdb,stockdb,962,1.0,2.0579677798730696e-05,False,False,False,False,False,False,False,unexplained
+2023-07-06,DWGL,0.3500000000000001,162.0,120.0,2590000,stockdb,stockdb,1338,1.0,0.00011938339682170607,True,False,False,False,False,False,False,unexplained
+2023-07-27,VINS,0.3500000000000001,162.0,120.0,4680000,stockdb,stockdb,1854,1.0,1.7844327640522505e-05,True,False,False,False,False,False,False,unexplained
+2023-08-08,CYBR,0.3500000000000001,135.0,100.0,59562400,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2023-09-19,TNCA,0.3500000000000001,270.0,200.0,17100000,stockdb,stockdb,1235,1.0,8.40680621395916e-06,True,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2023-10-05,PPRI,0.3500000000000001,108.0,80.0,170310000,stockdb,stockdb,41,1.0,8.60728025979783e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2023-10-06,IOTF,0.3500000000000001,135.0,100.0,104582900,idx,,1,,,False,True,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2023-10-10,SEMA,0.3500000000000001,135.0,100.0,134930000,stockdb,stockdb,424,1.0,1.3378837475020184e-05,True,False,False,False,False,False,False,unexplained
+2023-10-10,STRK,0.3500000000000001,135.0,100.0,21620800,idx,,1,,,False,False,False,False,False,False,True,first 5 rows of the code (IPO / data start)
+2023-11-06,MKNT,0.5,1.5,1.0,34750000,stockdb,stockdb,1643,3.0,1.0703206657934944e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2023-11-21,BEEF,0.3508771929824561,231.0,171.0,82040000,stockdb,stockdb,1187,1.0,2.9883618404276658e-05,False,False,False,False,False,False,False,unexplained
+2023-11-30,AYAM,0.3500000000000001,135.0,100.0,166391600,idx,,1,,,False,True,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2023-12-14,MKNT,0.5,1.5,1.0,32430000,stockdb,stockdb,1670,1.0,9.939652969418568e-07,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-01-16,MSKY,0.3500000000000001,135.0,100.0,74480000,stockdb,stockdb,2701,1.0,1.8195485768171955e-05,True,False,False,False,False,False,False,unexplained
+2024-01-17,SBAT,0.5,1.5,1.0,38260000,stockdb,stockdb,837,1.0,8.491305340792124e-07,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-01-19,MKNT,0.5,1.5,1.0,7270000,stockdb,stockdb,1693,1.0,9.741956949118492e-07,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-01-24,SBAT,0.5,1.5,1.0,5000000,stockdb,stockdb,842,1.0,8.376520358297776e-07,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-01-25,MKNT,0.5,1.5,1.0,3940000,stockdb,stockdb,1697,1.0,9.758051956953236e-07,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-01-30,SBAT,0.5,1.5,1.0,7770000,stockdb,stockdb,846,1.0,8.451189134893887e-07,False,False,False,False,False,False,False,unexplained
+2024-02-07,SBAT,0.5,1.5,1.0,4050000,stockdb,stockdb,852,1.0,8.366568989715436e-07,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-02-16,MKNT,0.5,1.5,1.0,4730000,stockdb,stockdb,1710,1.0,9.765853920056413e-07,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-02-27,MMIX,0.3500000000000001,81.0,60.0,33200000,stockdb,stockdb,295,1.0,1.2694364261320218e-05,True,False,False,False,False,False,False,unexplained
+2024-03-27,FMII,0.3500000000000001,270.0,200.0,1910000,stockdb,stockdb,3900,1.0,0.00011005571913650364,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-04-05,ARTI,0.5,3.0,2.0,2450000,stockdb,stockdb,3606,1.0,1.3654336836149717e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-04-16,ATLA,0.3500000000000001,135.0,100.0,80462200,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2024-04-16,MHKI,0.3500000000000001,216.0,160.0,269193800,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2024-04-17,ARTI,0.5,3.0,2.0,3900000,stockdb,stockdb,3608,1.0,1.3496455500820006e-06,False,False,False,False,False,False,False,unexplained
+2024-05-14,CHEM,0.3500000000000001,81.0,60.0,15990000,stockdb,stockdb,445,1.0,8.924592241560987e-06,True,False,False,False,False,False,False,unexplained
+2024-05-21,TELE,0.5,3.0,2.0,6530000,stockdb,stockdb,2301,1.0,1.2051486471467729e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-05-27,BTEK,0.5,3.0,2.0,38610000,stockdb,stockdb,4281,5.0,8.916560443716914e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-05-29,HADE,0.5,3.0,2.0,2670000,stockdb,stockdb,3386,1.0,3.9392372215502145e-07,False,False,False,False,False,False,False,unexplained
+2024-05-30,TELE,0.5,3.0,2.0,2089999,stockdb,stockdb,2306,1.0,1.2161348646994492e-06,False,False,False,False,False,False,False,unexplained
+2024-06-06,HADE,0.5,3.0,2.0,120300,stockdb,stockdb,3392,1.0,3.6649890006227454e-07,False,False,False,False,False,False,False,unexplained
+2024-06-12,TELE,0.5,3.0,2.0,1480000,stockdb,stockdb,2315,1.0,1.2782721359678941e-06,False,False,False,False,False,False,False,unexplained
+2024-06-24,DIVA,0.3500000000000001,108.0,80.0,17020000,stockdb,stockdb,1343,3.0,9.925298354459173e-06,True,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-06-24,HADE,0.5,3.0,2.0,646700,stockdb,stockdb,3402,3.0,3.678607082421931e-07,False,False,False,False,False,False,False,unexplained
+2024-06-25,TELE,0.5,3.0,2.0,2450000,stockdb,stockdb,2322,1.0,1.2729099302647098e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-06-28,TELE,0.5,3.0,2.0,1780000,stockdb,stockdb,2325,1.0,1.2430906540253695e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-07-04,TELE,0.5,3.0,2.0,1320000,stockdb,stockdb,2329,1.0,1.1954600991552673e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-07-08,BTEK,0.5,3.0,2.0,6030000,stockdb,stockdb,4302,3.0,7.521939216782628e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-07-08,GOLF,0.3500000000000001,270.0,200.0,1150773200,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2024-07-08,TELE,0.5,3.0,2.0,1210000,stockdb,stockdb,2331,3.0,1.1881023265920702e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-07-12,BTEK,0.5,3.0,2.0,124940000,stockdb,stockdb,4306,1.0,7.601637575694293e-06,False,False,False,False,False,False,False,unexplained
+2024-07-12,TELE,0.5,3.0,2.0,2320000,stockdb,stockdb,2335,1.0,1.2006908098168815e-06,False,False,False,False,False,False,False,unexplained
+2024-07-15,BEBS,0.5,3.0,2.0,54630000,stockdb,stockdb,735,3.0,7.2912715985324725e-06,False,False,False,False,False,False,False,unexplained
+2024-07-17,IBFN,0.5,3.0,2.0,16320000,stockdb,stockdb,1343,1.0,2.5551971247574295e-07,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-07-22,IBFN,0.5,3.0,2.0,10710000,stockdb,stockdb,1346,3.0,2.4835672465735904e-07,False,False,False,False,False,False,False,unexplained
+2024-07-24,TAXI,0.5,3.0,2.0,22520000,stockdb,stockdb,2211,1.0,1.6676947825288286e-06,False,False,False,False,False,False,False,unexplained
+2024-07-25,SOTS,0.3500000000000001,216.0,160.0,2590000,stockdb,stockdb,1199,1.0,1.3150350392484343e-05,False,False,False,False,False,False,False,unexplained
+2024-07-29,AGAR,0.3500000000000001,270.0,200.0,978300,stockdb,stockdb,972,3.0,1.6325957548470806e-05,False,False,False,False,False,False,False,unexplained
+2024-08-08,NEST,0.3500000000000001,270.0,200.0,495349600,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2024-08-29,INTD,0.3500000000000001,162.0,120.0,1610000,stockdb,stockdb,3513,1.0,5.5289030492909466e-06,True,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2024-09-09,FMII,0.3500000000000001,189.0,140.0,1550000,stockdb,stockdb,4004,3.0,6.932602790205273e-05,True,False,False,False,False,False,False,unexplained
+2024-09-10,POLA,-0.7,15.0,50.0,2270000,stockdb,stockdb,938,1554.0,,False,False,True,True,False,False,False,split-like jump next to a recorded split (unadjusted)
+2024-09-10,POOL,-0.7,15.0,50.0,2270000,stockdb,stockdb,938,1554.0,,False,False,True,True,False,False,False,split-like jump next to a recorded split (unadjusted)
+2024-11-12,BOAT,0.3500000000000001,135.0,100.0,750166000,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2024-11-13,BTEK,0.5,3.0,2.0,124890000,stockdb,stockdb,4393,1.0,7.59194482802435e-06,False,False,False,False,False,False,False,unexplained
+2024-11-21,LMPI,0.3500000000000001,135.0,100.0,29690000,stockdb,stockdb,4632,1.0,8.495142870750459e-06,False,False,False,False,False,False,False,unexplained
+2024-11-25,MAYA,0.3500000000000001,270.0,200.0,212000000,stockdb,stockdb,3751,3.0,0.00040151489523603147,True,False,False,False,False,False,False,unexplained
+2024-12-02,FUJI,0.3500000000000001,270.0,200.0,7480000,stockdb,stockdb,1281,3.0,2.2115236520486923e-05,True,False,False,False,False,False,False,unexplained
+2024-12-04,PICO,0.3500000000000001,162.0,120.0,71860000,stockdb,stockdb,4184,1.0,5.749325401394542e-06,False,False,False,False,False,False,False,unexplained
+2024-12-23,DPUM,0.3500000000000001,81.0,60.0,10300000,stockdb,stockdb,1633,3.0,2.0870067855850345e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2025-01-08,YOII,0.3500000000000001,135.0,100.0,530888200,idx,,1,,,False,True,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2025-01-15,DOOH,0.3500000000000001,81.0,60.0,511720000,stockdb,stockdb,397,1.0,3.890097312423725e-05,False,False,False,False,False,False,False,unexplained
+2025-01-30,INET,0.3500000000000001,108.0,80.0,479970000,stockdb,stockdb,366,6.0,4.9033398001996035e-05,False,False,False,False,False,False,False,unexplained
+2025-02-19,DWGL,0.3500000000000001,216.0,160.0,3190000,stockdb,stockdb,1697,1.0,0.00012814038348784974,False,False,False,False,False,False,False,unexplained
+2025-03-10,MINA,0.3500000000000001,189.0,140.0,279280000,stockdb,stockdb,1655,3.0,8.11495295923836e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2025-03-20,MINA,0.3500000000000001,162.0,120.0,812480000,stockdb,stockdb,1663,1.0,7.38412098703243e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2025-05-07,BATR,0.3500000000000001,81.0,60.0,93750000,stockdb,stockdb,218,1.0,1.5165439899930645e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2025-05-14,BBSS,0.3500000000000001,270.0,200.0,46170000,stockdb,stockdb,1220,5.0,8.162381823604375e-05,True,False,False,False,False,False,False,unexplained
+2025-06-03,TMPO,0.3500000000000001,162.0,120.0,65550000,stockdb,stockdb,4752,1.0,1.0430898642492246e-05,True,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2025-06-13,JAWA,0.3500000000000001,189.0,140.0,95500000,stockdb,stockdb,3237,1.0,0.0001822411975928583,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2025-06-19,CSIS,0.3500000000000001,81.0,60.0,32780000,stockdb,stockdb,1876,1.0,6.3723871258295535e-06,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2025-07-09,COIN,0.3500000000000001,135.0,100.0,2607700,idx,,1,,,False,False,False,False,False,False,False,first 5 rows of the code (IPO / data start)
+2025-07-29,SWID,0.3500000000000001,81.0,60.0,43440000,stockdb,stockdb,732,1.0,2.5375505535229872e-05,False,False,False,False,False,False,False,unexplained
+2025-08-19,BEER,0.3500000000000001,135.0,100.0,131690000,stockdb,stockdb,616,4.0,2.8312787348070462e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2025-08-20,CENT,0.3500000000000001,135.0,100.0,301040000,stockdb,stockdb,4686,1.0,0.00022228771288210843,False,False,False,False,False,False,False,unexplained
+2025-08-22,HUMI,0.3500000000000001,108.0,80.0,1770000000,stockdb,stockdb,482,1.0,8.764647509317316e-05,False,False,False,False,False,False,False,unexplained
+2025-09-10,PIPA,0.3500000000000001,216.0,160.0,655230000,stockdb,stockdb,554,1.0,4.00755939108584e-05,False,False,False,False,False,False,False,unexplained
+2025-09-25,ZATA,0.3500000000000001,81.0,60.0,1048465900,idx,idx,683,1.0,3.528880263670709e-05,False,False,False,False,False,False,False,unexplained
+2025-12-11,CTTH,0.3500000000000001,162.0,120.0,324247100,idx,idx,4667,1.0,9.236287894467115e-06,False,False,False,False,False,False,False,unexplained
+2026-01-15,ZATA,0.3500000000000001,81.0,60.0,1751842200,idx,idx,759,1.0,3.103400552705307e-05,False,False,False,False,False,False,False,unexplained
+2026-01-30,ERTX,0.3500000000000001,270.00000000000006,200.00000000000003,27495800,idx,idx,4314,1.0,1.7246914616190375e-05,False,False,False,False,False,False,False,unexplained
+2026-02-03,LMPI,0.3500000000000001,270.0,200.0,22304200,idx,idx,4914,1.0,1.4168189383909363e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2026-02-19,KOCI,0.3500000000000001,216.00000000000009,160.00000000000006,209008000,idx,idx,564,1.0,4.7474935799286456e-05,False,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2026-02-25,JAYA,0.3500000000000001,162.00000000000017,120.00000000000013,269728100,idx,idx,1693,1.0,6.434168472977684e-06,False,False,False,False,False,False,False,unexplained
+2026-03-05,KOKA,0.3500000000000001,270.00000000000006,200.00000000000003,61652000,idx,idx,564,1.0,4.233228029297552e-05,True,True,False,False,False,False,False,spike that reverts within 3 rows (glitch)
+2026-05-07,DPUM,0.3500000000000001,159.54545454545465,118.18181818181824,125769800,idx,idx,1952,1.0,3.9449244767889484e-05,False,False,False,False,False,False,False,unexplained
+2026-06-10,BABY,0.3500000000000001,188.9999999999999,139.99999999999991,5488800,idx,idx,651,1.0,3.958932162893524e-05,True,False,False,False,False,False,False,unexplained
+2026-06-17,BCIC,0.3500000000000001,135.00000000000017,100.00000000000011,10963400,idx,idx,1145,2.0,0.00016446779515400501,False,False,False,False,False,False,False,unexplained

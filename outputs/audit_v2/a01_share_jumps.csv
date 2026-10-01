@@ -1,0 +1,207 @@
+date,code,sh_ratio,price_move,mcap_ratio,source,prev_source,split_like,near_share_break,near_rights,near_split_table,class
+2008-03-31,BTEL,1.5029023746701846,-0.01449275362318836,1.481121180834385,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2008-10-06,ADRO,1.5342925659472422,-0.1597222222222222,1.2892319477751133,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2008-10-24,ANTM,0.3275590546856198,2.0528846194154715,1.0,yahoo,yahoo,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2008-10-27,ANTM,3.052884619415471,-0.7322834569983461,0.8173077164928298,yahoo,yahoo,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2008-11-28,ANTM,0.3118110240905786,2.20707070225172,0.9999999999999999,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2008-12-01,ANTM,3.20707070225172,-0.6881889759094214,0.9999999999999999,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-01-05,CPRO,0.664737553667932,0.017857142857142794,0.6766078671262878,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-01-05,OKAS,1.7519123904179041,0.0,1.7519123904179041,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-01-06,ANTM,0.38740156636958567,1.5813008692019284,1.0,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-01-07,ANTM,2.5813008692019284,-0.6125984336304143,1.0,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-02-03,OKAS,0.5600000277343754,0.0,0.5600000277343754,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-03-19,ANTM,0.33385827607801766,1.9952829438510458,0.9999999999999999,yahoo,yahoo,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2009-03-20,ANTM,2.9952829438510453,-0.6472441055166958,1.0566037140887603,yahoo,yahoo,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2009-04-17,ANTM,0.45984252083834726,1.1746575287924261,1.0,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-04-20,ANTM,2.174657528792426,-0.5433070898578517,0.9931506753867457,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-06-30,INDX,0.5625,0.0,0.5625,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-07-02,ANTM,0.6456692772826428,0.5487805215211572,1.0000000000000002,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-07-03,ANTM,1.548780521521157,-0.3543307227173572,1.0,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-07-10,ANTM,0.6141732160925604,0.6282051606908445,1.0,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-07-13,ANTM,1.6282051606908445,-0.41732284509752204,0.9487179506288732,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-12-28,ANTM,0.6614173307636375,0.5119047437802287,1.0000000000000002,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2009-12-29,ANTM,1.5119047437802284,-0.2913386003371924,1.0714285318841352,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2010-01-04,BKSL,0.06585173501577288,0.0,0.06585173501577288,yahoo,yahoo,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2010-01-04,TFCO,0.5638095238095238,0.19354838709677424,0.6729339477726575,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2010-06-30,BKSL,2.499001996007984,0.0,2.499001996007984,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2010-06-30,DILD,1.6655948553054662,0.009615384615384581,1.6816101904526342,yahoo,yahoo,False,True,False,False,"share count change, no recorded event"
+2010-06-30,ROTI,11.222222222222221,0.04861111111111116,11.767746913580247,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2010-06-30,TFCO,1.6283783783783783,0.0714285714285714,1.7446911196911195,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2011-03-31,BBKP,0.6455284552845528,0.0,0.6455284552845528,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2011-03-31,MBTO,1.5070422535211268,0.0,1.5070422535211268,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2011-03-31,NISP,0.6058519793459552,-0.006944420696220366,0.6016446883217391,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2011-09-30,APIC,3.5,0.0,3.5,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2011-09-30,BKSL,5.320331118083257,0.0,5.320331118083257,yahoo,yahoo,False,False,False,False,"share count change, no recorded event"
+2012-07-02,BACA,0.6479899288420689,-0.03883495145631066,0.622825271411309,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2012-07-02,SUGI,61.7,0.016393442622950838,62.71147540983607,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2012-09-24,ANTM,0.5673469068936056,-0.043165467625899234,0.5428571123514355,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2012-10-01,ALTO,0.6458333333333334,0.0,0.6458333333333334,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2012-10-01,BSIM,0.566079295154185,-0.020000000000000018,0.5547577092511012,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2012-10-01,DART,2.195804195804196,-0.015151515151515138,2.162534435261708,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2012-10-01,ELTY,0.09908925318761384,0.0,0.09908925318761384,stockdb,stockdb,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2012-10-08,SUPR,0.6083333333333333,-0.005291005291005346,0.6051146384479716,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2013-01-02,COWL,6.407894736842105,0.027972027972027913,6.587136547662863,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2013-01-02,GAMA,1.6683333333333332,-0.014285714285714235,1.6445,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2013-01-02,HOME,1.8512396694214877,0.010869565217391353,1.8713618397412866,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2013-02-15,PSAB,6.999999934066961,-0.8580246913580247,0.9938271511329634,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2013-02-15,SMMT,3.500859099470558,-0.7015384615384616,1.0448717927650588,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2013-04-01,BIPP,0.6025450862523982,0.010309278350515427,0.6087568912653095,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2013-04-01,MAGP,1.8,-0.014084507042253502,1.7746478873239437,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2013-07-01,MPPA,0.482078853046595,-0.042735042735042694,0.4614771926599884,stockdb,stockdb,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2013-09-26,SRAJ,0.5009025270758123,-0.05769230769230771,0.47200430435990004,stockdb,stockdb,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2013-09-30,BATA,1.6742424242424243,-0.009090909090909038,1.6590220385674932,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2014-01-03,BNBR,6.947368421052632,0.0,6.947368421052632,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2014-04-01,MLPL,0.6507115135834411,0.0044642857142858094,0.653616475697653,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2014-06-30,MAIN,6.31764705882353,0.0,6.31764705882353,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2014-09-30,MGNA,3.3333333333333335,0.0,3.3333333333333335,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2014-11-07,BKSL,0.19111110947205584,0.0,0.19111110947205584,stockdb,stockdb,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2014-11-19,BLTZ,2.125,-0.033333333333333326,2.0541666666666667,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2015-01-02,AMAG,0.663793889873054,0.008583690987124415,0.6694916915028656,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2015-03-31,WOMF,1.74,-0.007633587786259555,1.7267175572519085,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2015-06-30,AMAG,1.5060240963855422,0.02400000000000002,1.5421686746987953,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2015-09-30,BIPP,1.5412541254125414,0.13432835820895517,1.748288261661987,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2015-09-30,ENRG,0.11001344086021506,-0.037735849056603765,0.10586199026171637,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2016-09-30,BCAP,8.016064257028113,0.03125,8.266566265060241,stockdb,stockdb,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2017-01-04,SAFE,1.5897435897435896,0.10227272727272729,1.7523310023310024,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2017-03-31,RIMO,120.41176470588235,-0.01098901098901095,119.0885585003232,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2017-07-03,INTA,1.537037037037037,-0.03703703703703709,1.4801097393689986,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2017-10-02,LEAD,1.569767441860465,0.022222222222222143,1.6046511627906974,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2018-01-02,DWGL,1.55956678700361,0.008264462809917328,1.5724557687143836,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2018-01-02,MABA,2.5878378378378377,-0.1333333333333333,2.242792792792793,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2018-01-02,PCAR,8.357142857142858,0.2440944881889764,10.397075365579303,stockdb,yahoo,True,False,False,False,seam between data sources
+2018-04-02,IKAI,0.6518987341772152,0.035335689045936425,0.6749340251375409,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2018-04-02,RBMS,1.609825955151515,-0.14084507042253525,1.3830899051301748,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2018-06-26,TRIO,5.464285714285714,0.0,5.464285714285714,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2018-07-02,PRIM,1.547945205479452,-0.008510638297872353,1.5347712037306906,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2018-07-02,TNCA,1.9090909090909092,-0.24809160305343514,1.4354614850798058,stockdb,stockdb,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2018-07-02,TRUK,1.5357142857142858,0.0092592592592593,1.5499338624338626,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2018-07-11,BNBR,0.10674652104985027,0.05714285714285716,0.11284632225269886,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2018-10-01,MDRN,0.6590525959502758,0.0,0.6590525959502758,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-01-02,BNBR,1.7136963696369636,0.0,1.7136963696369636,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-01-02,HOME,1.5859030837004404,0.0431034482758621,1.6542609752392525,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-01-02,SATU,1.6666666666666667,-0.11428571428571432,1.4761904761904763,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-02-18,MAYA,1.6700175923598892,-0.40120391271632805,0.9999999999999999,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-04-01,BEEF,1.7682119205298013,-0.07272727272727275,1.6396146899458157,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-04-01,HOME,0.6305555555555555,-0.03448275862068961,0.6088122605363985,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-04-02,MDRN,1.5173295821073558,0.0,1.5173295821073558,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-07-01,FITT,1.5789473684210527,0.06611570247933884,1.683340582862114,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-07-01,MDRN,0.6590525959502758,0.0,0.6590525959502758,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-07-01,MYTX,2.6360544217687076,-0.014084507042253502,2.5989268947015427,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-07-01,POLA,3.008982035928144,-0.16956521739130437,2.498763342879459,stockdb,stockdb,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2019-09-30,ASRM,0.5476190476190477,-0.004770423375074495,0.5450066729136497,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-09-30,GGRP,0.6581521739130435,0.06382978723404253,0.7001618871415356,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-09-30,INOV,1.5083333333333333,-0.039024390243902474,1.4494715447154471,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2019-09-30,TMAS,0.25043859649122807,-0.015999999999999903,0.24643157894736845,stockdb,stockdb,True,True,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2019-10-24,MDRN,1.5168986083499005,0.0,1.5168986083499005,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2020-01-02,REAL,0.622678149273894,0.1399999999999999,0.7098530901722391,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2020-03-31,IKAN,1.66,0.053475935828877,1.7487700534759358,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2020-03-31,PURA,1.5142857142857142,0.012658227848101333,1.5334538878842676,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2020-04-22,AGRS,1.5851199929693904,0.0,1.5851199929693904,idx,idx,False,False,True,False,recorded rights issue / split nearby
+2020-06-30,BHAT,1.6666666666666667,0.022727272727272707,1.7045454545454546,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2020-07-08,MCOR,1.7757392541534949,0.0,1.7757392541534949,idx,idx,False,False,True,False,recorded rights issue / split nearby
+2020-09-30,ACST,4.5928571428571425,-0.02659574468085102,4.470706686930091,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2020-09-30,BBKP,2.8042918454935624,-0.02564102564102566,2.732386926378343,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2021-01-04,AISA,1.9436325678496869,-0.04102564102564099,1.8638937958353408,stockdb,stockdb,True,True,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2021-01-04,BEKS,0.3467593870726451,-0.06382978723404253,0.32462580917439116,stockdb,stockdb,True,True,True,True,recorded rights issue / split nearby
+2021-01-04,BRIS,4.074074074074074,0.049225159525980056,4.27462102029103,stockdb,stockdb,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2021-01-04,KONI,1.6666666666666667,0.0,1.6666666666666667,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2021-01-04,PNBS,1.6197829716193657,0.012048192771084265,1.6392984291087556,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2021-01-04,REAL,1.6053268765133173,0.0,1.6053268765133173,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2021-01-06,BEKS,4.274595714904546,-0.07228915662650603,3.9655887957548197,stockdb,stockdb,False,True,True,True,recorded rights issue / split nearby
+2021-03-16,PGJO,2.287043149289162,0.0,2.287043149289162,idx,idx,False,False,True,False,recorded rights issue / split nearby
+2021-03-31,SAME,2.016949152542373,0.05420054200542013,2.1262688898075424,stockdb,stockdb,True,True,True,False,recorded rights issue / split nearby
+2021-04-01,TAXI,1.661788617886179,0.0,1.661788617886179,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2021-06-25,AGRS,1.524460198543596,-0.06870229007633588,1.4197262917734252,idx,idx,False,False,True,False,recorded rights issue / split nearby
+2021-06-29,MITI,1.7304964539007093,-0.31999999999999995,1.1767375886524825,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2021-06-30,ARCI,10.525423728813559,0.020408163265306145,10.740228294707713,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2021-06-30,FIMP,1.6666666666666667,0.0,1.6666666666666667,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2021-06-30,HOPE,1.6640625,-0.03870967741935483,1.5996471774193548,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2021-07-19,BBHI,2.804111551897109,-0.047794117647058876,2.6700915144902617,idx,idx,False,False,True,False,recorded rights issue / split nearby
+2021-09-02,ZBRA,2.5539317536114297,-0.023809523809523836,2.4931238547159196,idx,idx,False,False,True,False,recorded rights issue / split nearby
+2021-09-30,ACST,1.9720062208398135,-0.03053435114503822,1.9117922904324909,stockdb,stockdb,True,True,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2021-09-30,ASJT,2.3333333333333335,-0.03205128205128205,2.2585470085470085,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2021-09-30,ENRG,2.400386847195358,-0.007751937984496138,2.3817791972170994,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2021-09-30,TIFA,3.287037037037037,0.0,3.287037037037037,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2021-11-16,JAYA,1.682658462188964,0.06837606837606836,1.7977120322531666,stockdb,stockdb,False,True,True,False,recorded rights issue / split nearby
+2022-01-03,ALDO,2.4,0.05499999999999994,2.5319999999999996,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2022-01-03,ALMI,6.161290322580645,-0.033333333333333326,5.955913978494624,stockdb,stockdb,True,True,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2022-01-03,BBKP,2.078053259871442,0.014981273408239737,2.10918514391446,stockdb,stockdb,True,False,True,False,recorded rights issue / split nearby
+2022-01-03,COCO,1.5892857142857142,0.0,1.5892857142857142,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2022-01-03,GSMF,1.9100671140939598,0.006211180124223503,1.9219308849889531,stockdb,stockdb,True,False,True,False,recorded rights issue / split nearby
+2022-01-03,SBAT,2.2093023255813953,0.0,2.2093023255813953,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2022-01-03,WSKT,1.9387049853797174,0.0,1.9387049853797174,idx,idx,True,False,True,False,recorded rights issue / split nearby
+2022-01-03,YELO,5.026315789473684,0.029629629629629672,5.175243664717349,stockdb,stockdb,True,True,True,False,recorded rights issue / split nearby
+2022-03-31,AMAR,1.718905472636816,0.037634408602150504,1.7835954635425026,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2022-03-31,BBRM,1.5791433891992552,-0.019607843137254943,1.5481797933326031,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2022-03-31,BUMI,1.7350208697993807,0.0,1.7350208697993807,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2022-03-31,ESIP,1.734375,0.0,1.734375,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2022-03-31,MEGA,1.6867816091954022,-0.007751937984496138,1.6737057827675308,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2022-08-23,AGRS,1.5183436899629141,0.0,1.5183436899629141,idx,idx,False,False,True,False,recorded rights issue / split nearby
+2022-08-29,ETWA,4.814432989690721,0.09677419354838701,5.280345859660791,stockdb,stockdb,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2022-09-30,AHAP,1.6666666666666667,-0.06593406593406592,1.5567765567765568,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2022-09-30,PANI,2.2,-0.031746031746031744,2.13015873015873,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2022-09-30,WEHA,1.6404494382022472,-0.05714285714285716,1.546709470304976,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2022-10-19,BUMI,2.390421807795641,-0.005952380952380931,2.376193106558762,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2023-01-02,ADHI,2.3623595505617976,0.0,2.3623595505617976,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2023-01-02,BACA,2.8177966101694913,0.01526717557251911,2.860816405744598,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2023-01-02,BMAS,1.9414414414414414,0.009132420091324311,1.9591715002673908,stockdb,stockdb,True,True,True,False,recorded rights issue / split nearby
+2023-01-02,IATA,2.2101576182136604,0.050000000000000044,2.3206654991243436,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2023-01-02,MTWI,1.7320261437908497,0.010101010101010166,1.7495213573644948,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2023-01-02,OASA,3.5277777777777777,0.08823529411764697,3.839052287581699,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2023-01-02,VICO,1.5129224652087476,0.0,1.5129224652087476,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2023-01-03,GIAA,3.533410583236771,-0.09009009009009006,3.2150853054676927,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2023-01-16,MGNA,3.41,0.0,3.41,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2023-03-31,BKSL,2.500149075730471,0.0,2.500149075730471,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2023-03-31,BPTR,2.2774193548387096,0.050724637681159424,2.392940626460963,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2023-03-31,OMRE,1.6857142857142857,-0.025210084033613467,1.6432172869147659,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2023-03-31,PBRX,3.314814814814815,0.0,3.314814814814815,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2023-07-03,BBKP,2.7675651789659743,0.009803921568627416,2.794698170916621,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2023-07-03,BKSW,1.720156555772994,0.0,1.720156555772994,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2023-07-03,HAJJ,1.50625,-0.09243697478991597,1.367016806722689,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2023-10-02,ARGO,9.323529411764707,0.007194244604316502,9.39060516292848,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2023-10-02,BUVA,2.845814977973568,0.0,2.845814977973568,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2023-10-02,WICO,1.7194244604316546,-0.012422360248447228,1.6980651503641806,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2023-10-02,WSBP,2.069802731411229,0.0,2.069802731411229,stockdb,stockdb,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2023-12-18,BSWD,2.6934306569343067,-0.31999999999999995,1.8315328467153287,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2024-01-02,BEEF,3.7393617021276597,0.0,3.7393617021276597,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2024-01-02,BMAS,2.0997679814385153,0.0,2.0997679814385153,stockdb,stockdb,True,False,True,False,recorded rights issue / split nearby
+2024-01-02,BNBR,7.249094202898551,0.0,7.249094202898551,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2024-01-02,JAWA,4.305039787798409,-0.08333333333333337,3.946286472148541,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2024-01-02,MPPA,1.5294811320754718,0.0,1.5294811320754718,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2024-04-01,PALM,2.1081460674157304,-0.09615384615384615,1.9054397147796025,stockdb,stockdb,False,False,True,False,recorded rights issue / split nearby
+2024-07-01,PYFA,4.162962962962963,0.036363636363636376,4.314343434343434,stockdb,stockdb,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2024-07-01,SDRA,1.7141190198366394,0.012931034482758674,1.7362843519896995,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2024-07-02,MKNT,0.5,0.0,0.5,idx,stockdb,True,False,False,False,seam between data sources
+2024-07-02,SBAT,0.5003139345263158,0.0,0.5003139345263158,idx,stockdb,True,False,False,False,seam between data sources
+2024-07-02,TOPS,0.5,0.0,0.5,idx,stockdb,True,False,False,False,seam between data sources
+2024-10-22,NETV,0.5,-0.00649350649350644,0.4967532467532468,idx,idx,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2024-10-28,NETV,3.5270716030285714,0.06617647058823528,3.7604807532289914,idx,idx,False,False,False,False,"share count change, no recorded event"
+2024-11-29,KLAS,1.683333013856813,-0.19310344827586212,1.3582756042844628,idx,idx,False,False,False,False,"share count change, no recorded event"
+2025-01-02,WIKA,4.444816053511706,0.06557377049180335,4.736279401282966,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2025-02-06,SAMF,2.0,0.01777777777777767,2.0355555555555553,idx,idx,True,False,False,True,recorded rights issue / split nearby
+2025-04-08,DEWA,1.8622425629290618,-0.14150943396226412,1.5987176719485343,stockdb,stockdb,False,False,False,False,"share count change, no recorded event"
+2025-05-23,MFIN,1.8678406564202925,-0.028124999999999956,1.8153076379584718,idx,idx,False,False,False,False,"share count change, no recorded event"
+2025-10-10,COCO,0.49992358483146065,0.24827586206896557,0.6240425438240992,idx,stockdb,True,False,True,False,seam between data sources
+2025-10-10,GGRP,2.0002272761354254,-0.008620689655172376,1.9829839375480511,idx,stockdb,True,False,False,False,seam between data sources
+2025-10-13,LPCK,1.9159274970149254,-0.008064516129032251,1.900476468813192,idx,stockdb,True,False,False,False,seam between data sources
+2025-10-13,MINA,1.5005716463414633,-0.0357142857142857,1.4469798018292683,idx,stockdb,False,False,False,False,seam between data sources
+2025-10-13,PKPK,2.0,-0.01754385964912286,1.9649122807017543,idx,stockdb,True,False,False,False,seam between data sources
+2025-10-13,SULI,1.5492100088235294,0.006802721088435382,1.5597488524209684,idx,stockdb,False,False,False,False,seam between data sources
+2025-10-13,WIFI,2.2493851758474577,-0.027989821882951627,2.1864252854293356,idx,stockdb,False,False,False,False,seam between data sources
+2025-10-16,COCO,1.6802018835730357,0.24390243902439002,2.0900072210298735,idx,idx,False,False,True,False,recorded rights issue / split nearby
+2025-10-20,COCO,1.913972505554224,-0.061068702290076216,1.7970886884211419,idx,idx,True,False,True,False,recorded rights issue / split nearby
+2025-10-24,MMIX,0.5000000000000001,0.06611570247933862,0.5330578512396694,idx,idx,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2025-11-10,MMIX,2.0,-0.03305785123966942,1.9338842975206612,idx,idx,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2025-12-08,GIAA,4.450024221068699,0.04504504504504503,4.650475762558281,idx,idx,False,False,False,False,"share count change, no recorded event"
+2025-12-22,GMFI,0.6518518518518519,0.09090909090909083,0.7111111111111111,idx,idx,False,False,True,False,recorded rights issue / split nearby
+2025-12-30,GMFI,3.1854927287387302,-0.09890109890109888,2.8704439973250095,idx,idx,False,False,True,False,recorded rights issue / split nearby
+2026-01-05,INET,0.6131052795604615,0.25,0.7663815994505768,idx,idx,False,False,True,False,recorded rights issue / split nearby
+2026-01-06,SDMU,1.9825947279173732,0.009708737864077666,2.0018432204214256,idx,idx,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2026-01-12,PACK,0.07560975609756097,0.09677419354838723,0.08292682926829269,idx,idx,False,False,True,False,recorded rights issue / split nearby
+2026-02-02,PACK,3.5413006390360873,-0.09708737864077666,3.1974850430131663,idx,idx,False,False,False,False,"share count change, no recorded event"
+2026-04-06,WGSH,0.5,-0.09401709401709402,0.452991452991453,idx,idx,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2026-04-10,MEGA,0.500990099009901,0.16600790513833985,0.5841584158415841,idx,idx,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2026-04-10,PACK,1.827947359968194,0.09883720930232553,2.0086165757790035,idx,idx,False,False,False,False,"share count change, no recorded event"
+2026-04-23,MORA,2.0203350146392087,0.009009009009008917,2.0385362309873094,idx,idx,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2026-04-24,WGSH,1.9999999999999998,-0.09374999999999989,1.8125,idx,idx,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"
+2026-05-04,MEGA,1.9999998668216958,-0.04977375565610853,1.9004523621382632,idx,idx,True,False,False,False,"share count jumps by a split ratio, price does not (basis mismatch)"

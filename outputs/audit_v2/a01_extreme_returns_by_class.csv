@@ -1,0 +1,9 @@
+class,n,negative,below_minus50,eligible_stock,max_index_weight
+unexplained,423,72,25,42,0.16565615702952183
+spike that reverts within 3 rows (glitch),209,59,29,12,0.02091651210222077
+first 5 rows of the code (IPO / data start),80,3,0,0,0.0009746146407552762
+"split-like jump, no recorded event",61,55,38,4,0.019090916277626085
+first trade after a gap > 10 days,6,3,0,0,
+split-like jump next to a recorded split (unadjusted),2,2,2,0,
+seam between data sources,1,1,1,0,0.030745745039426342
+rights issue window,1,0,0,0,0.0013832798969336101

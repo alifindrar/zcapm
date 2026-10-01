@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*.swo
+
+# Sensitive files & credentials
+.idx_session.json
+*.env
+
+# SQLite databases & heavy databases (>100MB exceeds GitHub limits)
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+
+# Large raw & interim pipeline data caches (reproducible from pipeline scripts)
+data/raw/
+data/raw_v2/
+data/interim/
+data/interim_v2/
+data/processed/
+data/processed_v2/
+00_data_acquisition/stockdb/
+00_data_acquisition/tmp_test/
+00_data_acquisition/batches/
+
+# Heavy archive / binary formats in data pipelines
+*.pkl
+*.gz
+
+# Retain external inputs, directory structure, and documentation
+!data/external/
+!data/README.md
