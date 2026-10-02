@@ -6,7 +6,7 @@ Two source versions (config `DB_VERSION`, default **`v2`**; override with env `Z
 | | v1 (`ZCAPM_DB=v1`) | **v2 = dbv2 (default)** |
 |---|---|---|
 | Source | `../_arcip/idx-api` SQLite | v1 DB (`idx_data.sqlite`) **+ STOCKDB** (`G:/My Drive/QUANT/STOCKDB/databases`) |
-| Prices | idx 2020-01-02 → 2026-06-30, Yahoo 2005–2019 | STOCKDB 1990-05-25 → 2025-10-10, v1 before/after |
+| Prices | idx 2020-01-02 → 2026-06-30, Yahoo 2005–2019 | STOCKDB where it has the code (a handful of codes from 1990; broad coverage from 2012), v1 before/after. 2005–2011 is still over 90% Yahoo rows |
 | Database | `idx_data.sqlite` | `dbv2.sqlite` |
 | Pipeline files | `data/raw/` | `data/raw_v2/` |
 | Script | `run.py` (with `ZCAPM_DB=v1`) | `run.py` → `fetch_stockdb.py` + `build_dbv2.py` |
@@ -59,8 +59,8 @@ pipeline contract files to `data/raw_v2/` (same columns as v1).
 4. `ratios.csv` (pbv for HML) come from STOCKDB `key_ratios` (35k rows vs 633 in v1); dividends, IHSG, delistings from v1
    (STOCKDB has none); dividends are rescaled to the dbv2 price basis.
 
-Limits: `close` is split-adjusted to the latest basis, so the Rp 50 price floor (`MIN_PRICE`) is applied to adjusted prices (as already
-true for the Yahoo years in v1). `volume` is as reported (only `> 0` is used). STOCKDB rows have no `remarks`. Vendor series are
+Limits: `close` is split-adjusted to the latest basis. `stock_daily.csv.gz` carries `price_scale` (adjusted / nominal close) for STOCKDB and idx
+rows, so step 01 applies the Rp 50 floor (`MIN_PRICE`) to the nominal price; Yahoo rows have no factor and use the adjusted price. `volume` is as reported (only `> 0` is used). STOCKDB rows have no `remarks`. Vendor series are
 sometimes partly adjusted with the break dated before the true ex-date (e.g. BBCA 2019-09-19), which is why shares are
 calibrated against v1; a few tickers (TMAS, KOPI, APIC) still show mcap jumps because the two sources' prices disagree.
 Validation vs v1 on common traded rows (2.24M): daily return within 0.5% on 99.0%; market cap ratio within 0.8–1.25 on 95%.

@@ -392,7 +392,9 @@ def main():
     # ---- canonical CSVs for steps 01-07
     raw = S.RAW
     raw.mkdir(parents=True, exist_ok=True)
-    stock[["date", "code", "close", "previous", "volume", "value", "listed_shares", "remarks"]].to_csv(
+    # price_scale = adjusted / nominal close; unknown for Yahoo rows (already adjusted at source)
+    stock["price_scale"] = stock["price_scale"].where(stock["source"].isin(["stockdb", "idx"]))
+    stock[["date", "code", "close", "previous", "volume", "value", "listed_shares", "remarks", "price_scale"]].to_csv(
         raw / "stock_daily.csv.gz", index=False)
     idx[["date", "code", "close"]].to_csv(raw / "index_daily.csv", index=False)
     div[["code", "ex_date", "cash_dividend"]].to_csv(raw / "dividends.csv", index=False)

@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from config import settings as S  # noqa: E402
 from lib.io import is_synthetic, load, log, window_mask, write_table  # noqa: E402
-from lib.portfolios import form_ls, holding_returns  # noqa: E402
+from lib.portfolios import form_ls, holding_returns, turnover_cost  # noqa: E402
 from lib.stats import ex_post_beta, nw_mean, summary  # noqa: E402
 
 STEP = "07"
@@ -39,7 +39,9 @@ def beta_sorts(agg):
     traded = load(S.INTERIM / "traded_daily.pkl")
     rm = load(S.INTERIM / "returns_monthly.pkl")
     last_date = load(S.INTERIM / "last_date.pkl")
+    delist = load(S.INTERIM / "delist_return.pkl")
     f = load(S.INTERIM / "factors_daily.pkl")
+    min_leg = S.MIN_LEG_SIZE if S.ENFORCE_MIN_LEG else None
     facs = [c for c in S.FACTOR_SORTS if f[c].notna().any()]
     if not facs:
         log(STEP, "no local factors - skipping factor-beta sorts")
@@ -55,10 +57,10 @@ def beta_sorts(agg):
         Y = r.loc[fw.index, codes].where(traded.loc[fw.index, codes]).sub(fw["Rf"], axis=0)
         F = np.column_stack([fw["Ra"] - fw["Rf"]] + [fw[c] for c in facs])
         coef = factor_betas(Y.to_numpy(), F)
-        R = holding_returns(codes, m1, rm, last_date, f.index[-1], S.DELIST_RETURN)
+        R = holding_returns(codes, m1, rm, last_date, f.index[-1], delist)
         for i, fac in enumerate(facs):
             score = pd.Series(coef[:, 2 + i], index=codes)
-            res = form_ls(score, R, S.SORT_SCHEME)
+            res = form_ls(score, R, S.SORT_SCHEME, min_leg)
             if res is not None:
                 out[fac][m1] = {k: v for k, v in res[0].items() if k.startswith("LS")}
     res = {}
@@ -71,26 +73,26 @@ def beta_sorts(agg):
 
 def costs(agg, legs):
     hold = load(S.PROCESSED / "holdings.pkl")
-    cost = {}
+    cost, turn = {}, {}
     for name, h in hold.groupby("portfolio"):
         W = h.pivot_table(index="T", columns="code", values="weight", fill_value=0.0).sort_index()
-        turnover = 0.5 * W.diff().abs().sum(axis=1)
-        turnover.iloc[0] = 1.0                       # initial purchase
-        c = turnover * (S.COST_BUY + S.COST_SELL)
+        c, turnover = turnover_cost(W, S.COST_BUY, S.COST_SELL)
         c.index = pd.PeriodIndex(c.index.to_period("M") + 1, freq="M")
-        cost[name] = c
+        turnover.index = c.index
+        cost[name], turn[name] = c, turnover
     cost = pd.DataFrame(cost).reindex(legs.index).fillna(0)
+    turn = pd.DataFrame(turn).reindex(legs.index).iloc[1:].mean()      # rebalancing months only
     K = sum(c.startswith("LS") for c in legs.columns)
     rows = {}
     for k in range(1, K + 1):
         cls = cost[f"L{k}"] + cost[f"S{k}"]
         gross, net = agg[f"M+LS{k}"], agg[f"M+LS{k}"] - cls
-        rows[f"M+LS{k}"] = {"turnover_L": (cost[f"L{k}"] / (S.COST_BUY + S.COST_SELL)).mean(),
+        rows[f"M+LS{k}"] = {"turnover_L": turn[f"L{k}"],
                             "cost_%/m": 100 * cls.mean(),
                             "gross_mean_%": 100 * gross.mean(), "net_mean_%": 100 * net.mean(),
                             "gross_sharpe": summary(gross, agg["Rf"])["sharpe"],
                             "net_sharpe": summary(net, agg["Rf"])["sharpe"]}
-    rows["g"] = {"turnover_L": (cost["g"] / (S.COST_BUY + S.COST_SELL)).mean(), "cost_%/m": 100 * cost["g"].mean(),
+    rows["g"] = {"turnover_L": turn["g"], "cost_%/m": 100 * cost["g"].mean(),
                  "gross_mean_%": 100 * agg["g"].mean(), "net_mean_%": 100 * (agg["g"] - cost["g"]).mean(),
                  "gross_sharpe": summary(agg["g"], agg["Rf"])["sharpe"],
                  "net_sharpe": summary(agg["g"] - cost["g"], agg["Rf"])["sharpe"]}
@@ -126,7 +128,7 @@ def main():
         key = f"{a}..{b or 'end'}"
         rows[key] = {"T": len(sub), "Sharpe M": summary(sub["M"], rf)["sharpe"],
                      "Sharpe g": summary(sub["g"], rf)["sharpe"],
-                     **{f"Sharpe M+LS{k}": summary(sub[f"M+LS{k}"], rf)["sharpe"] for k in (1, 2, 3, K)}}
+                     **{f"Sharpe M+LS{k}": summary(sub[f"M+LS{k}"], rf)["sharpe"] for k in range(1, K + 1)}}
     if rows:
         ts = pd.DataFrame(rows).T
         ts.index.name = "Subperiod"

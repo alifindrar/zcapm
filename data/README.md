@@ -4,3 +4,6 @@ Folders are versioned by `DB_VERSION` (config; default `v2` = dbv2). `v1` folder
 - `external/` — manual inputs, e.g. `rf.csv` (`date, rate_annual_pct`), shared by all versions
 - `interim/`, `interim_v2/` — steps 01–03
 - `processed/`, `processed_v2/` — steps 04–05
+- suffixes `_z20`, `_z50`, `_book24` — robustness runs (config `ZCAPM_ZERO`, `ZCAPM_SCHEME`)
+- `external/delistings_extra.csv` — additions to, and reasons for, the delisting list (step 01)
+- `external/rf_*.csv` — inputs of `02_market_factors/build_rf.py`, which writes `rf.csv`

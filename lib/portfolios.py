@@ -64,30 +64,45 @@ def cap_weights(w, cap):
     return w
 
 
-def g_weights(est, mkt_sd, vol_ratio, offset, cap):
-    """Proxy minimum-variance portfolio g: w ~ 1/(offset+|Z*|) * 1/var(u), low-vol stocks removed."""
+def g_weights(est, mkt_sd, vol_ratio, offset, cap, zscale=1.0):
+    """Proxy minimum-variance portfolio g: w ~ 1/(offset+|Z*|) * 1/var(u), low-vol stocks removed.
+    `zscale` puts Z* on the scale the offset is defined for (the book: monthly, daily Z* x 21)."""
     e = est.dropna(subset=["zstar", "resid_var"])
     e = e[(e["sd_daily"] >= vol_ratio * mkt_sd) & (e["resid_var"] > 0)]
-    w = 1.0 / (offset + e["zstar"].abs()) / e["resid_var"]
+    w = 1.0 / (offset + zscale * e["zstar"].abs()) / e["resid_var"]
     return cap_weights(w / w.sum(), cap)
 
 
 def holding_returns(codes, month, returns_monthly, last_date, data_end, delist_return):
-    """Month-`month` returns for `codes`, with a delisting return for stocks that stop trading."""
+    """Month-`month` returns for `codes`, with a delisting return for stocks that stop trading.
+    `delist_return`: Series code -> return (step 01 `delist_return.pkl`; 0 when none applies) or one number."""
     base = returns_monthly.loc[month].reindex(codes) if month in returns_monthly.index \
         else pd.Series(np.nan, index=codes)
     ld = last_date.reindex(codes)
     delisted = (ld <= month.end_time) & (ld < data_end - pd.Timedelta(days=10))
+    if isinstance(delist_return, pd.Series):
+        delist_return = delist_return.reindex(codes).fillna(0.0).to_numpy()
     return (1 + base.fillna(0)) * (1 + np.where(delisted, delist_return, 0.0)) - 1
 
 
-def form_ls(score, month_ret, scheme):
+def turnover_cost(W, buy, sell):
+    """Monthly cost and one-way turnover of target weights W (formation date x code).
+    Rebalancing sells and buys the same amount; the first month is a purchase of the whole portfolio."""
+    turnover = 0.5 * W.sort_index().diff().abs().sum(axis=1)
+    cost = turnover * (buy + sell)
+    turnover.iloc[0], cost.iloc[0] = 1.0, buy
+    return cost, turnover
+
+
+def form_ls(score, month_ret, scheme, min_leg=None):
     """Equal-weighted leg returns, L/S returns, avg score and counts for one formation date.
-    Returns None when there are too few scored stocks to fill every leg."""
+    Returns None when there are too few scored stocks to fill every leg (with `min_leg` stocks each, if given)."""
     score = score.dropna()
     if len(score) < 2 * n_ls(scheme):
         return None
     legs = leg_members(score, scheme)
+    if min_leg and min(len(c) for c in legs.values()) < min_leg:
+        return None
     K = n_ls(scheme)
     ret, avg, cnt, hold = {}, {}, {}, {}
     for name, codes in legs.items():

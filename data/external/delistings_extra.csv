@@ -1,0 +1,12 @@
+# Additions and overrides to data/raw*/delistings.csv, read by step 01 (see config DELIST_EXTRA_FILE).
+# A row adds a delisting missing from the IDX feed, or sets the reason for one already listed (date may be empty).
+# reason: forced | voluntary | merger. voluntary/merger -> DELIST_RETURN_VOLUNTARY (0), anything else -> DELIST_RETURN.
+# Dates marked "approx" are the day after the last trade in the price data, not taken from an IDX announcement.
+code,delisting_date,reason,note
+APOL,2020-04-06,forced,Arpeni Pratama Ocean Line - missing from the feed list; date approx
+SCBD,2020-04-20,voluntary,Danayasa Arthatama go-private - missing from the feed list; date approx
+FREN,2025-04-17,merger,Smartfren merged into XL Axiata (EXCL) - missing from the feed list; date approx
+RMBA,,voluntary,Bentoel Internasional Investama go-private with tender offer
+TURI,,voluntary,Tunas Ridean go-private with tender offer
+MASA,,voluntary,Multistrada Arah Sarana go-private
+MFIN,,voluntary,Mandala Multifinance after acquisition

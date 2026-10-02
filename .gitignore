@@ -31,12 +31,10 @@ ehthumbs.db
 *.db-wal
 
 # Large raw & interim pipeline data caches (reproducible from pipeline scripts)
-data/raw/
-data/raw_v2/
-data/interim/
-data/interim_v2/
-data/processed/
-data/processed_v2/
+data/raw*/
+data/interim*/
+data/processed*/
+outputs/*_synth*/
 00_data_acquisition/stockdb/
 00_data_acquisition/tmp_test/
 00_data_acquisition/batches/

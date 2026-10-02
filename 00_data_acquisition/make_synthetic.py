@@ -2,7 +2,7 @@
 
 Returns follow the empirical ZCAPM with known beta, Z, p per stock, plus IPOs, delistings,
 cash dividends (price drops on ex-date), stock splits (IDX-style adjusted `previous`) and zero-volume days.
-Writes data/raw/* and data/external/rf.csv, plus a data/raw/SYNTHETIC marker.
+Writes data/raw/* (and data/external/rf.csv if there is none), plus a data/raw/SYNTHETIC marker.
 
     python 00_data_acquisition/make_synthetic.py [--force]
 """
@@ -100,8 +100,9 @@ def main():
     pbv = np.exp(rng.normal(0.3, 0.6, N))[None, :] * np.exp(rng.normal(0, 0.1, (len(qe), N)))
     pd.DataFrame([(codes[j], qe[q], pbv[q, j]) for q in range(len(qe)) for j in range(N)],
                  columns=["code", "date", "pbv"]).to_csv(S.RAW / "ratios.csv", index=False)
-    pd.DataFrame({"date": pd.date_range(START, END, freq="MS"), "rate_annual_pct": RF_ANNUAL}).to_csv(
-        S.RF_FILE, index=False)
+    if not S.RF_FILE.exists():           # data/external is shared with real runs: never overwrite the real series
+        pd.DataFrame({"date": pd.date_range(START, END, freq="MS"), "rate_annual_pct": RF_ANNUAL}).to_csv(
+            S.RF_FILE, index=False)
     pd.DataFrame({"code": codes, "beta": beta, "Z": Z, "p": p, "zstar": Z * (2 * p - 1)}).to_csv(
         S.RAW / "synthetic_truth.csv", index=False)
     (S.RAW / "SYNTHETIC").write_text("synthetic data - plumbing test only\n")
