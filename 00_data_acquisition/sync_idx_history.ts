@@ -35,8 +35,12 @@ try {
 }
 
 // explicit order: object keys like "2024" would otherwise enumerate ascending, before "2025-2026"
-const ORDER = ['2025-2026']
-const BATCHES: Record<string, [string, string]> = { '2025-2026': ['2025-01-01', '2026-06-30'] }
+const todayStr = new Date().toISOString().slice(0, 10)
+const ORDER = ['2026-recent', '2025-2026']
+const BATCHES: Record<string, [string, string]> = {
+  '2026-recent': ['2026-07-01', todayStr],
+  '2025-2026': ['2025-01-01', '2026-06-30']
+}
 for (let y = 2024; y >= 1995; y--) {
   ORDER.push(String(y))
   BATCHES[String(y)] = [`${y}-01-01`, `${y}-12-31`]

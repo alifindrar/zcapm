@@ -1,12 +1,22 @@
 # Additions and overrides to data/raw*/delistings.csv, read by step 01 (see config DELIST_EXTRA_FILE).
 # A row adds a delisting missing from the IDX feed, or sets the reason for one already listed (date may be empty).
 # reason: forced | voluntary | merger. voluntary/merger -> DELIST_RETURN_VOLUNTARY (0), anything else -> DELIST_RETURN.
-# Dates marked "approx" are the day after the last trade in the price data, not taken from an IDX announcement.
+# Dates and reasons checked on 2026-10-02 against press reports of the IDX announcements (idx.co.id itself is not reachable).
 code,delisting_date,reason,note
-APOL,2020-04-06,forced,Arpeni Pratama Ocean Line - missing from the feed list; date approx
-SCBD,2020-04-20,voluntary,Danayasa Arthatama go-private - missing from the feed list; date approx
-FREN,2025-04-17,merger,Smartfren merged into XL Axiata (EXCL) - missing from the feed list; date approx
-RMBA,,voluntary,Bentoel Internasional Investama go-private with tender offer
-TURI,,voluntary,Tunas Ridean go-private with tender offer
-MASA,,voluntary,Multistrada Arah Sarana go-private
-MFIN,,voluntary,Mandala Multifinance after acquisition
+APOL,2020-04-06,forced,Arpeni Pratama Ocean Line - declared bankrupt (Supreme Court 2020-02-04); missing from the feed list
+SCBD,2020-04-20,voluntary,Danayasa Arthatama go-private - tender offer Rp 5565 by Kresna Aji Sembada; missing from the feed list
+FREN,2025-04-17,merger,Smartfren merged into XL Axiata (EXCL) - 0.011 EXCL per FREN share; missing from the feed list
+RMBA,,voluntary,Bentoel Internasional Investama go-private - tender offer Rp 1000
+TURI,,voluntary,Tunas Ridean go-private - tender offer Rp 1700
+MASA,,voluntary,Multistrada Arah Sarana go-private - tender offer Rp 8400
+MFIN,,merger,Mandala Multifinance merged into Adira Finance (ADMF) effective 2025-10-01 - 0.052401 ADMF per MFIN share
+FORZ,2025-07-21,forced,Forza Land Indonesia - bankrupt; IDX forced delisting batch effective 2025-07-21 (buyback window 2025-01-20..07-18); missing from the feed list
+HDTX,2025-07-21,forced,Panasia Indo Resources - IDX forced delisting effective 2025-07-21; missing from the feed list
+JKSW,2025-07-21,forced,Jakarta Kyoei Steel Works - IDX forced delisting effective 2025-07-21; missing from the feed list
+KPAL,2025-07-21,forced,Steadfast Marine - bankrupt; IDX forced delisting batch effective 2025-07-21; missing from the feed list
+KPAS,2025-07-21,forced,Cottonindo Ariesta - bankrupt; IDX forced delisting batch effective 2025-07-21; missing from the feed list
+KRAH,2025-07-21,forced,Grand Kartech - bankrupt; IDX forced delisting batch effective 2025-07-21; missing from the feed list
+MAMI,2025-07-21,forced,Mas Murni Indonesia - bankrupt; IDX forced delisting batch effective 2025-07-21; missing from the feed list
+MYRX,2025-07-21,forced,Hanson International - IDX forced delisting batch effective 2025-07-21; missing from the feed list
+NIPS,2025-07-21,forced,Nipress - bankrupt; IDX forced delisting batch effective 2025-07-21; missing from the feed list
+PRAS,2025-07-21,forced,Prima Alloy Steel Universal - bankrupt; IDX forced delisting batch effective 2025-07-21; missing from the feed list

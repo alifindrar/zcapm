@@ -10,8 +10,8 @@
 // Usage:
 //   deno run -A --config ../_arcip/idx-api/deno.json 00_data_acquisition/run_sync.ts
 
-const TARGET_YEAR = 2005
-const BATCHES = ['2025-2026']
+const TARGET_YEAR = 2020
+const BATCHES = ['2026-recent', '2025-2026']
 for (let y = 2024; y >= TARGET_YEAR; y--) {
   BATCHES.push(String(y))
 }

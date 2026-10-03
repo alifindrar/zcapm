@@ -20,6 +20,7 @@ def main():
     rm = load(S.INTERIM / "returns_monthly.pkl")
     last_date = load(S.INTERIM / "last_date.pkl")
     delist = load(S.INTERIM / "delist_return.pkl")
+    susp = load(S.INTERIM / "susp_monthly.pkl")
     f = load(S.INTERIM / "factors_daily.pkl")
     data_end = f.index[-1]
 
@@ -32,7 +33,7 @@ def main():
         m1 = T.to_period("M") + 1
         if m1 not in rm.index or e.empty:
             continue
-        R = holding_returns(e.index, m1, rm, last_date, data_end, delist)
+        R = holding_returns(e.index, m1, rm, last_date, data_end, delist, susp)
         res = form_ls(e["zstar"], R, S.SORT_SCHEME, min_leg)
         if res is None:
             skipped += 1

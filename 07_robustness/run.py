@@ -40,6 +40,7 @@ def beta_sorts(agg):
     rm = load(S.INTERIM / "returns_monthly.pkl")
     last_date = load(S.INTERIM / "last_date.pkl")
     delist = load(S.INTERIM / "delist_return.pkl")
+    susp = load(S.INTERIM / "susp_monthly.pkl")
     f = load(S.INTERIM / "factors_daily.pkl")
     min_leg = S.MIN_LEG_SIZE if S.ENFORCE_MIN_LEG else None
     facs = [c for c in S.FACTOR_SORTS if f[c].notna().any()]
@@ -57,7 +58,7 @@ def beta_sorts(agg):
         Y = r.loc[fw.index, codes].where(traded.loc[fw.index, codes]).sub(fw["Rf"], axis=0)
         F = np.column_stack([fw["Ra"] - fw["Rf"]] + [fw[c] for c in facs])
         coef = factor_betas(Y.to_numpy(), F)
-        R = holding_returns(codes, m1, rm, last_date, f.index[-1], delist)
+        R = holding_returns(codes, m1, rm, last_date, f.index[-1], delist, susp)
         for i, fac in enumerate(facs):
             score = pd.Series(coef[:, 2 + i], index=codes)
             res = form_ls(score, R, S.SORT_SCHEME, min_leg)

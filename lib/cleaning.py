@@ -6,6 +6,8 @@ none in the data, so the return is removed, in both directions, and logged with 
     spike      the price returns to the pre-move level within a few rows: every return of the round trip is dropped
     split      the move matches a split ratio (unadjusted corporate action): the one return is dropped
     other      anything else: the one return is dropped
+    revert     a later single move (within `level_rows`) that undoes an 'other' move and brings the price back to the
+               pre-move level: dropped too, otherwise the series keeps the reversal without the move it reverses
 """
 import numpy as np
 import pandas as pd
@@ -19,8 +21,9 @@ def split_like(q, tol=SPLIT_TOL):
     return bool(min(np.abs(q * SPLIT_K - 1).min(), np.abs(q / SPLIT_K - 1).min()) <= tol)
 
 
-def screen_returns(r, close, prev, limit, listing_rows, revert_rows, revert_band):
-    """Returns (cleaned returns, log of removed returns). `r`, `close`, `prev` are wide date x code frames."""
+def screen_returns(r, close, prev, limit, listing_rows, revert_rows, revert_band, level_rows=0):
+    """Returns (cleaned returns, log of removed returns). `r`, `close`, `prev` are wide date x code frames.
+    `limit` is the screen threshold itself (the caller adds any tolerance above the exchange band)."""
     obs_no = close.notna().cumsum()
     extreme = (r.abs() > limit) & (obs_no > listing_rows)
     drop = np.zeros(r.shape, bool)
@@ -43,5 +46,17 @@ def screen_returns(r, close, prev, limit, listing_rows, revert_rows, revert_band
                 if np.isfinite(R[u, j]):
                     rows.append((r.index[u], r.columns[j], R[u, j], cls, r.index[t]))
                 drop[u, j] = True
+            if cls == "other":
+                move = np.log1p(R[t, j])
+                for k in range(1, level_rows + 1):
+                    if i + k >= len(valid):
+                        break
+                    u = valid[i + k]
+                    back = abs(C[u, j] / base - 1) <= revert_band
+                    if back and np.isfinite(R[u, j]) and np.log1p(R[u, j]) * move < 0 \
+                            and abs(np.log1p(R[u, j])) >= 0.5 * abs(move):
+                        rows.append((r.index[u], r.columns[j], R[u, j], "revert", r.index[t]))
+                        drop[u, j] = True
+                        break
     log = pd.DataFrame(rows, columns=["date", "code", "r", "class", "trigger_date"])
     return r.mask(drop), log.sort_values(["date", "code"]).reset_index(drop=True)

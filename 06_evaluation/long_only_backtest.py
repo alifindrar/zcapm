@@ -50,14 +50,14 @@ def cost_series(W, index):
     return c.reindex(index).fillna(0), turnover
 
 
-def bucket_return(W, rm, last_date, data_end, index, delist):
+def bucket_return(W, rm, last_date, data_end, index, delist, susp):
     """Month-T+1 return of the pooled bucket, same holding-return convention as step 04."""
     out = {}
     for T, w in W.iterrows():
         m1 = T.to_period("M") + 1
         if m1 in index:
             w = w[w > 0]
-            R = holding_returns(w.index, m1, rm, last_date, data_end, delist)
+            R = holding_returns(w.index, m1, rm, last_date, data_end, delist, susp)
             out[m1] = float((R * w).sum())
     return pd.Series(out).reindex(index)
 
@@ -84,6 +84,7 @@ def main():
     fm = load(S.INTERIM / "factors_monthly.pkl")
     last_date = load(S.INTERIM / "last_date.pkl")
     delist = load(S.INTERIM / "delist_return.pkl")
+    susp = load(S.INTERIM / "susp_monthly.pkl")
     data_end = load(S.INTERIM / "factors_daily.pkl").index[-1]
     idx = legs.index
     rf = agg["Rf"]
@@ -91,7 +92,7 @@ def main():
     gross, net, turn = {}, {}, {}
     for name, members in BUCKETS.items():
         W = bucket_weights(hold, members)
-        r = legs["g"] if members == ["g"] else (legs[members[0]] if len(members) == 1 else bucket_return(W, rm, last_date, data_end, idx, delist))
+        r = legs["g"] if members == ["g"] else (legs[members[0]] if len(members) == 1 else bucket_return(W, rm, last_date, data_end, idx, delist, susp))
         c, t = cost_series(W, idx)
         gross[name], net[name], turn[name] = r, r - c, t.iloc[1:].mean()
     gross[BLEND[0]] = 0.5 * agg["M"] + 0.5 * gross[BLEND[1]]

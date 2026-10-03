@@ -44,13 +44,18 @@ EXCLUDE_PREFIXES = ("X",)       # ETFs
 EXCLUDE_REMARK_REGEX = None     # e.g. r"X" once the IDX remarks notation for Papan Pemantauan Khusus is verified
 MAX_ABS_DAILY_RET = 1.0         # |r| > 100% set to NaN and logged (backstop, applies to listing days too)
 RET_LIMIT = 0.35                # widest regular IDX auto-rejection band; larger moves are screened (lib/cleaning.py)
+RET_TOL = 0.02                  # screen only beyond RET_LIMIT + RET_TOL: a limit move lands at +35.0..36.x% after float
+                                # noise and tick rounding (Rp 1 tick at Rp 50 = 2%) and is a genuine return
 RET_LISTING_ROWS = 5            # first rows of a code are exempt from the screen (IPO days / data start)
 RET_REVERT_ROWS = 3             # a move beyond RET_LIMIT that returns to the old level within this many rows ...
 RET_REVERT_BAND = 0.15          # ... (to within this band) is a data spike: every return of the round trip is dropped
+RET_LEVEL_ROWS = 10             # a screened level shift ('other') reversed by one opposite move within this many rows:
+                                # the reversing return is dropped too, so the level ends where it started (e.g. APIC 2005)
 SIZE_CUT = 0.10                 # drop bottom share of market cap at latest year-end
 SIZE_FFILL_DAYS = 20            # year-end market cap carried forward this many rows when the stock did not trade
 MIN_OBS = 200                   # min traded days in the estimation window
 MIN_PRICE = 50                  # exclude stocks at/below the Rp 50 floor (nominal price when the raw file has it)
+BUY_TRADE_ROWS = 10             # eligible only with a trade in the last this-many rows up to T (not suspended at T)
 
 # ---------------------------------------------------------------- market factors (step 02)
 MARKET_PROXY = "own_vw"         # "own_vw" (cap-weighted from universe) or "ihsg"
@@ -80,8 +85,12 @@ DELIST_EXTRA_FILE = EXTERNAL / "delistings_extra.csv"   # code, delisting_date, 
 VOLUNTARY_REASONS = ("voluntary", "merger")
 
 # ---------------------------------------------------------------- robustness (step 07)
-COST_BUY = 0.0019               # incl. broker + levy (approx.)
-COST_SELL = 0.0029              # incl. 0.1% sales tax (approx.)
+# Stockbit Sekuritas fee schedule (help.stockbit.com, "Berapa biaya trading di Stockbit Sekuritas"), regular stocks.
+# ETF / right / warrant (0.15% both ways) are outside the universe; deposits are free, a withdrawal costs Rp 6,500.
+COST_BUY = 0.0015               # buy fee
+COST_SELL = 0.0025              # sell fee, incl. 0.1% final income tax (PPh)
+STAMP_DUTY = 10_000             # Rp per trade confirmation (one per trading day) ...
+STAMP_DUTY_MIN = 10e6           # ... when the day's total buy + sell value is above this (Rp); step 08 only
 NW_LAGS = 6
 SUBPERIODS = [("2005-01", "2013-12"), ("2014-01", "2019-12"), ("2020-01", None)]
 FACTOR_SORTS = ("SMB", "HML", "MOM")

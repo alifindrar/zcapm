@@ -73,13 +73,20 @@ def g_weights(est, mkt_sd, vol_ratio, offset, cap, zscale=1.0):
     return cap_weights(w / w.sum(), cap)
 
 
-def holding_returns(codes, month, returns_monthly, last_date, data_end, delist_return):
+def holding_returns(codes, month, returns_monthly, last_date, data_end, delist_return, susp=None):
     """Month-`month` returns for `codes`, with a delisting return for stocks that stop trading.
-    `delist_return`: Series code -> return (step 01 `delist_return.pkl`; 0 when none applies) or one number."""
+    `delist_return`: Series code -> return (step 01 `delist_return.pkl`; 0 when none applies) or one number.
+    `susp`: step 01 `susp_monthly.pkl` (month x code), set where a stock has no trade in the month: the return of a
+    holder who cannot sell (to the first trade after the month, or the delisting return when it never trades again).
+    It replaces the month's return and already holds any delisting return."""
     base = returns_monthly.loc[month].reindex(codes) if month in returns_monthly.index \
         else pd.Series(np.nan, index=codes)
     ld = last_date.reindex(codes)
     delisted = (ld <= month.end_time) & (ld < data_end - pd.Timedelta(days=10))
+    if susp is not None and month in susp.index:
+        s = susp.loc[month].reindex(codes)
+        base = base.where(s.isna(), s)
+        delisted &= s.isna()
     if isinstance(delist_return, pd.Series):
         delist_return = delist_return.reindex(codes).fillna(0.0).to_numpy()
     return (1 + base.fillna(0)) * (1 + np.where(delisted, delist_return, 0.0)) - 1

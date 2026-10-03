@@ -47,6 +47,26 @@ def delisting_returns(codes, last_date, data_end):
     return t[t["status"] != ""].sort_values(["status", "last_price_date"])
 
 
+def suspension_returns(close, vol, last_date, data_end, reason):
+    """Month x code return for a holder of a stock with no trade in the month (suspension or delisting).
+
+    The holder cannot sell, so the month carries the move from the last traded close before the month to the first
+    traded close after it (price only). A stock that never trades again and has stopped in the data gets
+    DELIST_RETURN_VOLUNTARY for a voluntary delisting or merger, else DELIST_RETURN (forced or unexplained stop).
+    NaN where the stock traded in the month, before its first trade, or when it is still untraded at the data end."""
+    tc = close.where((vol > 0) & (close > 0))
+    key = tc.index.to_period("M")
+    traded_m = tc.notna().groupby(key).any()
+    prior = tc.ffill().groupby(key).last().shift(1)
+    nxt = tc.bfill().groupby(key).first().shift(-1)
+    stopped = last_date.reindex(close.columns) < data_end - pd.Timedelta(days=10)
+    dr = pd.Series(S.DELIST_RETURN, index=close.columns)
+    dr[reason.reindex(close.columns).isin(S.VOLUNTARY_REASONS)] = S.DELIST_RETURN_VOLUNTARY
+    gone = nxt.isna() & stopped.to_numpy()[None, :]
+    dr_wide = pd.DataFrame(np.broadcast_to(dr.to_numpy(), nxt.shape), index=nxt.index, columns=nxt.columns)
+    return (nxt / prior - 1).mask(gone, dr_wide).where(~traded_m & prior.notna())
+
+
 def load_raw():
     raw = pd.read_csv(S.RAW / "stock_daily.csv.gz", parse_dates=["date"], dtype={"code": str, "remarks": str})
     raw = raw[raw["date"] >= pd.Timestamp(S.START_DATE)]
@@ -89,10 +109,12 @@ def main():
     r = r.mask(outlier)
 
     # moves beyond the auto-rejection band, outside listing days: removed in both directions and logged
-    r, flagged = screen_returns(r, close, prev, S.RET_LIMIT, S.RET_LISTING_ROWS, S.RET_REVERT_ROWS, S.RET_REVERT_BAND)
+    lim = S.RET_LIMIT + S.RET_TOL
+    r, flagged = screen_returns(r, close, prev, lim, S.RET_LISTING_ROWS, S.RET_REVERT_ROWS, S.RET_REVERT_BAND,
+                                S.RET_LEVEL_ROWS)
     flagged.to_csv(S.INTERIM / "returns_flagged.csv", index=False)
     for cls, n in flagged["class"].value_counts().items():
-        logrows.append((f"|r| > {S.RET_LIMIT:.0%} screen, class '{cls}' set to NaN", int(n)))
+        logrows.append((f"|r| > {lim:.0%} screen, class '{cls}' set to NaN", int(n)))
 
     traded = (vol > 0) & r.notna()
     shares = wide["listed_shares"].ffill()
@@ -106,13 +128,16 @@ def main():
     logrows.append(("share-count jumps beyond 1.5x (listed in share_jumps.csv, not changed)", len(jumps)))
     w = mcap.shift(1).where(r.notna() & (mcap.shift(1) > 0))
     w = w.div(w.sum(axis=1), axis=0)
-    logrows.append(("days with one stock above 25% of the cap-weighted index", int((w.max(axis=1) > 0.25).sum())))
+    thick = w.notna().sum(axis=1) >= 100     # thin early dates (14-35 returns) put one stock above 25% by construction
+    logrows.append(("days with one stock above 25% of the cap-weighted index (dates with >= 100 returns)",
+                    int((w.max(axis=1) > 0.25)[thick].sum())))
 
     delist = delisting_returns(close.columns, last_date, dates[-1])
     delist.to_csv(S.INTERIM / "delistings_status.csv")
     for status, n in delist["status"].value_counts().items():
         logrows.append((f"delistings: {status}", int(n)))
     delist_return = delist["delist_return"].reindex(close.columns).fillna(0.0)
+    susp = suspension_returns(close, vol, last_date, dates[-1], delist["reason"].fillna(""))
 
     # month-end eligibility
     mes = month_ends(dates)
@@ -132,6 +157,7 @@ def main():
         zero_frac = ((rr == 0) & tr).sum() / n_valid.clip(lower=1)
         ok = (n_valid >= S.MIN_OBS) & (zero_frac <= S.MAX_ZERO_FRAC)
         ok &= close_ff.loc[T] > S.MIN_PRICE
+        ok &= (vol.loc[:T].tail(S.BUY_TRADE_ROWS) > 0).any()   # a suspended stock cannot be bought at T
         ye = year_ends[year_ends <= T]
         if len(ye):
             mc = mcap_ff.loc[ye[-1]]
@@ -145,6 +171,11 @@ def main():
     logrows.append(("formation months with eligible stocks", len(n_elig)))
     logrows.append(("eligible stocks per month (min/median/max)",
                     f"{n_elig.min()}/{int(n_elig.median())}/{n_elig.max()}" if len(n_elig) else "0"))
+    held = elig.set_axis(elig.index.to_period("M") + 1).reindex(susp.index).fillna(False).astype(bool)
+    s_held = susp.where(held).stack().dropna()
+    logrows.append(("eligible at formation, no trade in the holding month (suspension return applied)",
+                    f"{len(s_held)} (mean {s_held.mean():+.1%}, at delisting return {int(s_held.eq(S.DELIST_RETURN).sum())})"
+                    if len(s_held) else "0"))
 
     save(r, S.INTERIM / "returns_daily.pkl")
     save(traded, S.INTERIM / "traded_daily.pkl")
@@ -152,6 +183,7 @@ def main():
     save(compound_monthly(r), S.INTERIM / "returns_monthly.pkl")
     save(last_date, S.INTERIM / "last_date.pkl")
     save(delist_return, S.INTERIM / "delist_return.pkl")
+    save(susp, S.INTERIM / "susp_monthly.pkl")
     save(elig, S.INTERIM / "eligible_monthly.pkl")
     pd.DataFrame(logrows, columns=["item", "value"]).to_csv(S.INTERIM / "cleaning_log.csv", index=False)
     for item, v in logrows:
