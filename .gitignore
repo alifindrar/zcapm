@@ -42,6 +42,7 @@ outputs/*_synth*/
 # Heavy archive / binary formats in data pipelines
 *.pkl
 *.gz
+*.bin
 
 # Retain external inputs, directory structure, and documentation
 !data/external/
