@@ -1,6 +1,10 @@
 """Step 08 - Rp 30 m top-10 Z* basket: lot-level account simulation, monthly reports and the live starting order sheet.
 
-Selection is the 06c rule (06_evaluation/topn_backtest.py --top-mcap 200 --min-adv 10e9): market-cap rank <= 200,
+Selection is the 06c rule (06_evaluation/topn_backtest.py --top-mcap 200 --min-adv 10e9): market-cap rank <= 200 and
+liquidity rank (ADV, 60d average daily traded value) <= 200 at T, so rebalancing trades stay small relative to volume.
+Every pick of the market-cap-only rule 2016-02..2026-10 was already inside the top 200 by ADV (the ADV floor does it),
+so the two rules give the same history. ZCAPM_BASKET_UNIVERSE=mcap / adv ranks on one of them only; adv alone swaps in
+small, high-turnover names and roughly halved the 2016-2026 result (+310% vs +694%),
 Z* top quintile in >= 2 of the 3 previous formation months, ADV (60d) >= Rp 10 bn, trades >= 90% of the last 60 days, beta <= 2, p >= 0.6,
 n_obs >= 200; the 10 highest Z*, equal weight, formed at month-end T and held T -> T+1.
 
@@ -22,6 +26,7 @@ close, from dbv2 OHLC), rounded down to the IDX tick, and good for ENTRY_DAYS se
 at the close of the last session. k is the value that gave the lowest average entry price, relative to buying at the
 first session's open, over every new position in the simulation (entry_study.csv).
 """
+import os
 import sqlite3
 import sys
 from pathlib import Path
@@ -37,6 +42,8 @@ from lib.portfolios import holding_returns  # noqa: E402
 
 STEP = "08"
 N, TOP_MCAP, MIN_ADV, LOT = 10, 200, 10e9, 100
+UNIVERSE = os.environ.get("ZCAPM_BASKET_UNIVERSE", "both")    # "both" = top-TOP_MCAP by market cap and by liquidity
+UNIV = {"adv": "most liquid", "mcap": "market cap", "both": "market cap and most liquid"}[UNIVERSE]
 CAPITAL = 30e6
 ENTRY_KS, ENTRY_DAYS = (0.0, 0.25, 0.5, 0.75, 1.0), 3
 FIRST = pd.Period(sys.argv[1] if len(sys.argv) > 1 else "2016-02", "M")   # first holding month
@@ -72,7 +79,8 @@ def main():
     q = {T: est.loc[T, "zstar"].rank(pct=True) >= 0.8 for T in Ts}
 
     def candidates(i, T):
-        """Top-TOP_MCAP universe at T and its filtered candidates ranked by Z* (all of them, not just the top N).
+        """Top-TOP_MCAP universe at T (by ADV or market cap, see UNIVERSE) and its filtered candidates ranked by Z*
+        (all of them, not just the top N).
         Market cap is step 01's (adjusted close x calibrated shares = the IDX market cap); only orders use the
         nominal price."""
         e = est.loc[T]
@@ -80,8 +88,11 @@ def main():
         row = mc.index[mc.index <= T][-1]
         e["mcap_rank"] = mc.loc[row].rank(ascending=False).reindex(e.index)
         e["persist"] = sum(q[t].reindex(e.index).fillna(False).astype(int) for t in Ts[i - 3:i])
+        e["adv_rank"] = adv.loc[row].rank(ascending=False).reindex(e.index)
         e["adv_bn"], e["tr60"] = adv.loc[row].reindex(e.index) / 1e9, tr60.loc[row].reindex(e.index)
-        big = e[e.mcap_rank <= TOP_MCAP]
+        keep = (e.adv_rank <= TOP_MCAP) & (e.mcap_rank <= TOP_MCAP) if UNIVERSE == "both" else \
+            e[f"{UNIVERSE}_rank"] <= TOP_MCAP
+        big = e[keep]
         c = big[(big.persist >= 2) & (big.adv_bn >= MIN_ADV / 1e9) & (big.tr60 >= .9) & (big.beta <= 2)
                 & (big.p >= .6) & (big.n_obs >= 200)].sort_values("zstar", ascending=False)
         return big, c, row
@@ -189,7 +200,8 @@ def main():
                              zstar=np.nan if meta is None else meta["zstar"],
                              beta=np.nan if meta is None else meta["beta"],
                              p=np.nan if meta is None else meta["p"],
-                             mcap_rank=np.nan if meta is None else meta["mcap_rank"]))
+                             mcap_rank=np.nan if meta is None else meta["mcap_rank"],
+                             adv_rank=np.nan if meta is None else meta["adv_rank"]))
         nav2 = cash + sum(h["value"] for h in pos.values())
         ew = float(holding_returns(big.index, m1, rm, ld, data_end, dl, susp).mean())
         nav_rows.append(dict(month=str(m1), formed=row.date(), nav_start=nav0, fees=fees, nav_after_trades=nav1,
@@ -247,7 +259,7 @@ def stats(r, rf):
 
 def write_report(m1, row, nav0, nav1, nav2, cash, fees, trades, hold, notes, nr, navrow):
     L = [f"# Basket report {m1}", "",
-         f"Top-{N} Z* basket, top-{TOP_MCAP} market cap, equal weight. Rebalanced at the close of {row.date()}, "
+         f"Top-{N} Z* basket, top-{TOP_MCAP} {UNIV}, equal weight. Rebalanced at the close of {row.date()}, "
          f"held through {m1}.", "",
          "| | Rp |", "|---|---:|",
          f"| NAV before rebalance | {rp(nav0)} |", f"| Trading fees | {rp(fees)} |",
@@ -275,7 +287,8 @@ def write_report(m1, row, nav0, nav1, nav2, cash, fees, trades, hold, notes, nr,
                         "value_start": h.value_start.map(rp), "weight_%": h.weight_pct.round(1),
                         "return_%": h.return_pct.round(2), "P&L": h.pnl.map(rp), "value_end": h.value_end.map(rp),
                         "zstar": h.zstar.round(3), "beta": h.beta.round(2), "p": h.p.round(2),
-                        "mcap_rank": h.mcap_rank.map(lambda x: "" if pd.isna(x) else int(x))})
+                        "mcap_rank": h.mcap_rank.map(lambda x: "" if pd.isna(x) else int(x)),
+                        "adv_rank": h.adv_rank.map(lambda x: "" if pd.isna(x) else int(x))})
     L += [to_markdown(out.set_index("rank")), ""]
     (OUT / "reports" / f"{m1}.md").write_text("\n".join(L), encoding="utf-8")
 
@@ -367,12 +380,12 @@ def write_start(m, row, last, c, p_t, p_last, skipped, o, k_best, study, prev):
                      "lots": sh // LOT if rank <= N else "", "value_at_close": rp(val) if rank <= N else "",
                      "weight_%": round(100 * val / CAPITAL, 1) if rank <= N else "",
                      "zstar": round(e.zstar, 3), "beta": round(e.beta, 2), "p": round(e.p, 2),
-                     "mcap_rank": int(e.mcap_rank), "adv_bn": round(e.adv_bn, 1), "note": note})
+                     "mcap_rank": int(e.mcap_rank), "adv_rank": int(e.adv_rank), "adv_bn": round(e.adv_bn, 1), "note": note})
     t = pd.DataFrame(rows).set_index("rank")
     sb = study.set_index("k")
     short = f" Only {len(c)} stocks pass the filters this month, so the capital is split {len(c)} ways." if len(c) < N else ""
     L = [f"# Starting order sheet - {m}", "",
-         f"Fresh Rp {rp(CAPITAL)} into the top-{N} Z* basket formed at {row.date()} (top-{TOP_MCAP} market cap, "
+         f"Fresh Rp {rp(CAPITAL)} into the top-{N} Z* basket formed at {row.date()} (top-{TOP_MCAP} {UNIV}, "
          f"equal weight, rebalance at each month-end).{short} Prices are nominal (traded) prices; lots are sized at the "
          f"{last.date()} close with a {100 * BUFFER:.1f}% haircut so fees fit. Re-check prices before placing orders.",
          "", "## Entry rule", "",
@@ -413,7 +426,7 @@ def write_readme(nav, trades, study, k_best):
     for label, start in (("full", r.index[0]), ("10y", pd.Period("2016-10", "M")), ("5y", pd.Period("2021-10", "M")),
                          ("3y", pd.Period("2023-10", "M")), ("1y", pd.Period("2025-10", "M")),
                          ("2026 YTD", pd.Period("2026-01", "M"))):
-        for name, s in ((f"Rp {CAPITAL / 1e6:.0f}m basket (net, lots)", r), (f"EW top-{TOP_MCAP} mcap", e3), ("Market (own VW)", mk)):
+        for name, s in ((f"Rp {CAPITAL / 1e6:.0f}m basket (net, lots)", r), (f"EW top-{TOP_MCAP} {UNIVERSE}", e3), ("Market (own VW)", mk)):
             if start >= r.index[0]:
                 rows[(label, name)] = stats(s[s.index >= start], rf)
     st = pd.DataFrame(rows).T.round(2)
@@ -432,7 +445,7 @@ def write_readme(nav, trades, study, k_best):
     n_tr = trades[trades.action.isin(["BUY", "SELL", "ADD", "TRIM"])]
     starts = sorted(OUT.glob("start_*.md"))
     L = [f"# Step 08 - Rp {CAPITAL / 1e6:.0f} m top-{N} Z* basket", "",
-         f"Account simulation of the top-{N} Z* rule (top-{TOP_MCAP} market cap, ADV >= Rp {MIN_ADV / 1e9:.0f} bn) with "
+         f"Account simulation of the top-{N} Z* rule (top-{TOP_MCAP} {UNIV}, ADV >= Rp {MIN_ADV / 1e9:.0f} bn) with "
          f"Rp {rp(CAPITAL)} starting in {nav.month.iloc[0]}: "
          f"whole IDX lots, buy fee {100 * S.COST_BUY:.2f}%, sell fee {100 * S.COST_SELL:.2f}%, stamp duty "
          f"Rp {rp(S.STAMP_DUTY)} on a rebalance above Rp {S.STAMP_DUTY_MIN / 1e6:.0f} m (Stockbit), idle cash at 0%. "
